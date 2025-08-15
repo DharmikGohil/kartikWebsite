@@ -2,6 +2,9 @@
   "functions": {
     "api/contact.ts": {
       "maxDuration": 10
+    },
+    "api/download-report.ts": {
+      "maxDuration": 10
     }
   },
   "rewrites": [

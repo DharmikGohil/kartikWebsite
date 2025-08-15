@@ -33,23 +33,39 @@ const DownloadPage = () => {
 
     setIsSubmitting(true)
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-    
-    // Reset form after 5 seconds
-    setTimeout(() => {
-      setIsSubmitted(false)
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        phone: '',
-        agreeToTerms: false
+    try {
+      const response = await fetch('/api/download-report', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       })
-    }, 5000)
+
+      const result = await response.json()
+
+      if (response.ok && result.success) {
+        setIsSubmitted(true)
+        // Reset form after 5 seconds
+        setTimeout(() => {
+          setIsSubmitted(false)
+          setFormData({
+            name: '',
+            email: '',
+            company: '',
+            phone: '',
+            agreeToTerms: false
+          })
+        }, 5000)
+      } else {
+        throw new Error(result.error || 'Failed to send sample report')
+      }
+    } catch (error) {
+      console.error('Form submission error:', error)
+      alert(error instanceof Error ? error.message : 'Failed to send sample report. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const reportFeatures = [
@@ -260,13 +276,18 @@ const DownloadPage = () => {
                   className="text-center p-8 bg-gradient-to-br from-accent-teal/10 to-accent-orange/10 rounded-2xl border border-accent-teal/20"
                 >
                   <CheckCircle className="w-16 h-16 text-accent-teal mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-navy-900 mb-2">Thank You!</h3>
+                  <h3 className="text-2xl font-bold text-navy-900 mb-2">Sample Report Sent!</h3>
                   <p className="text-gray-600 mb-4">
-                    Your sample report has been sent to your email address. Please check your inbox and spam folder.
+                    Your sample QC report has been sent to your email address. Please check your inbox and spam folder.
                   </p>
                   <p className="text-sm text-gray-500">
-                    You'll receive the report within the next few minutes.
+                    You'll receive the report within the next few minutes. This demonstrates our professional quality standards.
                   </p>
+                  <div className="mt-6 p-4 bg-accent-teal/10 rounded-lg border border-accent-teal/20">
+                    <p className="text-sm text-accent-teal font-medium">
+                      💡 Pro Tip: Check your spam folder if you don't see it in your inbox!
+                    </p>
+                  </div>
                 </motion.div>
               )}
             </motion.div>
@@ -409,7 +430,7 @@ const DownloadPage = () => {
                 Download Sample Report
                 <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform duration-300" />
               </a>
-              <a href="https://wa.me/1234567890" className="bg-green-600 hover:bg-green-700 text-white font-semibold py-5 px-10 rounded-lg text-lg transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl">
+              <a href="https://wa.me/919313749421" className="bg-green-600 hover:bg-green-700 text-white font-semibold py-5 px-10 rounded-lg text-lg transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl">
                 <Phone className="w-6 h-6 mr-3" />
                 Chat on WhatsApp
               </a>

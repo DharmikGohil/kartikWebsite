@@ -27,8 +27,8 @@ const About = () => {
   ]
 
   const credentials = [
-    'Chemical Engineering Degree (B.Tech)',
-    '1+ Years in Quality Assurance',
+    // 'Chemical Engineering Degree (B.Tech)',
+    // '1+ Years in Quality Assurance',
     'ISO 17020/17025 Standards Expert',
     'International Chemical Safety Certified',
     'Member of Chemical Manufacturers Association',
@@ -197,7 +197,7 @@ const About = () => {
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-5 h-5 text-accent-teal flex-shrink-0" />
-                    <span>Direct access to founder's 2+ years of experience</span>
+                    <span>Direct access to founder's proven expertise in chemical quality assurance</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-5 h-5 text-accent-teal flex-shrink-0" />

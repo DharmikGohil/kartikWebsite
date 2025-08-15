@@ -131,7 +131,7 @@ const Home = () => {
           >
             <Link to="/contact" className="btn-accent text-lg px-10 py-5 group">
               Request Inspection
-              <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform duration-300" />
+              <ArrowRight className="w-6 h-6 ml-14 group-hover:translate-x-2 transition-transform duration-300" />
             </Link>
             <Link to="/about" className="btn-secondary text-lg px-10 py-5">
               Learn More
@@ -344,7 +344,7 @@ const Home = () => {
                 Request Inspection
                 <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform duration-300" />
               </Link>
-              <a href="https://wa.me/1234567890" className="bg-green-600 hover:bg-green-700 text-white font-semibold py-5 px-10 rounded-lg text-lg transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl">
+              <a href="https://wa.me/919313749421" className="bg-green-600 hover:bg-green-700 text-white font-semibold py-5 px-10 rounded-lg text-lg transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl">
                 <Phone className="w-6 h-6 mr-3" />
                 Chat on WhatsApp
               </a>

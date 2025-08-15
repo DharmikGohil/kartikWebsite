@@ -141,7 +141,7 @@ const Contact = () => {
               Ready to ensure your chemical shipments are safe and compliant? Contact us today for expert quality assurance services.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a href="https://wa.me/1234567890" className="bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl group">
+              <a href="https://wa.me/919313749421" className="bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl group">
                 <MessageCircle className="w-6 h-6 mr-3 group-hover:scale-110 transition-transform duration-300" />
                 Chat on WhatsApp
               </a>
@@ -404,7 +404,7 @@ const Contact = () => {
               {
                 icon: <Users className="w-8 h-8" />,
                 title: 'Solo Expert Advantage',
-                description: 'Direct access to founder\'s 2+ years of experience and immediate communication without account managers.'
+                description: 'Direct access to founder\'s proven expertise in chemical quality assurance and immediate communication without account managers.'
               },
               {
                 icon: <Globe className="w-8 h-8" />,
@@ -458,7 +458,7 @@ const Contact = () => {
               Contact us today to discuss your chemical quality assurance needs and start your journey to safer, compliant shipments.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a href="https://wa.me/1234567890" className="bg-green-600 hover:bg-green-700 text-white font-semibold py-5 px-10 rounded-lg text-lg transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl">
+              <a href="https://wa.me/919313749421" className="bg-green-600 hover:bg-green-700 text-white font-semibold py-5 px-10 rounded-lg text-lg transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl">
                 <MessageCircle className="w-6 h-6 mr-3" />
                 Chat on WhatsApp
               </a>

@@ -74,7 +74,7 @@ const Process = () => {
     {
       icon: <Users className="w-8 h-8" />,
       title: 'Expert Team',
-      description: 'Led by chemical engineers with 2+ years of industry experience.'
+      description: 'Led by chemical engineers with proven expertise in chemical quality assurance.'
     },
     {
       icon: <Globe className="w-8 h-8" />,
@@ -123,13 +123,13 @@ const Process = () => {
               A simple, transparent 3-step workflow that ensures quality and delivers results. From inquiry to report delivery, we make chemical quality assurance straightforward and reliable.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact" className="btn-accent text-lg px-8 py-4 group">
+              {/* <Link to="/contact" className="btn-accent text-lg px-8 py-4 group">
                 Start Your Inspection
-                <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform duration-300" />
-              </Link>
-              <Link to="/services" className="btn-secondary text-lg px-8 py-4">
+                <ArrowRight className="w-9 h-6 ml-14 group-hover:translate-x-2 transition-transform duration-300" />
+              </Link> */}
+              {/* <Link to="/services" className="btn-secondary text-lg px-8 py-4">
                 View Our Services
-              </Link>
+              </Link> */}
             </div>
           </motion.div>
         </div>
@@ -357,7 +357,7 @@ const Process = () => {
                 Start Your Inspection
                 <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform duration-300" />
               </Link>
-              <a href="https://wa.me/1234567890" className="bg-green-600 hover:bg-green-700 text-white font-semibold py-5 px-10 rounded-lg text-lg transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl">
+              <a href="https://wa.me/919313749421" className="bg-green-600 hover:bg-green-700 text-white font-semibold py-5 px-10 rounded-lg text-lg transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl">
                 <Phone className="w-6 h-6 mr-3" />
                 Chat on WhatsApp
               </a>
