@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { ArrowRight, DollarSign, Shield, TrendingUp, CheckCircle, Eye, FileText, Microscope, Building2, Users, Globe, Award } from 'lucide-react'
+import { ArrowRight, DollarSign, Shield, TrendingUp, CheckCircle, Eye, Microscope, Building2, Users, Award } from 'lucide-react'
 
 const CaseStudies = () => {
   const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 })
@@ -134,7 +134,7 @@ const CaseStudies = () => {
             animate={casesInView ? "visible" : "hidden"}
             className="space-y-12"
           >
-            {caseStudies.map((caseStudy, index) => (
+            {caseStudies.map((caseStudy) => (
               <motion.div
                 key={caseStudy.id}
                 variants={itemVariants}

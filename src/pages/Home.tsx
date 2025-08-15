@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, CheckCircle, Star, Users, Zap, Shield, TestTube, FileText, Microscope, Building2, Clock, Award, Globe, Phone } from 'lucide-react'
+import { ArrowRight, Star, Users, Zap, Shield, TestTube, Microscope, Building2, Clock, Award, Globe, Phone } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 

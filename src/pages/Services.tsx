@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { ArrowRight, Eye, FileText, Microscope, Building2, CheckCircle, Shield, Clock, Award, Globe, Zap } from 'lucide-react'
+import { ArrowRight, Eye, FileText, Microscope, Building2, CheckCircle, Shield, Clock, Award, Globe } from 'lucide-react'
 
 const Services = () => {
   const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 })

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { Download, FileText, Eye, CheckCircle, Shield, Award, Users, Globe, ArrowRight, Mail, Phone } from 'lucide-react'
+import { Download, FileText, Eye, CheckCircle, Shield, Award, ArrowRight, Phone } from 'lucide-react'
 
 const DownloadPage = () => {
   const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 })

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { Mail, Phone, MapPin, MessageSquare, Clock, Users, Globe, ArrowRight, CheckCircle, Send, MessageCircle } from 'lucide-react'
+import { Mail, Phone, MapPin, Clock, Users, Globe, ArrowRight, CheckCircle, Send, MessageCircle } from 'lucide-react'
 
 const Contact = () => {
   const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 })

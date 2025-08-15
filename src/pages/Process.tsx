@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { ArrowRight, MessageSquare, Eye, FileText, CheckCircle, Clock, Users, Shield, Award, Globe, Phone, Mail, MapPin } from 'lucide-react'
+import { ArrowRight, MessageSquare, Eye, FileText, CheckCircle, Clock, Users, Shield, Globe, Phone } from 'lucide-react'
 
 const Process = () => {
   const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 })
