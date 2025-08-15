@@ -31,7 +31,7 @@ export default async function handler(
 
     // Send email via Resend
     const { data, error } = await resend.emails.send({
-      from: 'ChemAssure Global <noreply@chemassure.global>',
+      from: 'ChemAssure Global <onboarding@resend.dev>',
       to: ['chemsassureglobal@gmail.com'],
       subject: `New Contact Form Submission - ${name} from ${company || 'Unknown Company'}`,
       html: `
