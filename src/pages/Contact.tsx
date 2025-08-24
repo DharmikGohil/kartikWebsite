@@ -30,6 +30,7 @@ const Contact = () => {
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
+    console.log('formData============>', formData);
     e.preventDefault()
     if (!formData.agreeToTerms) return
 
@@ -38,6 +39,7 @@ const Contact = () => {
     try {
       // For development, we'll use a mock API. In production, this will use the Vercel API
       const apiUrl = '/api/contact'
+      console.log('apiUrl============>', apiUrl);
 
       const response = await fetch(apiUrl, {
         method: 'POST',

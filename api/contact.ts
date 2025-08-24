@@ -29,6 +29,8 @@ export default async function handler(
       })
     }
 
+    console.log('process.env.RESEND_API_KEY===================>', process.env.RESEND_API_KEY);
+    console.log('this api is hit data============>', req.body);
     // Send email via Resend
     const { data, error } = await resend.emails.send({
       from: 'ChemAssure Global <onboarding@resend.dev>',
