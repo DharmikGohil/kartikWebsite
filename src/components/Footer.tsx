@@ -23,9 +23,9 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
-              ChemAssure Global is a chemical quality assurance company that
-              provides pre-shipment inspection, COA & SDS verification, lab
-              testing coordination, and supplier audits.
+              ChemAssure Global is a chemical quality assurance company specializing in 
+              NABL accredited wastewater testing, GPCB approved ETP/CTP testing, 
+              textile export compliance, heavy metals analysis, and chemical QC services across Gujarat.
             </p>
             <div className="flex space-x-4">
               <a
@@ -114,16 +114,22 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">Our Services</h3>
             <ul className="space-y-2">
               <li className="text-gray-300 hover:text-purple-300 transition-colors text-sm cursor-pointer">
+                NABL Wastewater Testing Gujarat
+              </li>
+              <li className="text-gray-300 hover:text-purple-300 transition-colors text-sm cursor-pointer">
+                GPCB ETP/CTP Testing
+              </li>
+              <li className="text-gray-300 hover:text-purple-300 transition-colors text-sm cursor-pointer">
+                Heavy Metals ICP Testing
+              </li>
+              <li className="text-gray-300 hover:text-purple-300 transition-colors text-sm cursor-pointer">
+                Textile Export Compliance
+              </li>
+              <li className="text-gray-300 hover:text-purple-300 transition-colors text-sm cursor-pointer">
                 Pre-Shipment Inspection
               </li>
               <li className="text-gray-300 hover:text-purple-300 transition-colors text-sm cursor-pointer">
-                COA & SDS Verification
-              </li>
-              <li className="text-gray-300 hover:text-purple-300 transition-colors text-sm cursor-pointer">
                 Lab Testing Coordination
-              </li>
-              <li className="text-gray-300 hover:text-purple-300 transition-colors text-sm cursor-pointer">
-                Supplier Audits
               </li>
             </ul>
           </div>

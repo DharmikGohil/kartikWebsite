@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { ArrowRight, Eye, FileText, Microscope, Building2, CheckCircle, Shield, Clock, Award, Globe } from 'lucide-react'
+import { ArrowRight, Eye, FileText, Microscope, CheckCircle, Shield, Clock, Award, Globe, Droplets, FlaskConical, TestTube, Atom, Palette } from 'lucide-react'
 
 const Services = () => {
   const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 })
@@ -9,6 +9,76 @@ const Services = () => {
   const [benefitsRef, benefitsInView] = useInView({ triggerOnce: true, threshold: 0.1 })
 
   const services = [
+    {
+      icon: <Droplets className="w-10 h-10" />,
+      title: 'NABL accredited wastewater / effluent testing Gujarat',
+      subtitle: 'Comprehensive wastewater and effluent testing services across Gujarat with NABL accreditation.',
+      description: 'NABL accredited testing ensures your wastewater and effluent discharge meets regulatory standards. We provide reliable analytical results for industrial effluents, helping you maintain environmental compliance and avoid penalties.',
+      benefits: [
+        'NABL accredited results accepted by regulatory authorities',
+        'Ensure compliance with discharge norms',
+        'Avoid environmental penalties and legal issues',
+        'Comprehensive parameter analysis',
+        'Quick turnaround for urgent testing needs'
+      ],
+      features: ['NABL Accreditation', 'COD/BOD Analysis', 'Heavy Metals Testing', 'pH and TDS Testing', 'Regulatory Compliance']
+    },
+    {
+      icon: <FlaskConical className="w-10 h-10" />,
+      title: 'GPCB approved ETP/CTP water testing Ahmedabad / Vapi / Ankleshwar / Dahej',
+      subtitle: 'GPCB approved testing for Effluent Treatment Plants and Common Treatment Plants across key Gujarat locations.',
+      description: 'Gujarat Pollution Control Board approved testing services for ETP and CTP operations. We provide comprehensive water quality analysis to ensure your treatment plant operations meet GPCB discharge standards.',
+      benefits: [
+        'GPCB approved testing for regulatory compliance',
+        'Strategic coverage across major industrial hubs',
+        'Expert analysis for ETP/CTP optimization',
+        'Detailed reporting for authorities',
+        'Timely sample collection and analysis'
+      ],
+      features: ['GPCB Approval', 'ETP Performance Monitoring', 'CTP Compliance Testing', 'Multi-location Coverage', 'Treatment Efficiency Analysis']
+    },
+    {
+      icon: <TestTube className="w-10 h-10" />,
+      title: 'ZDHC / Oeko-Tex wastewater test Surat (textile export)',
+      subtitle: 'Specialized wastewater testing for textile exports meeting ZDHC and Oeko-Tex standards in Surat.',
+      description: 'Support textile exporters in Surat with wastewater testing that meets international ZDHC (Zero Discharge of Hazardous Chemicals) and Oeko-Tex standards. Essential for sustainable textile manufacturing and global market access.',
+      benefits: [
+        'Meet international textile export standards',
+        'Zero discharge of hazardous chemicals compliance',
+        'Oeko-Tex certification support',
+        'Enhanced market access for exports',
+        'Sustainable manufacturing practices validation'
+      ],
+      features: ['ZDHC Compliance', 'Oeko-Tex Standards', 'Textile Industry Focus', 'Export Certification Support', 'Hazardous Chemical Analysis']
+    },
+    {
+      icon: <Atom className="w-10 h-10" />,
+      title: 'Heavy metals ICP testing (Pb Cd Cr Hg) Gujarat',
+      subtitle: 'Precise heavy metals analysis using ICP technology for Lead, Cadmium, Chromium, and Mercury across Gujarat.',
+      description: 'Advanced Inductively Coupled Plasma (ICP) testing for accurate detection and quantification of heavy metals. Critical for environmental compliance, product safety, and regulatory requirements across various industries.',
+      benefits: [
+        'Highly accurate ICP technology for precise results',
+        'Complete heavy metals profile analysis',
+        'Environmental and health safety compliance',
+        'Product quality assurance for exports',
+        'Regulatory requirement fulfillment'
+      ],
+      features: ['ICP Technology', 'Multi-element Analysis', 'Sub-ppm Detection Limits', 'ISO Certified Methods', 'Quick Reporting']
+    },
+    {
+      icon: <Palette className="w-10 h-10" />,
+      title: 'Azo amine test reactive dyes Ahmedabad',
+      subtitle: 'Specialized testing for azo amines in reactive dyes ensuring safety compliance for textile applications.',
+      description: 'Essential safety testing for reactive dyes used in textile manufacturing. We detect banned azo amines that can form carcinogenic compounds, ensuring your dyes meet international safety standards for textile exports.',
+      benefits: [
+        'Ensure dye safety for textile applications',
+        'Compliance with international safety standards',
+        'Avoid banned azo amine compounds',
+        'Support for textile export requirements',
+        'Product liability protection'
+      ],
+      features: ['Azo Amine Detection', 'Carcinogen Risk Assessment', 'Textile Safety Compliance', 'International Standards', 'Export Documentation']
+    },
     {
       icon: <Eye className="w-10 h-10" />,
       title: 'Pre-Shipment Inspection',
@@ -50,20 +120,6 @@ const Services = () => {
         'Cost-effective testing solutions'
       ],
       features: ['Chemical Assays', 'Contaminant Analysis', 'Purity Testing', 'ISO Standards', 'Fast Turnaround']
-    },
-    {
-      icon: <Building2 className="w-10 h-10" />,
-      title: 'Supplier Audits',
-      subtitle: 'Evaluate suppliers\' quality systems and compliance through factory audits.',
-      description: 'Gain confidence in supplier capabilities and product consistency. Our audits assess quality management systems, production processes, and compliance with international standards.',
-      benefits: [
-        'Gain confidence in supplier capabilities and product consistency',
-        'Assess quality management systems',
-        'Verify production process controls',
-        'Ensure regulatory compliance',
-        'Long-term quality assurance'
-      ],
-      features: ['Quality Systems Audit', 'Process Evaluation', 'Compliance Verification', 'Risk Assessment', 'Improvement Recommendations']
     }
   ]
 

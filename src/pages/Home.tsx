@@ -102,7 +102,7 @@ const Home = () => {
           <Building2 className="w-28 h-28 text-violet-300/10 animate-float animation-delay-500 absolute bottom-1/3 left-1/3" />
         </div>
 
-        {/* Hero Content */}
+        {/* Hero Content */}      
         <div className="relative z-30 text-center text-white px-4 max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -115,7 +115,7 @@ const Home = () => {
               <span className="text-gradient">Compliance</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed max-w-4xl mx-auto">
-              Pre-shipment chemical inspections, COA/SDS checks & supplier audits by your dedicated expert in India.
+            NABL-accredited testing for dyes, chemicals, effluents & pharma — covering COA, SDS, wastewater, and pre-shipment compliance.                                                                                         
             </p>
           </motion.div>
 
@@ -358,4 +358,3 @@ const Home = () => {
 }
 
 export default Home
-                                                                                                    

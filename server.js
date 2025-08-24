@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // Contact form endpoint
-app.post('/contact', async (req, res) => {
+app.post('/api/contact', async (req, res) => {
   try {
     const { name, email, company, phone, message } = req.body;
 
@@ -64,7 +64,7 @@ app.post('/contact', async (req, res) => {
 });
 
 // Sample report download endpoint
-app.post('/download-report', async (req, res) => {
+app.post('/api/download-report', async (req, res) => {
   try {
     const { name, email, company, phone } = req.body;
 
@@ -116,12 +116,13 @@ app.post('/download-report', async (req, res) => {
 });
 
 // Health check endpoint
-app.get('/health', (req, res) => {
+app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', message: 'Development server running' });
 });
 
 app.listen(PORT, () => {
   console.log(`🚀 Development server running on http://localhost:${PORT}`);
-  console.log(`📧 Contact form endpoint: http://localhost:${PORT}/contact`);
-  console.log(`💚 Health check: http://localhost:${PORT}/health`);
+  console.log(`📧 Contact form endpoint: http://localhost:${PORT}/api/contact`);
+  console.log(`📄 Download report endpoint: http://localhost:${PORT}/api/download-report`);
+  console.log(`💚 Health check: http://localhost:${PORT}/api/health`);
 });
