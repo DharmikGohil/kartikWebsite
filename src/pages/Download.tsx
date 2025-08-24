@@ -34,6 +34,12 @@ const DownloadPage = () => {
     setIsSubmitting(true)
     
     try {
+      /* 
+      =================================================================
+      FUTURE: When you get a custom domain, uncomment this code below 
+      and comment out the current implementation
+      =================================================================
+      
       const response = await fetch('/api/download-report', {
         method: 'POST',
         headers: {
@@ -60,9 +66,71 @@ const DownloadPage = () => {
       } else {
         throw new Error(result.error || 'Failed to send sample report')
       }
+      */
+
+      // Current implementation: Direct PDF download + Contact API notification
+      // Send notification to company email using contact API
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          phone: formData.phone,
+          message: `Sample QC Report Download Request
+
+User Details:
+- Name: ${formData.name}
+- Email: ${formData.email}
+- Company: ${formData.company || 'Not provided'}
+- Phone: ${formData.phone || 'Not provided'}
+
+The user has downloaded the sample QC report. Please follow up with them for potential business opportunities.
+
+Downloaded on: ${new Date().toLocaleString('en-US', { 
+  timeZone: 'Asia/Kolkata',
+  year: 'numeric', 
+  month: 'long', 
+  day: 'numeric', 
+  hour: '2-digit', 
+  minute: '2-digit' 
+})}`
+        }),
+      })
+
+      const result = await response.json()
+
+      if (response.ok && result.success) {
+        // Trigger PDF download
+        const link = document.createElement('a')
+        link.href = '/sample-qc-report.pdf'
+        link.download = 'ChemAssure-Global-Sample-QC-Report.pdf'
+        link.style.display = 'none'
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link)
+
+        setIsSubmitted(true)
+        // Reset form after 8 seconds (increased time for user to notice download)
+        setTimeout(() => {
+          setIsSubmitted(false)
+          setFormData({
+            name: '',
+            email: '',
+            company: '',
+            phone: '',
+            agreeToTerms: false
+          })
+        }, 8000)
+      } else {
+        throw new Error(result.error || 'Failed to process download request')
+      }
     } catch (error) {
       console.error('Form submission error:', error)
-      alert(error instanceof Error ? error.message : 'Failed to send sample report. Please try again.')
+      alert(error instanceof Error ? error.message : 'Failed to process download request. Please try again.')
     } finally {
       setIsSubmitting(false)
     }
@@ -278,6 +346,24 @@ const DownloadPage = () => {
                   className="text-center p-8 bg-white/10 backdrop-blur-lg rounded-2xl border border-purple-400/30"
                 >
                   <CheckCircle className="w-16 h-16 text-purple-400 mx-auto mb-4" />
+                  <h3 className="text-2xl font-bold text-white mb-2">Download Started!</h3>
+                  <p className="text-gray-200 mb-4">
+                    Your sample QC report is downloading now. Check your downloads folder for the PDF file.
+                  </p>
+                  <p className="text-sm text-gray-300">
+                    This demonstrates our professional quality standards and the level of detail you can expect.
+                  </p>
+                  <div className="mt-6 p-4 bg-purple-600/20 rounded-lg border border-purple-400/30">
+                    <p className="text-sm text-purple-300 font-medium">
+                      📞 Ready to discuss your needs? We'll be in touch soon!
+                    </p>
+                  </div>
+
+                  {/* 
+                  ==========================================
+                  FUTURE: When using email-based approach
+                  ==========================================
+                  <CheckCircle className="w-16 h-16 text-purple-400 mx-auto mb-4" />
                   <h3 className="text-2xl font-bold text-white mb-2">Sample Report Sent!</h3>
                   <p className="text-gray-200 mb-4">
                     Your sample QC report has been sent to your email address. Please check your inbox and spam folder.
@@ -290,6 +376,7 @@ const DownloadPage = () => {
                       💡 Pro Tip: Check your spam folder if you don't see it in your inbox!
                     </p>
                   </div>
+                  */}
                 </motion.div>
               )}
             </motion.div>
