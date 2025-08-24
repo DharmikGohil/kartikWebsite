@@ -106,10 +106,11 @@ const Process = () => {
   }
 
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen pt-20 relative">
       {/* Hero Section */}
-      <section ref={heroRef} className="section-padding bg-gradient-to-br from-navy-950 via-navy-900 to-charcoal-800 text-white">
-        <div className="container-max text-center">
+      <section ref={heroRef} className="section-padding relative text-white">
+        <div className="absolute inset-0 bg-black/20 backdrop-blur-[1px]" />
+        <div className="container-max text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
@@ -136,18 +137,19 @@ const Process = () => {
       </section>
 
       {/* Process Overview */}
-      <section ref={processRef} className="section-padding bg-white">
-        <div className="container-max">
+      <section ref={processRef} className="section-padding relative">
+        <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" />
+        <div className="container-max relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={processInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Simple 3-Step Process
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
               Our streamlined workflow ensures efficiency while maintaining the highest standards of quality and accuracy.
             </p>
           </motion.div>
@@ -165,39 +167,39 @@ const Process = () => {
                 className="relative group"
               >
                 {/* Step Number Badge */}
-                <div className={`absolute -top-4 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-gradient-to-r ${step.color} rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10`}>
+                <div className={`absolute -top-4 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-gradient-to-r from-purple-600 to-violet-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10 border border-purple-400/30`}>
                   {step.number}
                 </div>
 
                 {/* Step Card */}
-                <div className="bg-gradient-to-br from-navy-50 to-charcoal-50 rounded-2xl p-8 pt-12 hover:shadow-strong card-hover border border-gray-200">
+                <div className="bg-white/5 hover:bg-white/10 backdrop-blur-lg border border-white/10 hover:border-white/20 rounded-2xl p-8 pt-12 card-hover transition-all duration-300">
                   {/* Icon */}
                   <motion.div
-                    className="w-20 h-20 bg-accent-teal/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-accent-teal/30 transition-all duration-300"
+                    className="w-20 h-20 bg-violet-500/20 hover:bg-violet-400/30 rounded-2xl flex items-center justify-center mx-auto mb-6 transition-all duration-300 border border-violet-400/20"
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     transition={{ type: "spring", stiffness: 300 }}
                   >
-                    <div className="text-accent-teal">
+                    <div className="text-violet-300 group-hover:text-white transition-colors duration-300">
                       {step.icon}
                     </div>
                   </motion.div>
 
                   {/* Content */}
-                  <h3 className="text-2xl font-bold text-navy-900 mb-3 text-center">
+                  <h3 className="text-2xl font-bold text-white mb-3 text-center">
                     {step.title}
                   </h3>
-                  <p className="text-lg text-gray-600 mb-4 text-center font-medium">
+                  <p className="text-lg text-gray-200 mb-4 text-center font-medium">
                     {step.subtitle}
                   </p>
-                  <p className="text-gray-700 mb-6 leading-relaxed">
+                  <p className="text-gray-200 mb-6 leading-relaxed">
                     {step.description}
                   </p>
 
                   {/* Duration */}
-                  <div className="bg-white p-3 rounded-lg mb-6 text-center">
+                  <div className="bg-white/10 backdrop-blur-md p-3 rounded-lg mb-6 text-center border border-purple-400/20">
                     <div className="flex items-center justify-center space-x-2">
-                      <Clock className="w-5 h-5 text-accent-teal" />
-                      <span className="text-sm font-semibold text-navy-900">
+                      <Clock className="w-5 h-5 text-purple-400" />
+                      <span className="text-sm font-semibold text-white">
                         Duration: {step.duration}
                       </span>
                     </div>
@@ -205,12 +207,12 @@ const Process = () => {
 
                   {/* Details */}
                   <div className="space-y-2">
-                    <h4 className="font-semibold text-navy-900 mb-3">What We Do:</h4>
+                    <h4 className="font-semibold text-white mb-3">What We Do:</h4>
                     <ul className="space-y-2">
                       {step.details.map((detail, detailIndex) => (
                         <li key={detailIndex} className="flex items-start space-x-2">
-                          <CheckCircle className="w-4 h-4 text-accent-teal flex-shrink-0 mt-0.5" />
-                          <span className="text-sm text-gray-700">{detail}</span>
+                          <CheckCircle className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" />
+                          <span className="text-sm text-gray-200">{detail}</span>
                         </li>
                       ))}
                     </ul>
@@ -224,7 +226,7 @@ const Process = () => {
                       initial={{ opacity: 0, scale: 0 }}
                       animate={processInView ? { opacity: 1, scale: 1 } : {}}
                       transition={{ delay: 0.5 + index * 0.3, duration: 0.6 }}
-                      className="w-8 h-8 bg-accent-teal rounded-full flex items-center justify-center"
+                      className="w-8 h-8 bg-gradient-to-r from-purple-600 to-violet-600 rounded-full flex items-center justify-center border border-purple-400/30"
                     >
                       <ArrowRight className="w-5 h-5 text-white" />
                     </motion.div>
@@ -237,25 +239,26 @@ const Process = () => {
       </section>
 
       {/* Timeline Visualization */}
-      <section ref={timelineRef} className="section-padding bg-gray-50">
-        <div className="container-max">
+      <section ref={timelineRef} className="section-padding relative">
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-black/40 to-violet-900/20" />
+        <div className="container-max relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={timelineInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Timeline Overview
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
               See how our efficient process delivers results in record time while maintaining quality standards.
             </p>
           </motion.div>
 
           <div className="relative">
             {/* Timeline Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-accent-teal via-accent-orange to-navy-600"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-purple-600 via-violet-600 to-purple-900"></div>
 
             {/* Timeline Items */}
             <div className="space-y-12">
@@ -272,15 +275,15 @@ const Process = () => {
                   className={`flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
                 >
                   <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
-                    <div className="bg-white p-6 rounded-xl shadow-soft hover:shadow-strong card-hover">
-                      <div className="text-2xl font-bold text-accent-teal mb-2">{item.time}</div>
-                      <h3 className="text-xl font-semibold text-navy-900 mb-2">{item.title}</h3>
-                      <p className="text-gray-600">{item.description}</p>
+                    <div className="bg-white/10 hover:bg-white/20 backdrop-blur-lg border border-white/10 hover:border-white/20 p-6 rounded-xl card-hover transition-all duration-300">
+                      <div className="text-2xl font-bold text-gradient mb-2">{item.time}</div>
+                      <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
+                      <p className="text-gray-200">{item.description}</p>
                     </div>
                   </div>
                   
-                  <div className="w-8 h-8 bg-accent-teal rounded-full border-4 border-white shadow-lg z-10 relative">
-                    <div className="w-4 h-4 bg-accent-teal rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+                  <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-violet-600 rounded-full border-4 border-white/20 shadow-lg z-10 relative backdrop-blur-sm">
+                    <div className="w-4 h-4 bg-white rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
                   </div>
                   
                   <div className="w-1/2"></div>
@@ -292,18 +295,19 @@ const Process = () => {
       </section>
 
       {/* Process Features */}
-      <section ref={featuresRef} className="section-padding bg-white">
-        <div className="container-max">
+      <section ref={featuresRef} className="section-padding relative">
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
+        <div className="container-max relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={featuresInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Why Our Process Works
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
               Our streamlined approach combines efficiency with expertise to deliver reliable results every time.
             </p>
           </motion.div>
@@ -315,21 +319,21 @@ const Process = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={featuresInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="text-center p-6 bg-gradient-to-br from-navy-50 to-charcoal-50 rounded-xl shadow-soft hover:shadow-strong card-hover group"
+                className="text-center p-6 bg-white/5 hover:bg-white/10 backdrop-blur-lg border border-white/10 hover:border-white/20 rounded-xl card-hover group transition-all duration-300"
               >
                 <motion.div
-                  className="w-16 h-16 bg-accent-teal/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-accent-teal/30 transition-all duration-300"
+                  className="w-16 h-16 bg-violet-500/20 hover:bg-violet-400/30 rounded-2xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 border border-violet-400/20"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
-                  <div className="text-accent-teal">
+                  <div className="text-violet-300 group-hover:text-white transition-colors duration-300">
                     {feature.icon}
                   </div>
                 </motion.div>
-                <h3 className="text-lg font-semibold text-navy-900 mb-2">
+                <h3 className="text-lg font-semibold text-white mb-2">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-200 text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </motion.div>
@@ -339,8 +343,9 @@ const Process = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-gradient-to-r from-accent-teal to-accent-orange text-white">
-        <div className="container-max text-center">
+      <section className="section-padding relative text-white">
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-900/30 via-violet-900/40 to-purple-900/30 backdrop-blur-sm" />
+        <div className="container-max text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={featuresInView ? { opacity: 1, y: 0 } : {}}
@@ -353,11 +358,11 @@ const Process = () => {
               Start with a simple inquiry and see how our streamlined process delivers quality results in record time.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link to="/contact" className="bg-white text-accent-teal hover:bg-gray-100 font-semibold py-5 px-10 rounded-lg text-lg transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl">
+              <Link to="/contact" className="btn-accent py-5 px-10 text-lg inline-flex items-center shadow-lg hover:shadow-xl">
                 Start Your Inspection
                 <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform duration-300" />
               </Link>
-              <a href="https://wa.me/919313749421" className="bg-green-600 hover:bg-green-700 text-white font-semibold py-5 px-10 rounded-lg text-lg transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl">
+              <a href="https://wa.me/919313749421" className="btn-secondary py-5 px-10 text-lg inline-flex items-center shadow-lg hover:shadow-xl">
                 <Phone className="w-6 h-6 mr-3" />
                 Chat on WhatsApp
               </a>

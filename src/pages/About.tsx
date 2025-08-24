@@ -58,10 +58,11 @@ const About = () => {
   }
 
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen pt-20 relative">
       {/* Hero Section */}
-      <section ref={heroRef} className="section-padding bg-gradient-to-br from-navy-950 via-navy-900 to-charcoal-800 text-white">
-        <div className="container-max">
+      <section ref={heroRef} className="section-padding relative text-white">
+        <div className="absolute inset-0 bg-black/20 backdrop-blur-[1px]" />
+        <div className="container-max relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
@@ -84,7 +85,7 @@ const About = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="space-y-6"
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-accent-teal">
+              <h2 className="text-3xl md:text-4xl font-bold text-gradient">
                 Meet Our Founder
               </h2>
               <p className="text-lg text-gray-200 leading-relaxed">
@@ -105,16 +106,16 @@ const About = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="relative"
             >
-              <div className="w-full h-96 bg-gradient-to-br from-accent-teal/20 to-accent-orange/20 rounded-2xl flex items-center justify-center border border-accent-teal/30">
+              <div className="w-full h-96 bg-white/10 backdrop-blur-lg rounded-2xl flex items-center justify-center border border-white/20 hover:border-white/30 transition-all duration-300">
                 <div className="text-center">
-                  <div className="w-32 h-32 bg-accent-teal rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <div className="w-32 h-32 bg-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center border border-purple-400/30">
                     <Users className="w-16 h-16 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-2">Mr. Kartik Radadiya</h3>
-                  <p className="text-accent-teal font-medium">Founder & Chief Inspector</p>
+                  <p className="text-purple-300 font-medium">Founder & Chief Inspector</p>
                 </div>
               </div>
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-accent-orange rounded-full flex items-center justify-center animate-bounce-gentle">
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-r from-purple-600 to-violet-600 rounded-full flex items-center justify-center animate-bounce-gentle border border-purple-400/30">
                 <Award className="w-12 h-12 text-white" />
               </div>
             </motion.div>
@@ -123,18 +124,19 @@ const About = () => {
       </section>
 
       {/* Values Section */}
-      <section ref={valuesRef} className="section-padding bg-white">
-        <div className="container-max">
+      <section ref={valuesRef} className="section-padding relative">
+        <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" />
+        <div className="container-max relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={valuesInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Our Core Values
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
               The foundation of everything we do at ChemAssure Global, ensuring excellence in every inspection and report.
             </p>
           </motion.div>
@@ -149,21 +151,21 @@ const About = () => {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="text-center p-8 rounded-2xl bg-gradient-to-br from-navy-50 to-charcoal-50 hover:from-navy-100 hover:to-charcoal-100 card-hover group"
+                className="text-center p-8 rounded-2xl bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/10 hover:border-white/20 card-hover group transition-all duration-300"
               >
                 <motion.div
-                  className="w-20 h-20 bg-accent-teal/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-accent-teal/20 transition-all duration-300"
+                  className="w-20 h-20 bg-purple-500/20 hover:bg-purple-400/30 rounded-2xl flex items-center justify-center mx-auto mb-6 transition-all duration-300 border border-purple-400/20"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
-                  <div className="text-accent-teal">
+                  <div className="text-purple-300 group-hover:text-white transition-colors duration-300">
                     {value.icon}
                   </div>
                 </motion.div>
-                <h3 className="text-xl font-semibold text-navy-900 mb-4">
+                <h3 className="text-xl font-semibold text-white mb-4">
                   {value.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-200 leading-relaxed">
                   {value.description}
                 </p>
               </motion.div>
@@ -173,8 +175,9 @@ const About = () => {
       </section>
 
       {/* Mission Section */}
-      <section ref={missionRef} className="section-padding bg-gray-50">
-        <div className="container-max">
+      <section ref={missionRef} className="section-padding relative">
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-black/40 to-violet-900/20" />
+        <div className="container-max relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -182,33 +185,33 @@ const About = () => {
               transition={{ duration: 0.8 }}
               className="space-y-6"
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-navy-900">
+              <h2 className="text-4xl md:text-5xl font-bold text-white">
                 Our Mission
               </h2>
-              <p className="text-xl text-gray-600 leading-relaxed">
+              <p className="text-xl text-gray-200 leading-relaxed">
                 To be your trusted quality partner in chemical sourcing, providing expert inspections and testing coordination that ensures product safety, regulatory compliance, and supply chain reliability.
               </p>
-              <p className="text-xl text-gray-600 leading-relaxed">
+              <p className="text-xl text-gray-200 leading-relaxed">
                 We believe that every chemical shipment deserves the highest level of scrutiny and that our expertise can make the difference between a successful delivery and a costly failure.
               </p>
               
-              <div className="bg-white p-6 rounded-xl shadow-soft">
-                <h3 className="text-lg font-semibold text-navy-900 mb-3">The Solo Expert Advantage</h3>
-                <ul className="space-y-2 text-gray-600">
+              <div className="bg-white/10 backdrop-blur-lg p-6 rounded-xl border border-white/20 hover:border-white/30 transition-all duration-300">
+                <h3 className="text-lg font-semibold text-white mb-3">The Solo Expert Advantage</h3>
+                <ul className="space-y-2 text-gray-200">
                   <li className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-accent-teal flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-purple-400 flex-shrink-0" />
                     <span>Direct access to founder's proven expertise in chemical quality assurance</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-accent-teal flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-purple-400 flex-shrink-0" />
                     <span>Immediate communication without account managers</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-accent-teal flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-purple-400 flex-shrink-0" />
                     <span>Lower overhead costs passed to clients</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-accent-teal flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-purple-400 flex-shrink-0" />
                     <span>Personalized service for every shipment</span>
                   </li>
                 </ul>
@@ -221,7 +224,7 @@ const About = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="space-y-6"
             >
-              <h3 className="text-2xl font-bold text-navy-900 mb-6">
+              <h3 className="text-2xl font-bold text-white mb-6">
                 Professional Credentials
               </h3>
               <div className="grid grid-cols-1 gap-4">
@@ -231,15 +234,15 @@ const About = () => {
                     initial={{ opacity: 0, x: 30 }}
                     animate={missionInView ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                    className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-soft hover:shadow-strong transition-all duration-300 group"
+                    className="flex items-center space-x-3 p-4 bg-white/5 hover:bg-white/10 backdrop-blur-md rounded-lg border border-white/10 hover:border-white/20 transition-all duration-300 group"
                   >
-                    <div className="w-3 h-3 bg-accent-teal rounded-full group-hover:scale-150 transition-transform duration-300"></div>
-                    <span className="text-gray-700 font-medium">{credential}</span>
+                    <div className="w-3 h-3 bg-purple-400 rounded-full group-hover:scale-150 transition-transform duration-300"></div>
+                    <span className="text-gray-200 font-medium">{credential}</span>
                   </motion.div>
                 ))}
               </div>
 
-              <div className="bg-gradient-to-br from-accent-teal to-accent-orange p-6 rounded-xl text-white">
+              <div className="bg-gradient-to-r from-purple-600 to-violet-600 p-6 rounded-xl text-white border border-purple-400/30 backdrop-blur-sm">
                 <h4 className="text-lg font-semibold mb-3">Global Reach</h4>
                 <p className="text-white/90 mb-4">
                   Serving clients across Europe, North America, Asia-Pacific, and the Middle East with our India-based expertise.
@@ -255,8 +258,9 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-gradient-to-r from-navy-950 to-charcoal-900 text-white">
-        <div className="container-max text-center">
+      <section className="section-padding relative text-white">
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-900/30 via-violet-900/40 to-purple-900/30 backdrop-blur-sm" />
+        <div className="container-max text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={missionInView ? { opacity: 1, y: 0 } : {}}

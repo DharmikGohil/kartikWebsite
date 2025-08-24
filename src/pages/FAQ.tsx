@@ -57,10 +57,11 @@ const FAQ = () => {
   };
 
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen pt-20 relative">
       {/* Hero */}
-      <section className="section-padding bg-gradient-to-br from-navy-950 via-navy-900 to-charcoal-800 text-white">
-        <div className="container-max text-center">
+      <section className="section-padding relative text-white">
+        <div className="absolute inset-0 bg-black/20 backdrop-blur-[1px]" />
+        <div className="container-max text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -76,33 +77,34 @@ const FAQ = () => {
       </section>
 
       {/* FAQ List */}
-      <section className="section-padding bg-white">
-        <div className="container-max max-w-4xl">
+      <section className="section-padding relative">
+        <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" />
+        <div className="container-max max-w-4xl relative z-10">
           <div className="space-y-4">
             {faqs.map((item, index) => {
               const isOpen = openIndex === index;
               return (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-navy-50 to-charcoal-50 rounded-2xl border border-navy-100/60 overflow-hidden">
+                  className="bg-white/5 hover:bg-white/10 backdrop-blur-lg border border-white/10 hover:border-white/20 rounded-2xl overflow-hidden transition-all duration-300">
                   <button
                     className="w-full flex items-center justify-between px-6 sm:px-8 py-5 sm:py-6 text-left group"
                     onClick={() => toggle(index)}
                     aria-expanded={isOpen}
                     aria-controls={`faq-panel-${index}`}>
                     <div className="flex items-start gap-3">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-accent-teal/20 rounded-xl flex items-center justify-center text-accent-teal font-bold text-lg sm:text-xl">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-purple-600/20 rounded-xl flex items-center justify-center text-purple-300 font-bold text-lg sm:text-xl border border-purple-400/30">
                         {index + 1}
                       </div>
-                      <h3 className="text-base sm:text-lg md:text-xl font-semibold text-navy-900 pr-6">
+                      <h3 className="text-base sm:text-lg md:text-xl font-semibold text-white pr-6">
                         {item.question}
                       </h3>
                     </div>
                     <motion.div
                       animate={{ rotate: isOpen ? 180 : 0 }}
                       transition={{ duration: 0.2 }}
-                      className="text-navy-600 group-hover:text-accent-teal">
-                      <ChevronDown className="w-5 h-5 sm:w-6 sm:h-6" />
+                      className="w-8 h-8 rounded-full bg-purple-600/10 flex items-center justify-center group-hover:bg-purple-600/20 transition-colors duration-200 border border-purple-400/20">
+                      <ChevronDown className="w-5 h-5 text-purple-300" />
                     </motion.div>
                   </button>
 
@@ -116,7 +118,7 @@ const FAQ = () => {
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.25 }}
                         className="px-6 sm:px-8 pb-6 sm:pb-8">
-                        <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
+                        <p className="text-gray-200 leading-relaxed text-sm sm:text-base">
                           {item.answer}
                         </p>
                       </motion.div>
@@ -129,7 +131,7 @@ const FAQ = () => {
 
           {/* CTA */}
           <div className="mt-12 sm:mt-16 text-center">
-            <p className="text-gray-700 mb-6">
+            <p className="text-gray-200 mb-6">
               Still have questions? We're here to help.
             </p>
             <a

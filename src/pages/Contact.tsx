@@ -124,10 +124,11 @@ const Contact = () => {
   }
 
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen pt-20 relative">
       {/* Hero Section */}
-      <section ref={heroRef} className="section-padding bg-gradient-to-br from-navy-950 via-navy-900 to-charcoal-800 text-white">
-        <div className="container-max text-center">
+      <section ref={heroRef} className="section-padding relative text-white">
+        <div className="absolute inset-0 bg-black/20 backdrop-blur-[1px]" />
+        <div className="container-max text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
@@ -154,8 +155,9 @@ const Contact = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section ref={formRef} id="contact-form" className="section-padding bg-white">
-        <div className="container-max">
+      <section ref={formRef} id="contact-form" className="section-padding relative">
+        <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" />
+        <div className="container-max relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Form */}
             <motion.div
@@ -165,10 +167,10 @@ const Contact = () => {
               className="space-y-6"
             >
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                   Send Us a Message
                 </h2>
-                <p className="text-lg text-gray-600 mb-8">
+                <p className="text-lg text-gray-200 mb-8">
                   Fill out the form below and we'll get back to you within 1 business day. For urgent inquiries, use our WhatsApp chat for immediate assistance.
                 </p>
               </div>
@@ -177,7 +179,7 @@ const Contact = () => {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
                         Full Name *
                       </label>
                       <input
@@ -187,12 +189,12 @@ const Contact = () => {
                         value={formData.name}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-teal focus:border-transparent transition-all duration-200"
+                        className="w-full px-4 py-3 bg-white/5 text-white border border-white/20 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500/50 transition-all duration-200 placeholder-gray-400"
                         placeholder="Enter your full name"
                       />
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
                         Email Address *
                       </label>
                       <input
@@ -202,7 +204,7 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-teal focus:border-transparent transition-all duration-200"
+                        className="w-full px-4 py-3 bg-white/5 text-white border border-white/20 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500/50 transition-all duration-200 placeholder-gray-400"
                         placeholder="Enter your email"
                       />
                     </div>
@@ -210,7 +212,7 @@ const Contact = () => {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label htmlFor="company" className="block text-sm font-medium text-white mb-2">
                         Company Name
                       </label>
                       <input
@@ -219,12 +221,12 @@ const Contact = () => {
                         name="company"
                         value={formData.company}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-teal focus:border-transparent transition-all duration-200"
+                        className="w-full px-4 py-3 bg-white/5 text-white border border-white/20 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500/50 transition-all duration-200 placeholder-gray-400"
                         placeholder="Enter company name"
                       />
                     </div>
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label htmlFor="phone" className="block text-sm font-medium text-white mb-2">
                         Phone Number
                       </label>
                       <input
@@ -233,14 +235,14 @@ const Contact = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-teal focus:border-transparent transition-all duration-200"
+                        className="w-full px-4 py-3 bg-white/5 text-white border border-white/20 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500/50 transition-all duration-200 placeholder-gray-400"
                         placeholder="Enter phone number"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
                       Message/Inquiry *
                     </label>
                     <textarea
@@ -250,7 +252,7 @@ const Contact = () => {
                       onChange={handleInputChange}
                       required
                       rows={6}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-teal focus:border-transparent transition-all duration-200 resize-none"
+                      className="w-full px-4 py-3 bg-white/5 text-white border border-white/20 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500/50 transition-all duration-200 resize-none placeholder-gray-400"
                       placeholder="Tell us about your chemical inspection needs, shipment details, or any questions you have..."
                     />
                   </div>
@@ -263,9 +265,9 @@ const Contact = () => {
                       checked={formData.agreeToTerms}
                       onChange={handleInputChange}
                       required
-                      className="w-5 h-5 text-accent-teal border-gray-300 rounded focus:ring-accent-teal mt-1"
+                      className="w-5 h-5 text-purple-500 bg-white/5 border-white/20 rounded focus:ring-purple-500 mt-1"
                     />
-                    <label htmlFor="agreeToTerms" className="text-sm text-gray-600">
+                    <label htmlFor="agreeToTerms" className="text-sm text-gray-200">
                       I agree to the processing of my personal data for the purpose of responding to my inquiry. Your information is protected and will not be shared with third parties.
                     </label>
                   </div>
@@ -275,8 +277,8 @@ const Contact = () => {
                     disabled={isSubmitting || !formData.agreeToTerms}
                     className={`w-full py-4 px-8 rounded-lg font-semibold text-lg transition-all duration-300 ${
                       isSubmitting || !formData.agreeToTerms
-                        ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                        : 'bg-accent-teal hover:bg-accent-teal/90 text-white hover:scale-105 shadow-lg hover:shadow-xl'
+                        ? 'bg-gray-600/30 text-gray-400 cursor-not-allowed'
+                        : 'btn-accent hover:scale-105 shadow-lg hover:shadow-xl'
                     }`}
                     whileHover={!isSubmitting && formData.agreeToTerms ? { scale: 1.02 } : {}}
                     whileTap={!isSubmitting && formData.agreeToTerms ? { scale: 0.98 } : {}}
@@ -298,14 +300,14 @@ const Contact = () => {
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  className="text-center p-8 bg-gradient-to-br from-accent-teal/10 to-accent-orange/10 rounded-2xl border border-accent-teal/20"
+                  className="text-center p-8 bg-white/10 backdrop-blur-lg rounded-2xl border border-purple-400/30"
                 >
-                  <CheckCircle className="w-16 h-16 text-accent-teal mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-navy-900 mb-2">Message Sent!</h3>
-                  <p className="text-gray-600 mb-4">
+                  <CheckCircle className="w-16 h-16 text-purple-400 mx-auto mb-4" />
+                  <h3 className="text-2xl font-bold text-white mb-2">Message Sent!</h3>
+                  <p className="text-gray-200 mb-4">
                     Thank you for your inquiry. We'll get back to you within 1 business day.
                   </p>
-                  <p className="text-sm text-gray-500">
+                  <p className="text-sm text-gray-300">
                     For urgent matters, please use our WhatsApp chat for immediate assistance.
                   </p>
                 </motion.div>
@@ -319,8 +321,8 @@ const Contact = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="space-y-6"
             >
-              <div className="bg-gradient-to-br from-navy-50 to-charcoal-50 p-8 rounded-2xl border border-gray-200">
-                <h3 className="text-2xl font-bold text-navy-900 mb-6">Contact Information</h3>
+              <div className="bg-white/5 hover:bg-white/10 backdrop-blur-lg p-8 rounded-2xl border border-white/10 hover:border-white/20 transition-all duration-300">
+                <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
                 
                 <div className="space-y-6">
                   {contactMethods.map((method, index) => (
@@ -330,7 +332,7 @@ const Contact = () => {
                       initial={{ opacity: 0, y: 20 }}
                       animate={formInView ? { opacity: 1, y: 0 } : {}}
                       transition={{ delay: 0.3 + index * 0.1 }}
-                      className="flex items-start space-x-4 p-4 bg-white rounded-xl hover:shadow-soft transition-all duration-300 group"
+                      className="flex items-start space-x-4 p-4 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 group"
                     >
                       <div className={`w-12 h-12 bg-gradient-to-r ${method.color} rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
                         <div className="text-white">
@@ -338,21 +340,21 @@ const Contact = () => {
                         </div>
                       </div>
                       <div className="flex-1">
-                        <h4 className="font-semibold text-navy-900 mb-1">{method.title}</h4>
-                        <p className="text-lg font-medium text-accent-teal mb-1">{method.value}</p>
-                        <p className="text-sm text-gray-600">{method.description}</p>
+                        <h4 className="font-semibold text-white mb-1">{method.title}</h4>
+                        <p className="text-lg font-medium text-purple-300 mb-1">{method.value}</p>
+                        <p className="text-sm text-gray-200">{method.description}</p>
                       </div>
                     </motion.a>
                   ))}
                 </div>
 
-                <div className="mt-8 p-6 bg-accent-teal/10 rounded-xl border border-accent-teal/20">
+                <div className="mt-8 p-6 bg-purple-600/10 backdrop-blur-md rounded-xl border border-purple-400/30">
                   <div className="flex items-center space-x-3 mb-3">
-                    <Clock className="w-6 h-6 text-accent-teal" />
-                    <h4 className="font-semibold text-navy-900">Response Time</h4>
+                    <Clock className="w-6 h-6 text-purple-400" />
+                    <h4 className="font-semibold text-white">Response Time</h4>
                   </div>
-                  <p className="text-gray-700">
-                    We typically reply within <strong>1 business day</strong>. For urgent inquiries, use our WhatsApp chat for immediate assistance.
+                  <p className="text-gray-200">
+                    We typically reply within <strong className="text-white">1 business day</strong>. For urgent inquiries, use our WhatsApp chat for immediate assistance.
                   </p>
                 </div>
               </div>
@@ -378,18 +380,19 @@ const Contact = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section ref={infoRef} className="section-padding bg-gray-50">
-        <div className="container-max">
+      <section ref={infoRef} className="section-padding relative">
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-black/40 to-violet-900/20" />
+        <div className="container-max relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={infoInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Why Choose ChemAssure Global?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
               Our expertise and commitment to quality make us the preferred choice for chemical quality assurance worldwide.
             </p>
           </motion.div>
@@ -420,21 +423,21 @@ const Contact = () => {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="text-center p-8 bg-white rounded-2xl shadow-soft hover:shadow-strong card-hover group"
+                className="text-center p-8 bg-white/5 hover:bg-white/10 backdrop-blur-lg border border-white/10 hover:border-white/20 rounded-2xl card-hover group transition-all duration-300"
               >
                 <motion.div
-                  className="w-20 h-20 bg-accent-teal/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-accent-teal/30 transition-all duration-300"
+                  className="w-20 h-20 bg-violet-500/20 hover:bg-violet-400/30 rounded-2xl flex items-center justify-center mx-auto mb-6 transition-all duration-300 border border-violet-400/20"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
-                  <div className="text-accent-teal">
+                  <div className="text-violet-300 group-hover:text-white transition-colors duration-300">
                     {feature.icon}
                   </div>
                 </motion.div>
-                <h3 className="text-xl font-semibold text-navy-900 mb-4">
+                <h3 className="text-xl font-semibold text-white mb-4">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-200 leading-relaxed">
                   {feature.description}
                 </p>
               </motion.div>
@@ -444,8 +447,9 @@ const Contact = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-gradient-to-r from-navy-950 to-charcoal-900 text-white">
-        <div className="container-max text-center">
+      <section className="section-padding relative text-white">
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-900/30 via-violet-900/40 to-purple-900/30 backdrop-blur-sm" />
+        <div className="container-max text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={infoInView ? { opacity: 1, y: 0 } : {}}
@@ -458,11 +462,11 @@ const Contact = () => {
               Contact us today to discuss your chemical quality assurance needs and start your journey to safer, compliant shipments.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a href="https://wa.me/919313749421" className="bg-green-600 hover:bg-green-700 text-white font-semibold py-5 px-10 rounded-lg text-lg transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl">
+              <a href="https://wa.me/919313749421" className="btn-secondary py-5 px-10 text-lg inline-flex items-center shadow-lg hover:shadow-xl">
                 <MessageCircle className="w-6 h-6 mr-3" />
                 Chat on WhatsApp
               </a>
-              <a href="#contact-form" className="bg-white text-navy-950 hover:bg-gray-100 font-semibold py-5 px-10 rounded-lg text-lg transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl">
+              <a href="#contact-form" className="btn-accent py-5 px-10 text-lg inline-flex items-center shadow-lg hover:shadow-xl">
                 Fill Contact Form
                 <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform duration-300" />
               </a>

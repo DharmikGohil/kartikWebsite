@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import ShaderBackground from "./components/ShaderBackground";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -13,7 +14,7 @@ import FAQ from "./pages/FAQ";
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <ShaderBackground>
       <ScrollToTop />
       <Navbar />
       <main>
@@ -29,7 +30,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
-    </div>
+    </ShaderBackground>
   );
 }
 

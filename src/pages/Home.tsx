@@ -89,21 +89,17 @@ const Home = () => {
   }
 
   return (
-    <div className="min-h-screen">
-      {/* Hero Section with Video Background */}
+    <div className="min-h-screen relative">
+      {/* Hero Section */}
       <section ref={heroRef} className="relative h-screen flex items-center justify-center overflow-hidden">
-        {/* Video Background */}
-        <div className="absolute inset-0 w-full h-full">
-          <div className="absolute inset-0 bg-gradient-to-br from-navy-950/80 via-navy-900/70 to-charcoal-800/60 z-10" />
-          <div className="absolute inset-0 bg-navy-950/40 z-20" />
-          {/* Placeholder for video - replace with actual video */}
-          <div className="absolute inset-0 bg-gradient-to-br from-navy-950 via-navy-900 to-charcoal-800 animate-pulse-slow">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <TestTube className="w-32 h-32 text-navy-300/20 animate-float" />
-              <Microscope className="w-24 h-24 text-navy-400/20 animate-float animation-delay-300 absolute top-1/4 right-1/4" />
-              <Building2 className="w-28 h-28 text-navy-500/20 animate-float animation-delay-500 absolute bottom-1/4 left-1/4" />
-            </div>
-          </div>
+        {/* Enhanced overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/20 backdrop-blur-[1px]" />
+        
+        {/* Floating decorative elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <TestTube className="w-32 h-32 text-white/10 animate-float absolute top-1/4 left-1/4" />
+          <Microscope className="w-24 h-24 text-purple-300/10 animate-float animation-delay-300 absolute top-1/3 right-1/4" />
+          <Building2 className="w-28 h-28 text-violet-300/10 animate-float animation-delay-500 absolute bottom-1/3 left-1/3" />
         </div>
 
         {/* Hero Content */}
@@ -161,8 +157,9 @@ const Home = () => {
       </section>
 
       {/* Value Propositions Section */}
-      <section className="section-padding bg-white">
-        <div className="container-max">
+      <section className="section-padding relative">
+        <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" />
+        <div className="container-max relative z-10">
           <motion.div
             ref={featuresRef}
             variants={containerVariants}
@@ -174,21 +171,21 @@ const Home = () => {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="text-center p-8 rounded-2xl bg-gradient-to-br from-navy-50 to-charcoal-50 hover:from-navy-100 hover:to-charcoal-100 card-hover group"
+                className="text-center p-8 rounded-2xl bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/10 hover:border-white/20 card-hover group transition-all duration-300"
               >
                 <motion.div
-                  className="w-20 h-20 bg-accent-teal/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-accent-teal/20 transition-all duration-300"
+                  className="w-20 h-20 bg-purple-500/20 hover:bg-purple-400/30 rounded-2xl flex items-center justify-center mx-auto mb-6 transition-all duration-300 border border-purple-400/20"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
-                  <div className="text-accent-teal">
+                  <div className="text-purple-300 group-hover:text-white transition-colors duration-300">
                     {proposition.icon}
                   </div>
                 </motion.div>
-                <h3 className="text-xl font-semibold text-navy-900 mb-4">
+                <h3 className="text-xl font-semibold text-white mb-4">
                   {proposition.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-200 leading-relaxed">
                   {proposition.description}
                 </p>
               </motion.div>
@@ -198,18 +195,19 @@ const Home = () => {
       </section>
 
       {/* Features Section */}
-      <section className="section-padding bg-gray-50">
-        <div className="container-max">
+      <section className="section-padding relative">
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-black/40 to-violet-900/20" />
+        <div className="container-max relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={featuresInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Why Choose ChemAssure Global?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
               We combine creativity with technical expertise to deliver chemical QC services that not only meet standards but exceed expectations.
             </p>
           </motion.div>
@@ -221,21 +219,21 @@ const Home = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={featuresInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
-                className="text-center p-8 rounded-2xl bg-white hover:shadow-strong card-hover group"
+                className="text-center p-8 rounded-2xl bg-white/5 hover:bg-white/10 backdrop-blur-lg border border-white/10 hover:border-white/20 card-hover group"
               >
                 <motion.div
-                  className="w-20 h-20 bg-accent-teal/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-accent-teal/20 transition-all duration-300"
+                  className="w-20 h-20 bg-violet-500/20 hover:bg-violet-400/30 rounded-2xl flex items-center justify-center mx-auto mb-6 transition-all duration-300 border border-violet-400/20"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
-                  <div className="text-accent-teal">
+                  <div className="text-violet-300 group-hover:text-white transition-colors duration-300">
                     {feature.icon}
                   </div>
                 </motion.div>
-                <h3 className="text-xl font-semibold text-navy-900 mb-4">
+                <h3 className="text-xl font-semibold text-white mb-4">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-200 leading-relaxed">
                   {feature.description}
                 </p>
               </motion.div>
@@ -245,8 +243,9 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="section-padding bg-gradient-to-r from-navy-950 to-charcoal-900 text-white">
-        <div className="container-max">
+      <section className="section-padding relative text-white">
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
+        <div className="container-max relative z-10">
           <motion.div
             ref={statsRef}
             variants={containerVariants}
@@ -266,13 +265,13 @@ const Home = () => {
                 className="group"
               >
                 <motion.div
-                  className="text-5xl font-bold mb-3 text-accent-teal group-hover:text-white transition-colors duration-300"
+                  className="text-5xl font-bold mb-3 text-gradient group-hover:text-white transition-colors duration-300"
                   whileHover={{ scale: 1.1 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
                   {stat.number}
                 </motion.div>
-                <div className="text-navy-100 text-lg">{stat.label}</div>
+                <div className="text-gray-200 text-lg">{stat.label}</div>
               </motion.div>
             ))}
           </motion.div>
@@ -280,8 +279,9 @@ const Home = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="section-padding bg-white">
-        <div className="container-max">
+      <section className="section-padding relative">
+        <div className="absolute inset-0 bg-gradient-to-br from-violet-900/20 via-black/30 to-purple-900/20" />
+        <div className="container-max relative z-10">
           <motion.div
             ref={testimonialsRef}
             initial={{ opacity: 0, y: 30 }}
@@ -289,10 +289,10 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               What Our Clients Say
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
               Don't just take our word for it. Here's what our clients have to say about working with ChemAssure Global.
             </p>
           </motion.div>
@@ -304,19 +304,19 @@ const Home = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={testimonialsInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
-                className="bg-gradient-to-br from-navy-50 to-charcoal-50 p-8 rounded-2xl shadow-soft hover:shadow-strong card-hover"
+                className="bg-white/5 hover:bg-white/10 backdrop-blur-lg border border-white/10 hover:border-white/20 p-8 rounded-2xl shadow-soft hover:shadow-strong card-hover"
               >
                 <div className="flex items-center mb-6">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="w-6 h-6 text-yellow-400 fill-current" />
                   ))}
                 </div>
-                <p className="text-gray-700 mb-6 leading-relaxed text-lg">
+                <p className="text-gray-200 mb-6 leading-relaxed text-lg">
                   "{testimonial.content}"
                 </p>
                 <div>
-                  <div className="font-semibold text-navy-900 text-lg">{testimonial.name}</div>
-                  <div className="text-sm text-gray-500">{testimonial.role}</div>
+                  <div className="font-semibold text-white text-lg">{testimonial.name}</div>
+                  <div className="text-sm text-gray-400">{testimonial.role}</div>
                 </div>
               </motion.div>
             ))}
@@ -325,8 +325,9 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section ref={ctaRef} className="section-padding bg-gradient-to-r from-accent-teal to-accent-orange text-white">
-        <div className="container-max text-center">
+      <section ref={ctaRef} className="section-padding relative text-white">
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-900/30 via-violet-900/40 to-purple-900/30 backdrop-blur-sm" />
+        <div className="container-max text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={ctaInView ? { opacity: 1, y: 0 } : {}}
@@ -340,11 +341,11 @@ const Home = () => {
               Get in touch with us today!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link to="/contact" className="bg-white text-accent-teal hover:bg-gray-100 font-semibold py-5 px-10 rounded-lg text-lg transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl">
+              <Link to="/contact" className="btn-accent text-lg px-10 py-5 group inline-flex items-center">
                 Request Inspection
                 <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform duration-300" />
               </Link>
-              <a href="https://wa.me/919313749421" className="bg-green-600 hover:bg-green-700 text-white font-semibold py-5 px-10 rounded-lg text-lg transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl">
+              <a href="https://wa.me/919313749421" className="bg-green-600/80 hover:bg-green-600 backdrop-blur-sm border border-green-500/30 text-white font-semibold py-5 px-10 rounded-lg text-lg transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl">
                 <Phone className="w-6 h-6 mr-3" />
                 Chat on WhatsApp
               </a>
@@ -357,3 +358,4 @@ const Home = () => {
 }
 
 export default Home
+                                                                                                    
