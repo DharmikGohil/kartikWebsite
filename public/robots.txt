@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://chemassure.vercel.app/sitemap.xml
+
+# Block sensitive pages if any (example)
+# Disallow: /admin/
+# Disallow: /api/
+
+# Allow all CSS and JS files
+Allow: /assets/
+Allow: *.css
+Allow: *.js
