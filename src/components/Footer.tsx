@@ -73,6 +73,13 @@ const Footer = () => {
               </li>
               <li>
                 <Link
+                  to="/labs-search"
+                  className="text-gray-300 hover:text-purple-300 transition-colors text-sm">
+                  Find Labs
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/process"
                   className="text-gray-300 hover:text-purple-300 transition-colors text-sm">
                   Process
@@ -162,7 +169,18 @@ const Footer = () => {
             <p className="text-gray-400 text-sm">
               © {currentYear} ChemAssure Global. All rights reserved.
             </p>
-            <div className="flex space-x-6 text-sm">
+            <div className="flex items-center space-x-6 text-sm">
+              <div className="text-gray-400">
+                Designed with ❤️{' '}
+                <a
+                  href="https://www.linkedin.com/in/dharmikgohil/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-300 hover:text-purple-100 transition-colors font-medium"
+                >
+                  Dharmik Gohil
+                </a>
+              </div>
               <a
                 href="#"
                 className="text-gray-400 hover:text-purple-300 transition-colors">

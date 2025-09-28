@@ -12,6 +12,7 @@ const Navbar = () => {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
+    { name: "Find Labs", href: "/labs-search" },
     { name: "Process", href: "/process" },
     { name: "Case Studies", href: "/case-studies" },
     { name: "FAQ", href: "/faq" },
@@ -83,9 +84,14 @@ const Navbar = () => {
             >
               <Link 
                 to="/contact" 
-                className="btn-primary relative overflow-hidden group rounded-full px-8 py-3 bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 text-white font-semibold shadow-lg hover:shadow-xl hover:shadow-purple-500/50 transition-all duration-300 border border-purple-400/30"
+                className="relative overflow-hidden group rounded-full px-8 py-3 bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 text-white font-semibold shadow-lg hover:shadow-xl hover:shadow-purple-500/50 transition-all duration-300 border border-purple-400/30 flex items-center space-x-2"
               >
                 <span className="relative z-10">Request Inspection</span>
+                <motion.div
+                  className="w-2 h-2 bg-white rounded-full"
+                  animate={{ scale: [1, 1.2, 1] }}
+                  transition={{ duration: 1.5, repeat: Infinity }}
+                />
                 <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
               </Link>
             </motion.div>

@@ -1,0 +1,1058 @@
+🚀 Development server running on http://localhost:3001
+📧 Contact form endpoint: http://localhost:3001/api/contact
+📄 Download report endpoint: http://localhost:3001/api/download-report
+🔍 Labs search endpoint: http://localhost:3001/api/labs-search
+💚 Health check: http://localhost:3001/api/health
+Cities for Goa: [
+  '',
+  'Bardez',
+  'Bicholim',
+  'Bicholim- 403504',
+  'Corlim',
+  'Goa',
+  'Madgaon',
+  'Mapusa',
+  'Mormugao',
+  'Ponda',
+  'Porvorim',
+  'Vasco',
+  'Vasco-Da-Gama- 403802',
+  'Verna',
+  'Verna- 403722'
+]
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 669 results for query: "all", state: Gujarat, city: all
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: 'Goa', stateType: 'string' }
+🏙️  Found 20 labs in state: Goa
+🏙️  Cities in Goa: 15 [ '', 'Bardez', 'Bicholim', 'Bicholim- 403504', 'Corlim' ]
+🔍 Labs search: 20 results for query: "all", state: Goa, city: all
+🏙️ DEBUG: Returning 15 cities for state: Goa
+🔍 State filter debug: { state: 'Maharashtra', stateType: 'string' }
+🏙️  Found 786 labs in state: Maharashtra
+🏙️  Cities in Maharashtra: 166 [
+  'Ahmednagar',
+  'Ahmednagar- 414111',
+  'Ahmednagar- 414301',
+  'Akola',
+  'Akola- 444005'
+]
+🔍 Labs search: 786 results for query: "all", state: Maharashtra, city: all
+🏙️ DEBUG: Returning 166 cities for state: Maharashtra
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 129 results for query: "all", state: Gujarat, city: Ahmedabad
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 3 results for query: "all", state: Gujarat, city: Ahmedabad- 380009
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 1 results for query: "all", state: Gujarat, city: Adani Ports And Special Economic Zone Kachchh
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: 'Goa', stateType: 'string' }
+🏙️  Found 20 labs in state: Goa
+🏙️  Cities in Goa: 15 [ '', 'Bardez', 'Bicholim', 'Bicholim- 403504', 'Corlim' ]
+🔍 Labs search: 20 results for query: "all", state: Goa, city: all
+🏙️ DEBUG: Returning 15 cities for state: Goa
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 669 results for query: "all", state: Gujarat, city: all
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 53 results for query: "all", state: Gujarat, city: Surat
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 669 results for query: "all", state: Gujarat, city: all
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 53 results for query: "all", state: Gujarat, city: Surat
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 10 results for query: "all", state: Gujarat, city: Vapi
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 33 results for query: "all", state: Gujarat, city: Bharuch
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 33 results for query: "all", state: Gujarat, city: Bharuch
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 0 results for query: "all", state: Gujarat, city: Moga
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 53 results for query: "all", state: Gujarat, city: Surat
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 13 results for query: "bhavnagar", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 33 results for query: "d", state: Gujarat, city: Bharuch
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 20 results for query: "dahej", state: Gujarat, city: Bharuch
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 669 results for query: "all", state: Gujarat, city: all
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 6 results for query: "all", state: Gujarat, city: Bhachau
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 33 results for query: "all", state: Gujarat, city: Bharuch
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 6 results for query: "all", state: Gujarat, city: Bharuch
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 27 results for query: "all", state: Gujarat, city: Bharuch
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: 'Goa', stateType: 'string' }
+🏙️  Found 20 labs in state: Goa
+🏙️  Cities in Goa: 15 [ '', 'Bardez', 'Bicholim', 'Bicholim- 403504', 'Corlim' ]
+🔍 Labs search: 20 results for query: "all", state: Goa, city: all
+🏙️ DEBUG: Returning 15 cities for state: Goa
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: 'Goa', stateType: 'string' }
+🏙️  Found 20 labs in state: Goa
+🏙️  Cities in Goa: 15 [ '', 'Bardez', 'Bicholim', 'Bicholim- 403504', 'Corlim' ]
+🔍 Labs search: 20 results for query: "all", state: Goa, city: all
+🏙️ DEBUG: Returning 15 cities for state: Goa
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 669 results for query: "all", state: Gujarat, city: all
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 669 results for query: "all", state: Gujarat, city: all
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 4 results for query: "all", state: Gujarat, city: Sanand
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 4 results for query: "all", state: Gujarat, city: Sanand
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 4 results for query: "all", state: Gujarat, city: Sanand
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 4 results for query: "all", state: Gujarat, city: Sanand
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: 'Gujarat', stateType: 'string' }
+🏙️  Found 669 labs in state: Gujarat
+🏙️  Cities in Gujarat: 133 [
+  'Adani Ports And Special Economic Zone Kachchh',
+  'Ahmedabad',
+  'Ahmedabad- 380004',
+  'Ahmedabad- 380009',
+  'Ahmedabad- 380013'
+]
+🔍 Labs search: 4 results for query: "all", state: Gujarat, city: Sanand
+🏙️ DEBUG: Returning 133 cities for state: Gujarat
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all
+🔍 State filter debug: { state: undefined, stateType: 'undefined' }
+🏙️  Showing all cities: 1392
+🔍 Labs search: 5200 results for query: "all", state: all, city: all
+🏙️ DEBUG: Returning 1392 cities for state: all

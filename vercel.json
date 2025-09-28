@@ -5,6 +5,9 @@
     },
     "api/download-report.ts": {
       "maxDuration": 10
+    },
+    "api/labs-search.ts": {
+      "maxDuration": 10
     }
   },
   "rewrites": [
