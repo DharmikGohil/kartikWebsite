@@ -51,7 +51,7 @@ const LabsSearch: React.FC = () => {
       queryString.append('limit', params.limit?.toString() || '20')
       queryString.append('sortBy', params.sortBy || 'name')
 
-      const response = await fetch(`http://localhost:3001/api/labs-search?${queryString.toString()}`)
+      const response = await fetch(`/api/labs-search?${queryString.toString()}`)
       
       if (!response.ok) {
         throw new Error('Search failed')
