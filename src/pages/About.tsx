@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Globe, Shield, Settings, Leaf, FlaskConical, Target, Eye, Cpu, User, Linkedin } from 'lucide-react'
+import { ArrowRight, Globe, Shield, Settings, Leaf, FlaskConical, Target, Eye, Cpu, Linkedin } from 'lucide-react'
 
 const About = () => {
   return (
