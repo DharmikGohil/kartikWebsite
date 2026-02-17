@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, Waves, Thermometer, FlaskConical, Box, Leaf } from 'lucide-react'
+import { SEOHead, Breadcrumbs, FAQSection, RelatedPages, getEngineeringPageSEO } from '../seo'
 
 const FoamControlEngineering = () => {
+  const seo = getEngineeringPageSEO();
   const pillars = [
     {
       icon: <Waves className="w-8 h-8" />,
@@ -32,8 +34,10 @@ const FoamControlEngineering = () => {
 
   return (
     <div className="min-h-screen bg-navy-900 pt-20">
+      <SEOHead meta={seo.meta} schemas={seo.schemas} />
       <section className="section-padding">
         <div className="container-max max-w-3xl">
+          <Breadcrumbs items={seo.breadcrumbs} />
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             Foam Control <span className="text-gradient">Engineering</span>
           </h1>
@@ -88,6 +92,9 @@ const FoamControlEngineering = () => {
           </div>
         </div>
       </section>
+
+      <FAQSection faqs={seo.faqs} />
+      <RelatedPages links={seo.relatedPages} heading="Explore More" />
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Mail, Phone, MapPin, Send, CheckCircle, MessageCircle } from 'lucide-react'
+import { SEOHead, Breadcrumbs, getContactPageSEO } from '../seo'
 
 const industryOptions = [
   "Textile Processing",
@@ -30,6 +31,7 @@ const processStepOptions: Record<string, string[]> = {
 }
 
 const Contact = () => {
+  const seo = getContactPageSEO();
   const [formData, setFormData] = useState({
     name: '', email: '', company: '', phone: '',
     industry: '', processStep: '', temperatureRange: '',
@@ -96,8 +98,10 @@ Contact: ${formData.name} | ${formData.email} | ${formData.company} | ${formData
 
   return (
     <div className="min-h-screen bg-navy-900 pt-20">
+      <SEOHead meta={seo.meta} schemas={seo.schemas} />
       <section className="section-padding pb-10">
         <div className="container-max max-w-3xl">
+          <Breadcrumbs items={seo.breadcrumbs} />
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">
             Discuss Your <span className="text-gradient">Process</span>
           </h1>

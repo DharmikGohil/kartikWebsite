@@ -1,14 +1,12 @@
 User-agent: *
 Allow: /
 
-# Sitemap
 Sitemap: https://chemassureglobal.com/sitemap.xml
 
-# Block sensitive pages if any (example)
-# Disallow: /admin/
-# Disallow: /api/
+# Block API routes from crawling
+Disallow: /api/
 
-# Allow all CSS and JS files
+# Allow all static assets
 Allow: /assets/
 Allow: *.css
 Allow: *.js

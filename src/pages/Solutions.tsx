@@ -2,12 +2,17 @@ import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import { industries } from '../data/industries'
 import { IndustryIcon } from '../data/industryIcons'
+import { SEOHead, Breadcrumbs, FAQSection, getSolutionsHubSEO } from '../seo'
 
 const Solutions = () => {
+  const seo = getSolutionsHubSEO();
+
   return (
     <div className="min-h-screen bg-navy-900 pt-20">
+      <SEOHead meta={seo.meta} schemas={seo.schemas} />
       <section className="section-padding">
         <div className="container-max max-w-3xl">
+          <Breadcrumbs items={seo.breadcrumbs} />
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             Solutions by <span className="text-gradient">Industry</span>
           </h1>
@@ -56,6 +61,8 @@ const Solutions = () => {
           </div>
         </div>
       </section>
+
+      <FAQSection faqs={seo.faqs} />
     </div>
   )
 }

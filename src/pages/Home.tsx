@@ -2,8 +2,10 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, Droplets, Settings, Leaf, Globe, Factory, FlaskConical, Shield, Zap } from 'lucide-react'
 import { industries } from '../data/industries'
 import { IndustryIcon } from '../data/industryIcons'
+import { SEOHead, FAQSection, getHomePageSEO } from '../seo'
 
 const Home = () => {
+  const seo = getHomePageSEO();
   const signals = [
     { icon: <Settings className="w-7 h-7" />, title: 'Application-Driven', desc: 'Solutions configured for your specific process conditions, not generic products.' },
     { icon: <FlaskConical className="w-7 h-7" />, title: 'Chemistry-Aware', desc: 'We select the right chemistry platform based on your operating window.' },
@@ -13,6 +15,7 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-navy-900">
+      <SEOHead meta={seo.meta} schemas={seo.schemas} />
       {/* Hero */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-navy-950 via-navy-900 to-brand-950/30" />
@@ -159,6 +162,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section for SEO */}
+      <FAQSection faqs={seo.faqs} />
     </div>
   )
 }

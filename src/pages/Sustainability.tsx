@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, Leaf, Droplets, Recycle, BarChart3, AlertCircle } from 'lucide-react'
+import { SEOHead, Breadcrumbs, FAQSection, RelatedPages, getSustainabilityPageSEO } from '../seo'
 
 const Sustainability = () => {
+  const seo = getSustainabilityPageSEO();
   const principles = [
     {
       icon: <BarChart3 className="w-7 h-7" />,
@@ -22,8 +24,10 @@ const Sustainability = () => {
 
   return (
     <div className="min-h-screen bg-navy-900 pt-20">
+      <SEOHead meta={seo.meta} schemas={seo.schemas} />
       <section className="section-padding">
         <div className="container-max max-w-3xl">
+          <Breadcrumbs items={seo.breadcrumbs} />
           <div className="flex items-center space-x-2 mb-4">
             <Leaf className="w-5 h-5 text-green-400" />
             <span className="text-green-400 font-medium text-sm uppercase tracking-wider">Sustainability</span>
@@ -97,6 +101,9 @@ const Sustainability = () => {
           </div>
         </div>
       </section>
+
+      <FAQSection faqs={seo.faqs} />
+      <RelatedPages links={seo.relatedPages} heading="Explore More" />
     </div>
   )
 }

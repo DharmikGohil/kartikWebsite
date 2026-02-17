@@ -1,12 +1,17 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, Globe, Shield, Settings, Leaf, FlaskConical, Target, Eye, Cpu, Linkedin } from 'lucide-react'
+import { SEOHead, Breadcrumbs, RelatedPages, getAboutPageSEO } from '../seo'
 
 const About = () => {
+  const seo = getAboutPageSEO();
+
   return (
     <div className="min-h-screen bg-navy-900 pt-20">
+      <SEOHead meta={seo.meta} schemas={seo.schemas} />
       {/* Header */}
       <section className="section-padding">
         <div className="container-max max-w-3xl">
+          <Breadcrumbs items={seo.breadcrumbs} />
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             About <span className="text-gradient">ChemAssure Global</span>
           </h1>
@@ -181,6 +186,8 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      <RelatedPages links={seo.relatedPages} heading="Learn More" />
     </div>
   )
 }

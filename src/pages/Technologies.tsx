@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, FlaskConical, Box, Leaf, Beaker, Droplets, Wind, Trees, Factory, Recycle, ShieldCheck, Waves } from 'lucide-react'
+import { SEOHead, Breadcrumbs, FAQSection, RelatedPages, getTechnologiesPageSEO } from '../seo'
 
 const chemistryPlatforms = [
   {
@@ -101,11 +102,15 @@ const TechCard = ({ title, body, tags, icon }: TechCardProps) => (
 )
 
 const Technologies = () => {
+  const seo = getTechnologiesPageSEO();
+
   return (
     <div className="min-h-screen bg-navy-900 pt-20">
+      <SEOHead meta={seo.meta} schemas={seo.schemas} />
       {/* Header */}
       <section className="section-padding">
         <div className="container-max max-w-3xl">
+          <Breadcrumbs items={seo.breadcrumbs} />
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             Foam Control Technologies Across Chemistry, Form{' '}
             <span className="text-gradient">& Sustainability</span>
@@ -178,6 +183,9 @@ const Technologies = () => {
           </div>
         </div>
       </section>
+
+      <FAQSection faqs={seo.faqs} />
+      <RelatedPages links={seo.relatedPages} heading="Explore More" />
     </div>
   )
 }
