@@ -1,197 +1,100 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Linkedin, Twitter, TestTube } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Droplets } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  const industries = [
+    { name: "Textile Processing", slug: "textile-processing" },
+    { name: "Wastewater Treatment", slug: "wastewater-treatment" },
+    { name: "Paints & Coatings", slug: "paints-coatings" },
+    { name: "Paper & Pulp", slug: "paper-pulp" },
+    { name: "Cement & Construction", slug: "cement-construction" },
+    { name: "Sugar & Fermentation", slug: "sugar-fermentation" },
+    { name: "Food & Beverage", slug: "food-beverage" },
+    { name: "Pharma & Biotech", slug: "pharma-biotech" },
+    { name: "Oil & Gas", slug: "oil-gas" },
+    { name: "Municipal Water Reuse", slug: "municipal-water-reuse" },
+  ];
+
   return (
-    <footer className="relative text-white">
-      <div className="absolute inset-0 bg-black/40 backdrop-blur-sm border-t border-white/10" />
-      <div className="container-max section-padding relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
+    <footer className="relative text-white bg-navy-950 border-t border-white/5">
+      <div className="container-max section-padding">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-purple-600 rounded-xl flex items-center justify-center border border-purple-400/30">
-                <TestTube className="w-6 h-6 text-white" />
+              <div className="w-10 h-10 bg-brand-600 rounded-lg flex items-center justify-center">
+                <Droplets className="w-5 h-5 text-white" />
               </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-bold">ChemAssure</span>
-                <span className="text-sm text-purple-300 font-medium">
-                  Global
-                </span>
+              <div>
+                <span className="text-lg font-bold">ChemAssure</span>
+                <span className="text-xs text-brand-400 font-medium ml-1">Global</span>
               </div>
             </div>
-            <p className="text-gray-300 text-sm leading-relaxed">
-              ChemAssure Global is a chemical quality assurance company specializing in 
-              NABL accredited wastewater testing, GPCB approved ETP/CTP testing, 
-              textile export compliance, heavy metals analysis, and chemical QC services across Gujarat.
+            <p className="text-gray-400 text-sm leading-relaxed">
+              Industrial foam control solutions engineered for process efficiency and sustainability. Application-specific defoamers and antifoams across industries.
             </p>
-            <div className="flex space-x-4">
-              <a
-                href="https://www.linkedin.com/in/chemsassure-global-b62a3737a/"
-                target="_blank"
-                className="text-gray-400 hover:text-purple-300 transition-colors">
-                <Linkedin size={20} />
+            <div className="flex space-x-3">
+              <a href="https://www.linkedin.com/in/chemsassure-global-b62a3737a/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-brand-400 transition-colors">
+                <Linkedin size={18} />
               </a>
-              <a
-                href="https://x.com/chemsAssure_G"
-                target="_blank"
-                className="text-gray-400 hover:text-purple-300 transition-colors">
-                <Twitter size={20} />
-              </a>
-              {/* <a href="https://www.chemassure.com" target="_blank" className="text-gray-400 hover:text-accent-teal transition-colors">
-                <Globe size={20} />
-              </a> */}
             </div>
           </div>
 
-          {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Quick Links</h3>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">Navigation</h3>
             <ul className="space-y-2">
-              <li>
-                <Link
-                  to="/"
-                  className="text-gray-300 hover:text-purple-300 transition-colors text-sm">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/about"
-                  className="text-gray-300 hover:text-purple-300 transition-colors text-sm">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services"
-                  className="text-gray-300 hover:text-purple-300 transition-colors text-sm">
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/labs-search"
-                  className="text-gray-300 hover:text-purple-300 transition-colors text-sm">
-                  Find Labs
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/process"
-                  className="text-gray-300 hover:text-purple-300 transition-colors text-sm">
-                  Process
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/case-studies"
-                  className="text-gray-300 hover:text-purple-300 transition-colors text-sm">
-                  Case Studies
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/faq"
-                  className="text-gray-300 hover:text-purple-300 transition-colors text-sm">
-                  FAQ
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/download"
-                  className="text-gray-300 hover:text-purple-300 transition-colors text-sm">
-                  Download
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="text-gray-300 hover:text-purple-300 transition-colors text-sm">
-                  Contact
-                </Link>
-              </li>
+              {[
+                { name: "Home", href: "/" },
+                { name: "Foam Control Engineering", href: "/foam-control-engineering" },
+                { name: "Solutions by Industry", href: "/solutions" },
+                { name: "Technologies", href: "/technologies" },
+                { name: "Sustainability", href: "/sustainability" },
+                { name: "About", href: "/about" },
+                { name: "Contact", href: "/contact" },
+              ].map((link) => (
+                <li key={link.name}>
+                  <Link to={link.href} className="text-gray-400 hover:text-brand-400 transition-colors text-sm">{link.name}</Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Services */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Our Services</h3>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">Industries</h3>
             <ul className="space-y-2">
-              <li className="text-gray-300 hover:text-purple-300 transition-colors text-sm cursor-pointer">
-                NABL Wastewater Testing Gujarat
-              </li>
-              <li className="text-gray-300 hover:text-purple-300 transition-colors text-sm cursor-pointer">
-                GPCB ETP/CTP Testing
-              </li>
-              <li className="text-gray-300 hover:text-purple-300 transition-colors text-sm cursor-pointer">
-                Heavy Metals ICP Testing
-              </li>
-              <li className="text-gray-300 hover:text-purple-300 transition-colors text-sm cursor-pointer">
-                Textile Export Compliance
-              </li>
-              <li className="text-gray-300 hover:text-purple-300 transition-colors text-sm cursor-pointer">
-                Pre-Shipment Inspection
-              </li>
-              <li className="text-gray-300 hover:text-purple-300 transition-colors text-sm cursor-pointer">
-                Lab Testing Coordination
-              </li>
+              {industries.map((ind) => (
+                <li key={ind.slug}>
+                  <Link to={`/solutions/${ind.slug}`} className="text-gray-400 hover:text-brand-400 transition-colors text-sm">{ind.name}</Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Contact Info</h3>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">Contact</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <Mail size={16} className="text-purple-300" />
-                <span className="text-gray-300 text-sm">
-                  chemsassureglobal@gmail.com
-                </span>
+                <Mail size={15} className="text-brand-400" />
+                <span className="text-gray-400 text-sm">chemsassureglobal@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone size={16} className="text-purple-300" />
-                <span className="text-gray-300 text-sm">+91 93137 49421</span>
+                <Phone size={15} className="text-brand-400" />
+                <span className="text-gray-400 text-sm">+91 93137 49421</span>
               </div>
               <div className="flex items-center space-x-3">
-                <MapPin size={16} className="text-purple-300" />
-                <span className="text-gray-300 text-sm">Ahmedabad, India</span>
+                <MapPin size={15} className="text-brand-400" />
+                <span className="text-gray-400 text-sm">Ahmedabad, Gujarat, India</span>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-white/10 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-400 text-sm">
-              © {currentYear} ChemAssure Global. All rights reserved.
-            </p>
-            <div className="flex items-center space-x-6 text-sm">
-              <div className="text-gray-400">
-                Designed with ❤️{' '}
-                <a
-                  href="https://www.linkedin.com/in/dharmikgohil/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-purple-300 hover:text-purple-100 transition-colors font-medium"
-                >
-                  Dharmik Gohil
-                </a>
-              </div>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-purple-300 transition-colors">
-                Privacy Policy
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-purple-300 transition-colors">
-                Terms of Service
-              </a>
-            </div>
+        <div className="border-t border-white/5 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <p className="text-gray-500 text-sm">© {currentYear} ChemAssure Global. All rights reserved.</p>
+          <div className="text-gray-500 text-sm">
+            Designed & Developed by{' '}
+            <a href="https://www.linkedin.com/in/dharmikgohil/" target="_blank" rel="noopener noreferrer" className="text-brand-400 hover:text-brand-300 transition-colors">Dharmik Gohil</a>
           </div>
         </div>
       </div>

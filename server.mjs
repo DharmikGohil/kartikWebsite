@@ -4,7 +4,7 @@ import path from 'path';
 import { readFileSync } from 'fs';
 
 const app = express();
-const PORT = 3001;
+const PORT = 3008;
 
 // Middleware
 app.use(cors());

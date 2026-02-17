@@ -1,282 +1,184 @@
 import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
-import { ArrowRight, Award, Target, Eye, Shield, Users, Globe, CheckCircle } from 'lucide-react'
+import { ArrowRight, Globe, Shield, Settings, Leaf, FlaskConical, Target, Eye, Cpu, User, Linkedin } from 'lucide-react'
 
 const About = () => {
-  const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 })
-  const [valuesRef, valuesInView] = useInView({ triggerOnce: true, threshold: 0.1 })
-  const [missionRef, missionInView] = useInView({ triggerOnce: true, threshold: 0.1 })
-
-  const values = [
-    {
-      icon: <Eye className="w-8 h-8" />,
-      title: 'Integrity',
-      description: 'Unwavering commitment to honesty and ethical practices in all our inspections.'
-    },
-    {
-      icon: <Target className="w-8 h-8" />,
-      title: 'Accuracy',
-      description: 'Precise and reliable results through rigorous quality control processes.'
-    },
-    {
-      icon: <Shield className="w-8 h-8" />,
-      title: 'Transparency',
-      description: 'Clear, detailed reporting with full visibility into our inspection processes.'
-    }
-  ]
-
-  const credentials = [
-    // 'Chemical Engineering Degree (B.Tech)',
-    // '1+ Years in Quality Assurance',
-    'ISO 17020/17025 Standards Expert',
-    'International Chemical Safety Certified',
-    'Member of Chemical Manufacturers Association',
-    'Advanced Analytical Techniques Specialist'
-  ]
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2
-      }
-    }
-  }
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut"
-      }
-    }
-  }
-
   return (
-    <div className="min-h-screen pt-20 relative">
-      {/* Hero Section */}
-      <section ref={heroRef} className="section-padding relative text-white">
-        <div className="absolute inset-0 bg-black/20 backdrop-blur-[1px]" />
-        <div className="container-max relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={heroInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              About <span className="text-gradient">ChemAssure Global</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
-              Your trusted partner in chemical quality assurance, delivering expert inspections and testing coordination from India to the world.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Founder Story */}
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={heroInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="space-y-6"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold text-gradient">
-                Meet Our Founder
-              </h2>
-              <p className="text-lg text-gray-200 leading-relaxed">
-                ChemAssure Global was founded by <strong>Mr. Kartik Radadiya</strong>, a distinguished chemical engineer who has experience in quality assurance and chemical safety.
-              </p>
-              <p className="text-lg text-gray-200 leading-relaxed">
-                Passionate about product safety and precision, Mr. Radadiya delivers personalized inspections and testing coordination for international buyers, ensuring that every chemical shipment meets the highest standards of quality and compliance.
-              </p>
-              <p className="text-lg text-gray-200 leading-relaxed">
-                With a deep understanding of international chemical regulations and a commitment to excellence, Mr. Radadiya has built ChemAssure Global into a trusted name in chemical quality control across global markets.
-              </p>
-            </motion.div>
-
-            {/* Founder Photo Placeholder */}
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={heroInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="relative"
-            >
-              <div className="w-full h-96 bg-white/10 backdrop-blur-lg rounded-2xl flex items-center justify-center border border-white/20 hover:border-white/30 transition-all duration-300">
-                <div className="text-center">
-                  <div className="w-32 h-32 bg-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center border border-purple-400/30">
-                    <Users className="w-16 h-16 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-white mb-2">Mr. Kartik Radadiya</h3>
-                  <p className="text-purple-300 font-medium">Founder & Chief Inspector</p>
-                </div>
-              </div>
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-r from-purple-600 to-violet-600 rounded-full flex items-center justify-center animate-bounce-gentle border border-purple-400/30">
-                <Award className="w-12 h-12 text-white" />
-              </div>
-            </motion.div>
-          </div>
+    <div className="min-h-screen bg-navy-900 pt-20">
+      {/* Header */}
+      <section className="section-padding">
+        <div className="container-max max-w-3xl">
+          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+            About <span className="text-gradient">ChemAssure Global</span>
+          </h1>
+          <p className="text-lg text-gray-300 leading-relaxed mb-6">
+            We specialize in foam control engineering for industrial processes. Our approach combines application understanding, chemistry selection and cost-performance optimization to deliver reliable results under real plant conditions.
+          </p>
+          <p className="text-gray-400 leading-relaxed">
+            Based in Ahmedabad, Gujarat — serving industries across India and expanding globally. We work directly with plant teams to understand foam challenges and configure solutions that work in practice, not just on paper.
+          </p>
         </div>
       </section>
 
-      {/* Values Section */}
-      <section ref={valuesRef} className="section-padding relative">
-        <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" />
-        <div className="container-max relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={valuesInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Our Core Values
-            </h2>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-              The foundation of everything we do at ChemAssure Global, ensuring excellence in every inspection and report.
-            </p>
-          </motion.div>
-
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            animate={valuesInView ? "visible" : "hidden"}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8"
-          >
-            {values.map((value, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                className="text-center p-8 rounded-2xl bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/10 hover:border-white/20 card-hover group transition-all duration-300"
-              >
-                <motion.div
-                  className="w-20 h-20 bg-purple-500/20 hover:bg-purple-400/30 rounded-2xl flex items-center justify-center mx-auto mb-6 transition-all duration-300 border border-purple-400/20"
-                  whileHover={{ scale: 1.1, rotate: 5 }}
-                  transition={{ type: "spring", stiffness: 300 }}
+      {/* Founder */}
+      <section className="section-padding bg-navy-950/50">
+        <div className="container-max">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-start">
+            <div className="lg:col-span-2">
+              <div className="p-8 rounded-2xl bg-white/[0.03] border border-white/5 text-center">
+                <img
+                  src="/kartikPhoto.jpeg"
+                  alt="Mr. Kartik Radadiya — Founder of ChemAssure Global"
+                  className="w-28 h-28 rounded-full object-cover mx-auto mb-5 border-2 border-brand-500/30"
+                />
+                <h3 className="text-xl font-bold text-white mb-1">Mr. Kartik Radadiya</h3>
+                <p className="text-brand-400 text-sm font-medium mb-2">Founder & Technical Lead</p>
+                <a
+                  href="https://www.linkedin.com/in/kartik-radadiya-a3478b266/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-1.5 text-gray-400 hover:text-brand-400 transition-colors duration-200 text-sm mb-4"
                 >
-                  <div className="text-purple-300 group-hover:text-white transition-colors duration-300">
-                    {value.icon}
-                  </div>
-                </motion.div>
-                <h3 className="text-xl font-semibold text-white mb-4">
-                  {value.title}
-                </h3>
-                <p className="text-gray-200 leading-relaxed">
-                  {value.description}
-                </p>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Mission Section */}
-      <section ref={missionRef} className="section-padding relative">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-black/40 to-violet-900/20" />
-        <div className="container-max relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={missionInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.8 }}
-              className="space-y-6"
-            >
-              <h2 className="text-4xl md:text-5xl font-bold text-white">
-                Our Mission
-              </h2>
-              <p className="text-xl text-gray-200 leading-relaxed">
-                To be your trusted quality partner in chemical sourcing, providing expert inspections and testing coordination that ensures product safety, regulatory compliance, and supply chain reliability.
-              </p>
-              <p className="text-xl text-gray-200 leading-relaxed">
-                We believe that every chemical shipment deserves the highest level of scrutiny and that our expertise can make the difference between a successful delivery and a costly failure.
-              </p>
-              
-              <div className="bg-white/10 backdrop-blur-lg p-6 rounded-xl border border-white/20 hover:border-white/30 transition-all duration-300">
-                <h3 className="text-lg font-semibold text-white mb-3">The Solo Expert Advantage</h3>
-                <ul className="space-y-2 text-gray-200">
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-purple-400 flex-shrink-0" />
-                    <span>Direct access to founder's proven expertise in chemical quality assurance</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-purple-400 flex-shrink-0" />
-                    <span>Immediate communication without account managers</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-purple-400 flex-shrink-0" />
-                    <span>Lower overhead costs passed to clients</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-purple-400 flex-shrink-0" />
-                    <span>Personalized service for every shipment</span>
-                  </li>
-                </ul>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={missionInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="space-y-6"
-            >
-              <h3 className="text-2xl font-bold text-white mb-6">
-                Professional Credentials
-              </h3>
-              <div className="grid grid-cols-1 gap-4">
-                {credentials.map((credential, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, x: 30 }}
-                    animate={missionInView ? { opacity: 1, x: 0 } : {}}
-                    transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                    className="flex items-center space-x-3 p-4 bg-white/5 hover:bg-white/10 backdrop-blur-md rounded-lg border border-white/10 hover:border-white/20 transition-all duration-300 group"
-                  >
-                    <div className="w-3 h-3 bg-purple-400 rounded-full group-hover:scale-150 transition-transform duration-300"></div>
-                    <span className="text-gray-200 font-medium">{credential}</span>
-                  </motion.div>
-                ))}
-              </div>
-
-              <div className="bg-gradient-to-r from-purple-600 to-violet-600 p-6 rounded-xl text-white border border-purple-400/30 backdrop-blur-sm">
-                <h4 className="text-lg font-semibold mb-3">Global Reach</h4>
-                <p className="text-white/90 mb-4">
-                  Serving clients across Europe, North America, Asia-Pacific, and the Middle East with our India-based expertise.
-                </p>
-                <div className="flex items-center space-x-2">
-                  <Globe className="w-5 h-5" />
-                  <span className="text-sm">24/7 Global Support Available</span>
+                  <Linkedin className="w-4 h-4" />
+                  <span>LinkedIn Profile</span>
+                </a>
+                <div className="space-y-2 text-left">
+                  {[
+                    "Chemical Engineer",
+                    "Foam control & process chemistry",
+                    "Application engineering across 10+ industries",
+                    "Formulation development & field validation",
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-start space-x-2">
+                      <div className="w-1.5 h-1.5 bg-brand-400/70 rounded-full mt-2 flex-shrink-0" />
+                      <span className="text-gray-400 text-sm">{item}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
-            </motion.div>
+            </div>
+
+            <div className="lg:col-span-3">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Meet Our Founder</h2>
+              <div className="space-y-4 text-gray-300 leading-relaxed">
+                <p>
+                  ChemAssure Global was founded by Mr. Kartik Radadiya, a chemical engineer with hands-on experience in foam control, process chemistry and industrial application engineering.
+                </p>
+                <p>
+                  His approach is straightforward: understand the process first, then select the chemistry. Every recommendation starts with the plant's actual operating conditions — temperature, pH, shear, foam mechanism — not a product catalogue.
+                </p>
+                <p>
+                  Mr. Radadiya works directly with plant teams across textiles, wastewater, paints, paper, cement, sugar, food processing, pharma and oil & gas — configuring foam control solutions that perform under real conditions.
+                </p>
+                <p className="text-gray-400 text-sm">
+                  Based in Ahmedabad, Gujarat. Available for technical discussions, plant visits and solution development across India.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="section-padding relative text-white">
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-900/30 via-violet-900/40 to-purple-900/30 backdrop-blur-sm" />
-        <div className="container-max text-center relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={missionInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Ready to Work with Our Expert?
+      {/* How We Work */}
+      <section className="section-padding">
+        <div className="container-max">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">How We Work</h2>
+          <p className="text-gray-400 mb-8 max-w-2xl">
+            We don't sell standard products. We configure solutions based on your process.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              { icon: <Target className="w-5 h-5" />, step: "01", title: "Understand the Process", desc: "We start by understanding your foam mechanism, operating window and chemistry environment. No assumptions." },
+              { icon: <FlaskConical className="w-5 h-5" />, step: "02", title: "Select the Chemistry", desc: "Silicone, silicone-free, polyether, fatty ester or hybrid — chosen based on compatibility and performance requirements." },
+              { icon: <Settings className="w-5 h-5" />, step: "03", title: "Configure the Solution", desc: "Physical form, dosage method, environmental profile — everything is configured for your specific process conditions." },
+              { icon: <Cpu className="w-5 h-5" />, step: "04", title: "Validate in Practice", desc: "Field trials under real plant conditions. We adjust until the solution performs reliably in your actual operating environment." },
+            ].map((item, i) => (
+              <div key={i} className="p-6 rounded-xl bg-white/[0.03] border border-white/5">
+                <div className="text-[11px] text-brand-400 font-bold uppercase tracking-widest mb-3">{item.step}</div>
+                <div className="w-10 h-10 bg-brand-600/15 rounded-lg flex items-center justify-center text-brand-400 mb-4">
+                  {item.icon}
+                </div>
+                <h3 className="text-base font-semibold text-white mb-2">{item.title}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Core Values */}
+      <section className="section-padding bg-navy-950/50">
+        <div className="container-max">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">Core Values</h2>
+          <p className="text-gray-400 mb-8 max-w-2xl">
+            The foundation of how we operate — with every client, every process, every solution.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              { icon: <Eye className="w-6 h-6" />, title: "Honesty", desc: "No fake claims, no greenwashing. We tell you what works, what doesn't, and why. Sustainability performance depends on application and system design — we say that upfront." },
+              { icon: <Settings className="w-6 h-6" />, title: "Engineering Rigor", desc: "Every recommendation is backed by process logic. We select chemistry based on operating conditions, not sales targets. If a simpler solution works, we recommend it." },
+              { icon: <Leaf className="w-6 h-6" />, title: "Sustainability Awareness", desc: "Lower dosage, biodegradable options, water-reuse compatible grades. We design for reduced environmental load — but we never overstate what a product can do." },
+              { icon: <Shield className="w-6 h-6" />, title: "Process-First Thinking", desc: "We don't start with a product. We start with your process. Temperature, pH, shear, foam type — the solution follows the conditions, not the other way around." },
+            ].map((item, i) => (
+              <div key={i} className="p-6 rounded-xl bg-white/5 border border-white/5">
+                <div className="w-12 h-12 bg-brand-600/15 rounded-lg flex items-center justify-center text-brand-400 mb-4">
+                  {item.icon}
+                </div>
+                <h3 className="text-base font-semibold text-white mb-2">{item.title}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Industry Reach */}
+      <section className="section-padding">
+        <div className="container-max">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <div className="flex items-center space-x-3 mb-4">
+                <Globe className="w-5 h-5 text-brand-400" />
+                <h2 className="text-2xl sm:text-3xl font-bold text-white">Where We Operate</h2>
+              </div>
+              <p className="text-gray-300 leading-relaxed mb-6">
+                Headquartered in Ahmedabad, Gujarat — we serve industrial clients across India with foam control solutions engineered for local process conditions and global performance standards.
+              </p>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Our coverage spans textiles, wastewater treatment, paints & coatings, paper & pulp, cement & construction, sugar & fermentation, food & beverage, pharmaceutical, oil & gas and municipal water systems.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                { num: "10", label: "Industries Served" },
+                { num: "5", label: "Chemistry Platforms" },
+                { num: "4", label: "Physical Forms" },
+                { num: "3", label: "ECO Grade Levels" },
+              ].map((stat, i) => (
+                <div key={i} className="p-6 rounded-xl bg-white/5 border border-white/5 text-center">
+                  <div className="text-3xl font-bold text-brand-400 mb-1">{stat.num}</div>
+                  <div className="text-gray-400 text-sm">{stat.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="section-padding bg-navy-950/50">
+        <div className="container-max">
+          <div className="bg-gradient-to-r from-brand-900/20 to-brand-800/10 border border-brand-500/15 rounded-2xl p-10 sm:p-14 text-center">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+              Ready to work with us?
             </h2>
-            <p className="text-xl mb-8 text-gray-200 max-w-3xl mx-auto">
-              Experience the ChemAssure Global difference with personalized chemical quality assurance services.
+            <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
+              Tell us about your process. We'll tell you how we can help.
             </p>
-            <Link to="/contact" className="btn-accent text-lg px-10 py-5 inline-flex items-center group">
-              Request Inspection
-              <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform duration-300" />
+            <Link to="/contact" className="btn-primary inline-flex items-center group">
+              Discuss Your Process
+              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </Link>
-          </motion.div>
+          </div>
         </div>
       </section>
     </div>

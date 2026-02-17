@@ -1,50 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://chemassure.vercel.app/</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://chemassureglobal.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://chemassure.vercel.app/about</loc>
-    <lastmod>2024-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://chemassure.vercel.app/services</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://chemassureglobal.com/foam-control-engineering</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://chemassure.vercel.app/process</loc>
-    <lastmod>2024-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://chemassureglobal.com/solutions</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://chemassure.vercel.app/case-studies</loc>
-    <lastmod>2024-01-20</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://chemassureglobal.com/solutions/textile-processing</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chemassure.vercel.app/faq</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://chemassureglobal.com/solutions/wastewater-treatment</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chemassure.vercel.app/download</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://chemassureglobal.com/solutions/paints-coatings</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chemassureglobal.com/solutions/paper-pulp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chemassureglobal.com/solutions/cement-construction</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chemassureglobal.com/solutions/sugar-fermentation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chemassureglobal.com/solutions/food-beverage</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chemassureglobal.com/solutions/pharma-biotech</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chemassureglobal.com/solutions/oil-gas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chemassureglobal.com/solutions/municipal-water-reuse</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chemassureglobal.com/technologies</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chemassureglobal.com/sustainability</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chemassure.vercel.app/contact</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://chemassureglobal.com/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chemassureglobal.com/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

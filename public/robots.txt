@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://chemassure.vercel.app/sitemap.xml
+Sitemap: https://chemassureglobal.com/sitemap.xml
 
 # Block sensitive pages if any (example)
 # Disallow: /admin/
