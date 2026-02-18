@@ -347,6 +347,7 @@ ${chunks[i].map((route) => `  <url>
 </urlset>
 `;
     writeFileSync(join(process.cwd(), "dist", `sitemap-${i + 1}.xml`), xml, "utf-8");
+    writeFileSync(join(process.cwd(), "public", `sitemap-${i + 1}.xml`), xml, "utf-8");
   }
 
   const indexXml = `<?xml version="1.0" encoding="UTF-8"?>
