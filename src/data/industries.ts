@@ -30,6 +30,7 @@ export interface IndustryData {
   slug: string;
   name: string;
   icon: string;
+  heroImage: string;
   shortDesc: string;
   sustainabilityNote: string;
   positioningNote?: string;
@@ -41,6 +42,7 @@ export const industries: IndustryData[] = [
     slug: "textile-processing",
     name: "Textile Processing",
     icon: "🧵",
+    heroImage: "https://images.unsplash.com/photo-1636986056375-184676d8ca14?w=1200&q=80",
     shortDesc: "Foam control for washing, dyeing, finishing and printing operations where foam disrupts uniformity, throughput and fabric quality.",
     sustainabilityNote: "Lower dosage formulations reduce chemical load in effluent. ZDHC-aligned grades support textile export compliance. Silicone-free options minimize environmental persistence.",
     subProcesses: [
@@ -134,6 +136,7 @@ export const industries: IndustryData[] = [
     slug: "wastewater-treatment",
     name: "Wastewater Treatment & Water Reuse",
     icon: "💧",
+    heroImage: "https://images.unsplash.com/photo-1607113090645-8af7ec35b211?w=1200&q=80",
     shortDesc: "Foam control for aeration, clarification, sludge handling and membrane systems where foam affects treatment efficiency and compliance.",
     sustainabilityNote: "Dosage-optimized formulations minimize discharge load. Biodegradable options support water reuse targets. Compatible with GPCB discharge norms.",
     subProcesses: [
@@ -224,6 +227,7 @@ export const industries: IndustryData[] = [
     slug: "paints-coatings",
     name: "Paints & Coatings",
     icon: "🎨",
+    heroImage: "https://images.unsplash.com/photo-1710360258725-8361478b9eb5?w=1200&q=80",
     shortDesc: "Foam control during grinding, let-down and filling where micro-foam causes surface defects, pinholes and color inconsistency.",
     sustainabilityNote: "Low-VOC formulations support environmental coating standards. Reduced dosage requirements minimize additive load. Compatible with water-based coating systems.",
     subProcesses: [
@@ -316,6 +320,7 @@ export const industries: IndustryData[] = [
     slug: "paper-pulp",
     name: "Paper & Pulp",
     icon: "📄",
+    heroImage: "https://images.unsplash.com/photo-1727517786578-ff2bb896b852?w=1200&q=80",
     shortDesc: "Foam control in pulp washing, stock preparation and paper machine operations where foam causes sheet breaks, pinholes and drainage issues.",
     sustainabilityNote: "Efficient defoaming reduces water consumption in washing stages. Lower dosage formulations minimize chemical discharge. Compatible with closed-loop water systems.",
     subProcesses: [
@@ -379,6 +384,7 @@ export const industries: IndustryData[] = [
     slug: "cement-construction",
     name: "Cement & Construction",
     icon: "🏗️",
+    heroImage: "https://images.unsplash.com/photo-1568621422837-a343133e2bb9?w=1200&q=80",
     shortDesc: "Foam control in dry mortar, ready-mix concrete and tile adhesive production where air entrainment affects compressive strength and surface finish.",
     sustainabilityNote: "Precise dosage control reduces material waste. Silicone-free options preferred for construction applications. Optimized formulations maintain structural integrity while controlling foam.",
     subProcesses: [
@@ -442,6 +448,7 @@ export const industries: IndustryData[] = [
     slug: "sugar-fermentation",
     name: "Sugar & Fermentation",
     icon: "🍬",
+    heroImage: "https://images.unsplash.com/photo-1758978912199-e0df57bde255?w=1200&q=80",
     shortDesc: "Foam control in fermentation vessels and evaporation systems where foam causes overflow, carry-over and yield loss.",
     sustainabilityNote: "Food-grade formulations ensure product safety. Dosage efficiency reduces overall chemical consumption. Biodegradable options available for fermentation applications.",
     subProcesses: [
@@ -505,6 +512,7 @@ export const industries: IndustryData[] = [
     slug: "food-beverage",
     name: "Food & Beverage Processing",
     icon: "🍽️",
+    heroImage: "https://images.unsplash.com/photo-1530037335614-e68828dcf258?w=1200&q=80",
     shortDesc: "Custom-engineered foam control for fermentation, CIP systems and evaporation where food safety and regulatory compliance are non-negotiable.",
     sustainabilityNote: "Food-grade formulations meet regulatory requirements. Dosage optimization reduces chemical usage in food-contact applications. Custom solutions designed per specific process and regulatory needs.",
     positioningNote: "Solutions are engineered on request and validated in collaboration with customer process and regulatory requirements.",
@@ -597,6 +605,7 @@ export const industries: IndustryData[] = [
     slug: "pharma-biotech",
     name: "Pharmaceutical & Biotech",
     icon: "💊",
+    heroImage: "https://images.unsplash.com/photo-1669101283561-642d16d924ba?w=1200&q=80",
     shortDesc: "Qualification-driven custom foam control for bioreactors, fermenters and pharmaceutical processing where purity, validation and compliance are critical.",
     sustainabilityNote: "Precision dosing minimizes chemical load in sensitive processes. Custom formulations reduce waste and rework. Designed to meet pharmaceutical environmental standards.",
     positioningNote: "Offered through collaborative development and qualification programs.",
@@ -663,6 +672,7 @@ export const industries: IndustryData[] = [
     slug: "oil-gas",
     name: "Oil, Gas & Petrochemical",
     icon: "⛽",
+    heroImage: "https://images.unsplash.com/photo-1768564206500-5cddb1fea679?w=1200&q=80",
     shortDesc: "Performance-critical custom foam control for separators, distillation units and drilling operations under extreme temperature and chemical conditions.",
     sustainabilityNote: "Targeted chemistry reduces overall chemical consumption. High-efficiency formulations minimize dosage requirements. Process-specific solutions reduce waste and improve operational efficiency.",
     positioningNote: "Solutions are evaluated and supplied based on site-specific operational requirements.",
@@ -754,6 +764,7 @@ export const industries: IndustryData[] = [
     slug: "municipal-water-reuse",
     name: "Municipal Water Reuse & Advanced STP",
     icon: "🌊",
+    heroImage: "https://images.unsplash.com/photo-1674578745937-c73f81bdda07?w=1200&q=80",
     shortDesc: "Future-critical foam control for reuse-grade STPs where biological foam, regulatory pressure and sustainability objectives drive chemistry selection.",
     sustainabilityNote: "Designed to support water reuse and sustainability objectives. Ultra-low environmental persistence. Compatible with advanced treatment technologies.",
     positioningNote: "Designed to support water reuse and sustainability objectives.",

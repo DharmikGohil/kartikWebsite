@@ -27,19 +27,26 @@ const Blog = () => {
         ]}
       />
 
-      <section className="section-padding">
-        <div className="container-max max-w-3xl">
-          <Breadcrumbs items={breadcrumbs} />
-          <div className="flex items-center space-x-2 mb-4">
-            <BookOpen className="w-5 h-5 text-brand-400" />
-            <span className="text-brand-400 font-medium text-sm uppercase tracking-wider">Technical Blog</span>
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img src="https://images.unsplash.com/photo-1766297247072-93fd815afef3?w=1200&q=80" alt="Laboratory shelves with glassware" className="w-full h-full object-cover" loading="eager" />
+          <div className="absolute inset-0 bg-navy-950/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/30 to-transparent" />
+        </div>
+        <div className="relative z-10 section-padding pt-28">
+          <div className="container-max max-w-3xl">
+            <Breadcrumbs items={breadcrumbs} />
+            <div className="flex items-center space-x-2 mb-4">
+              <BookOpen className="w-5 h-5 text-brand-400" />
+              <span className="text-brand-400 font-medium text-sm uppercase tracking-wider">Technical Blog</span>
+            </div>
+            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+              Foam Control <span className="text-gradient">Insights</span>
+            </h1>
+            <p className="text-lg text-gray-300 leading-relaxed">
+              Practical articles on defoamer selection, dosage optimization, and industry-specific foam control. Written by our engineering team.
+            </p>
           </div>
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            Foam Control <span className="text-gradient">Insights</span>
-          </h1>
-          <p className="text-lg text-gray-300 leading-relaxed">
-            Practical articles on defoamer selection, dosage optimization, and industry-specific foam control. Written by our engineering team.
-          </p>
         </div>
       </section>
 

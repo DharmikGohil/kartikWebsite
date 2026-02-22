@@ -29,24 +29,38 @@ export default function SubProcessPage() {
       <SEOHead meta={seo.meta} schemas={seo.schemas} />
 
       {/* Header */}
-      <section className="section-padding pb-10">
-        <div className="container-max">
-          <Breadcrumbs items={seo.breadcrumbs} />
-          <div className="flex items-center gap-3 mb-4">
-            <IndustryIcon slug={industry.slug} className="w-10 h-10 text-brand-400" />
-            <Link
-              to={`/solutions/${industry.slug}`}
-              className="text-brand-400 hover:text-brand-300 text-sm font-medium transition-colors"
-            >
-              {industry.name}
-            </Link>
+      <section className="relative overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src={industry.heroImage}
+            alt={`${subProcess.name} - ${industry.name}`}
+            className="w-full h-full object-cover"
+            loading="eager"
+          />
+          <div className="absolute inset-0 bg-navy-950/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/30 to-transparent" />
+        </div>
+
+        <div className="relative z-10 section-padding pb-10 pt-28">
+          <div className="container-max">
+            <Breadcrumbs items={seo.breadcrumbs} />
+            <div className="flex items-center gap-3 mb-4">
+              <IndustryIcon slug={industry.slug} className="w-10 h-10 text-brand-400" />
+              <Link
+                to={`/solutions/${industry.slug}`}
+                className="text-brand-400 hover:text-brand-300 text-sm font-medium transition-colors"
+              >
+                {industry.name}
+              </Link>
+            </div>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+              Defoamer for {subProcess.name}{subProcess.productGrades?.[0] && <span className="text-brand-400 ml-2">{subProcess.productGrades[0].code}</span>} <span className="text-gradient">Foam Control</span>
+            </h1>
+            <p className="text-lg text-gray-300 max-w-3xl leading-relaxed">
+              {subProcess.engineeringApproach.description}
+            </p>
           </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-            Defoamer for {subProcess.name}{subProcess.productGrades?.[0] && <span className="text-brand-400 ml-2">{subProcess.productGrades[0].code}</span>} <span className="text-gradient">Foam Control</span>
-          </h1>
-          <p className="text-lg text-gray-300 max-w-3xl leading-relaxed">
-            {subProcess.engineeringApproach.description}
-          </p>
         </div>
       </section>
 

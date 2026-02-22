@@ -108,16 +108,23 @@ const Technologies = () => {
     <div className="min-h-screen bg-navy-900 pt-20">
       <SEOHead meta={seo.meta} schemas={seo.schemas} />
       {/* Header */}
-      <section className="section-padding">
-        <div className="container-max max-w-3xl">
-          <Breadcrumbs items={seo.breadcrumbs} />
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            Foam Control Technologies Across Chemistry, Form{' '}
-            <span className="text-gradient">& Sustainability</span>
-          </h1>
-          <p className="text-lg text-gray-300 leading-relaxed">
-            Our solutions are engineered using multiple chemistry platforms and physical formats, selected based on process conditions and environmental requirements.
-          </p>
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img src="https://images.unsplash.com/photo-1738918922725-d70c666ddccb?w=1200&q=80" alt="Industrial tanks and technology" className="w-full h-full object-cover" loading="eager" />
+          <div className="absolute inset-0 bg-navy-950/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/30 to-transparent" />
+        </div>
+        <div className="relative z-10 section-padding pt-28">
+          <div className="container-max max-w-3xl">
+            <Breadcrumbs items={seo.breadcrumbs} />
+            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+              Foam Control Technologies Across Chemistry, Form{' '}
+              <span className="text-gradient">& Sustainability</span>
+            </h1>
+            <p className="text-lg text-gray-300 leading-relaxed">
+              Our solutions are engineered using multiple chemistry platforms and physical formats, selected based on process conditions and environmental requirements.
+            </p>
+          </div>
         </div>
       </section>
 

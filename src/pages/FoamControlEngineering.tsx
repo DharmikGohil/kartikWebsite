@@ -35,18 +35,25 @@ const FoamControlEngineering = () => {
   return (
     <div className="min-h-screen bg-navy-900 pt-20">
       <SEOHead meta={seo.meta} schemas={seo.schemas} />
-      <section className="section-padding">
-        <div className="container-max max-w-3xl">
-          <Breadcrumbs items={seo.breadcrumbs} />
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            Foam Control <span className="text-gradient">Engineering</span>
-          </h1>
-          <p className="text-lg text-gray-300 leading-relaxed mb-4">
-            We don't just sell defoamers. We control foam by understanding your process.
-          </p>
-          <p className="text-gray-400 leading-relaxed">
-            Every foam problem has a root cause. Our engineering approach identifies that cause and matches the right chemistry, form and dosage to solve it reliably - under your real plant conditions, not theoretical ones.
-          </p>
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img src="https://images.unsplash.com/photo-1759064776046-45b988af4b6d?w=1200&q=80" alt="Industrial pipes and machinery close-up" className="w-full h-full object-cover" loading="eager" />
+          <div className="absolute inset-0 bg-navy-950/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/30 to-transparent" />
+        </div>
+        <div className="relative z-10 section-padding pt-28">
+          <div className="container-max max-w-3xl">
+            <Breadcrumbs items={seo.breadcrumbs} />
+            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+              Foam Control <span className="text-gradient">Engineering</span>
+            </h1>
+            <p className="text-lg text-gray-300 leading-relaxed mb-4">
+              We don't just sell defoamers. We control foam by understanding your process.
+            </p>
+            <p className="text-gray-400 leading-relaxed">
+              Every foam problem has a root cause. Our engineering approach identifies that cause and matches the right chemistry, form and dosage to solve it reliably - under your real plant conditions, not theoretical ones.
+            </p>
+          </div>
         </div>
       </section>
 

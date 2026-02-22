@@ -10,15 +10,22 @@ const Solutions = () => {
   return (
     <div className="min-h-screen bg-navy-900 pt-20">
       <SEOHead meta={seo.meta} schemas={seo.schemas} />
-      <section className="section-padding">
-        <div className="container-max max-w-3xl">
-          <Breadcrumbs items={seo.breadcrumbs} />
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            Solutions by <span className="text-gradient">Industry</span>
-          </h1>
-          <p className="text-lg text-gray-300 leading-relaxed">
-            Every industry has unique foam challenges, operating conditions and chemistry requirements. We engineer foam control solutions specific to each - not one-size-fits-all products.
-          </p>
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img src="https://images.unsplash.com/photo-1585204630262-84278b4d8b00?w=1200&q=80" alt="Industrial machinery and equipment" className="w-full h-full object-cover" loading="eager" />
+          <div className="absolute inset-0 bg-navy-950/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/30 to-transparent" />
+        </div>
+        <div className="relative z-10 section-padding pt-28">
+          <div className="container-max max-w-3xl">
+            <Breadcrumbs items={seo.breadcrumbs} />
+            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+              Solutions by <span className="text-gradient">Industry</span>
+            </h1>
+            <p className="text-lg text-gray-300 leading-relaxed">
+              Every industry has unique foam challenges, operating conditions and chemistry requirements. We engineer foam control solutions specific to each - not one-size-fits-all products.
+            </p>
+          </div>
         </div>
       </section>
 

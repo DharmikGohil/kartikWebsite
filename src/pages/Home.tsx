@@ -18,10 +18,17 @@ const Home = () => {
       <SEOHead meta={seo.meta} schemas={seo.schemas} />
       {/* Hero */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-navy-950 via-navy-900 to-brand-950/30" />
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-500 rounded-full blur-[128px]" />
-          <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-brand-600 rounded-full blur-[100px]" />
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src="https://images.unsplash.com/photo-1768128834456-0bb2432f727a?w=1600&q=80"
+            alt="Industrial chemical processing facility"
+            className="w-full h-full object-cover"
+            loading="eager"
+          />
+          <div className="absolute inset-0 bg-navy-950/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/20 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-950/50 to-transparent" />
         </div>
 
         <div className="relative z-10 container-max px-4 sm:px-6 lg:px-8 py-32">

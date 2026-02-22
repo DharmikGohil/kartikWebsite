@@ -79,15 +79,22 @@ Contact: ${formData.name} | ${formData.email} | ${formData.company} | ${formData
         schemas={[buildBreadcrumbSchema(breadcrumbs), buildWebPageSchema("Request Pricing", "Get pricing for industrial foam control products.", "/request-pricing")]}
       />
 
-      <section className="section-padding pb-10">
-        <div className="container-max max-w-3xl">
-          <Breadcrumbs items={breadcrumbs} />
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">
-            Request <span className="text-gradient">Pricing</span>
-          </h1>
-          <p className="text-lg text-gray-300 leading-relaxed">
-            Tell us what you need and we'll provide a customized quote. Pricing depends on product grade, volume, and delivery requirements.
-          </p>
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img src="https://images.unsplash.com/photo-1768268959053-770212976791?w=1200&q=80" alt="Industrial golden pipes and machinery" className="w-full h-full object-cover" loading="eager" />
+          <div className="absolute inset-0 bg-navy-950/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/30 to-transparent" />
+        </div>
+        <div className="relative z-10 section-padding pb-10 pt-28">
+          <div className="container-max max-w-3xl">
+            <Breadcrumbs items={breadcrumbs} />
+            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">
+              Request <span className="text-gradient">Pricing</span>
+            </h1>
+            <p className="text-lg text-gray-300 leading-relaxed">
+              Tell us what you need and we'll provide a customized quote. Pricing depends on product grade, volume, and delivery requirements.
+            </p>
+          </div>
         </div>
       </section>
 

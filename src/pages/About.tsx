@@ -9,18 +9,25 @@ const About = () => {
     <div className="min-h-screen bg-navy-900 pt-20">
       <SEOHead meta={seo.meta} schemas={seo.schemas} />
       {/* Header */}
-      <section className="section-padding">
-        <div className="container-max max-w-3xl">
-          <Breadcrumbs items={seo.breadcrumbs} />
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            About <span className="text-gradient">ChemAssure Global</span>
-          </h1>
-          <p className="text-lg text-gray-300 leading-relaxed mb-6">
-            ChemAssure Global is a specialty chemical company focused on industrial foam control. We engineer application-specific defoamers and antifoams for process industries where foam disrupts efficiency, quality and throughput.
-          </p>
-          <p className="text-gray-400 leading-relaxed">
-            Headquartered in Surat, Gujarat, India - we serve manufacturers across textiles, wastewater, paints, paper, cement, sugar, food processing, pharma, oil & gas and municipal water systems.
-          </p>
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img src="https://images.unsplash.com/photo-1766297246906-210617be31a4?w=1200&q=80" alt="Chemical laboratory research" className="w-full h-full object-cover" loading="eager" />
+          <div className="absolute inset-0 bg-navy-950/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/30 to-transparent" />
+        </div>
+        <div className="relative z-10 section-padding pt-28">
+          <div className="container-max max-w-3xl">
+            <Breadcrumbs items={seo.breadcrumbs} />
+            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+              About <span className="text-gradient">ChemAssure Global</span>
+            </h1>
+            <p className="text-lg text-gray-300 leading-relaxed mb-6">
+              ChemAssure Global is a specialty chemical company focused on industrial foam control. We engineer application-specific defoamers and antifoams for process industries where foam disrupts efficiency, quality and throughput.
+            </p>
+            <p className="text-gray-400 leading-relaxed">
+              Headquartered in Surat, Gujarat, India - we serve manufacturers across textiles, wastewater, paints, paper, cement, sugar, food processing, pharma, oil & gas and municipal water systems.
+            </p>
+          </div>
         </div>
       </section>
 
