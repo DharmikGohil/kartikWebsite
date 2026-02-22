@@ -20,7 +20,7 @@ export function getChemistryPageSEO(chemistrySlug?: string): SEOPageData {
       },
       {
         question: "How do you choose the right chemistry for my process?",
-        answer: "We analyze your foam mechanism, operating temperature, pH, shear level, and downstream requirements. The chemistry platform is selected to match your actual plant conditions — not theoretical ones.",
+        answer: "We analyze your foam mechanism, operating temperature, pH, shear level, and downstream requirements. The chemistry platform is selected to match your actual plant conditions - not theoretical ones.",
       },
     ];
     return {

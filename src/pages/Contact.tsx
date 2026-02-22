@@ -170,7 +170,7 @@ Contact: ${formData.name} | ${formData.email} | ${formData.company} | ${formData
                   </div>
                   <div>
                     <label htmlFor="foamDescription" className={labelClass}>Foam Problem Description *</label>
-                    <textarea id="foamDescription" name="foamDescription" value={formData.foamDescription} onChange={handleChange} required rows={4} className={inputClass + " resize-none"} placeholder="Describe the foam issue — where it occurs, how severe, what you've tried..." />
+                    <textarea id="foamDescription" name="foamDescription" value={formData.foamDescription} onChange={handleChange} required rows={4} className={inputClass + " resize-none"} placeholder="Describe the foam issue - where it occurs, how severe, what you've tried..." />
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
@@ -247,7 +247,7 @@ Contact: ${formData.name} | ${formData.email} | ${formData.company} | ${formData
                   </a>
                   <div className="flex items-center space-x-3 text-gray-400 text-sm">
                     <MapPin size={16} className="text-brand-400" />
-                    <span>Ahmedabad, Gujarat, India</span>
+                    <span>Ground Floor, Plot No. 134, Pramukh Park Society, Sanya Road, Simada Gam, Surat - 395006, Gujarat, India</span>
                   </div>
                 </div>
               </div>
@@ -263,7 +263,7 @@ Contact: ${formData.name} | ${formData.email} | ${formData.company} | ${formData
               <div className="p-6 rounded-xl bg-brand-900/15 border border-brand-500/15">
                 <h3 className="text-sm font-semibold text-white mb-2">Why this form?</h3>
                 <p className="text-gray-400 text-xs leading-relaxed">
-                  The process details you provide help our technical team understand your foam challenge before the first conversation. This means faster, more relevant recommendations — configured for your specific conditions.
+                  The process details you provide help our technical team understand your foam challenge before the first conversation. This means faster, more relevant recommendations - configured for your specific conditions.
                 </p>
               </div>
             </div>

@@ -51,12 +51,12 @@ export function getHomePageSEO(): SEOPageData {
     {
       question: "How is ChemAssure different from generic defoamer suppliers?",
       answer:
-        "We don't sell off-the-shelf products. We engineer foam control solutions by first understanding your process — foam mechanism, temperature, pH, shear level, and chemistry compatibility — then configuring the right chemistry platform, physical form, and dosage for your specific conditions.",
+        "We don't sell off-the-shelf products. We engineer foam control solutions by first understanding your process - foam mechanism, temperature, pH, shear level, and chemistry compatibility - then configuring the right chemistry platform, physical form, and dosage for your specific conditions.",
     },
     {
       question: "Where is ChemAssure Global located?",
       answer:
-        "We are headquartered in Ahmedabad, Gujarat, India, and serve industrial clients across India with global-standard foam control engineering.",
+        "We are headquartered in Surat, Gujarat, India, and serve industrial clients across India with global-standard foam control engineering.",
     },
   ];
 
@@ -197,7 +197,7 @@ export function getIndustryPageSEO(slug: string): SEOPageData | null {
 }
 
 
-// ─── Sub-Process Page SEO (Programmatic — scales to 100k+) ───────
+// ─── Sub-Process Page SEO (Programmatic - scales to 100k+) ───────
 // Each industry × sub-process combination gets a unique page with
 // unique title, description, FAQs, and schema markup.
 
@@ -263,7 +263,7 @@ export function getSubProcessPageSEO(
         .slice(0, 1)
         .map((sp) => ({
           href: `/solutions/${i.slug}/${slugify(sp.name)}`,
-          label: `${sp.name} — ${i.name}`,
+          label: `${sp.name} - ${i.name}`,
           description: sp.engineeringApproach.description,
         }))
     )
@@ -271,7 +271,7 @@ export function getSubProcessPageSEO(
 
   return {
     meta: {
-      title: `${subProcess.name} Foam Control — ${industry.name} | ${SITE_NAME}`,
+      title: `${subProcess.name} Foam Control - ${industry.name} | ${SITE_NAME}`,
       description: `Engineered defoamer solutions for ${subProcess.name.toLowerCase()} in ${industry.name.toLowerCase()}. Operating at ${subProcess.operatingConditions.temperature}, pH ${subProcess.operatingConditions.ph}. ${subProcess.engineeringApproach.description}`,
       canonical: `/solutions/${industrySlug}/${subProcessSlug}`,
     },
@@ -308,7 +308,7 @@ export function getEngineeringPageSEO(): SEOPageData {
     {
       question: "Why does the foam mechanism matter?",
       answer:
-        "Different foam types — surfactant-driven, mechanical, biological, or resin-based — require fundamentally different control strategies. Applying the wrong approach wastes chemical and can create new problems.",
+        "Different foam types - surfactant-driven, mechanical, biological, or resin-based - require fundamentally different control strategies. Applying the wrong approach wastes chemical and can create new problems.",
     },
     {
       question: "How do process conditions affect defoamer selection?",
@@ -368,7 +368,7 @@ export function getTechnologiesPageSEO(): SEOPageData {
 
   return {
     meta: {
-      title: `Foam Control Technologies — Chemistry, Form & Sustainability | ${SITE_NAME}`,
+      title: `Foam Control Technologies - Chemistry, Form & Sustainability | ${SITE_NAME}`,
       description:
         "Explore defoamer chemistry platforms (silicone, silicone-free, polyether, fatty ester), physical formats (liquid, emulsion, powder), and environmental profiles engineered for your process.",
       canonical: "/technologies",
@@ -443,9 +443,9 @@ export function getAboutPageSEO(): SEOPageData {
 
   return {
     meta: {
-      title: `About ${SITE_NAME} | Foam Control Engineering Company | Ahmedabad, India`,
+      title: `About ${SITE_NAME} | Foam Control Engineering Company | Surat, India`,
       description:
-        "ChemAssure Global specializes in foam control engineering for industrial processes. Founded by Kartik Radadiya, we combine application understanding, chemistry selection, and cost-performance optimization.",
+        "ChemAssure Global specializes in foam control engineering for industrial processes. We combine application understanding, chemistry selection, and cost-performance optimization for 10+ industries.",
       canonical: "/about",
     },
     breadcrumbs,
@@ -455,7 +455,7 @@ export function getAboutPageSEO(): SEOPageData {
       buildBreadcrumbSchema(breadcrumbs),
       buildWebPageSchema(
         `About ${SITE_NAME}`,
-        "Foam control engineering company based in Ahmedabad, Gujarat, India.",
+        "Foam control engineering company based in Surat, Gujarat, India.",
         "/about"
       ),
     ],

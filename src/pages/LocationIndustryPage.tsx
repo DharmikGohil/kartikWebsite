@@ -132,7 +132,7 @@ export default function LocationIndustryPage() {
         </section>
       )}
 
-      <FAQSection faqs={seo.faqs} heading={`${industry.name} Foam Control in ${locationName} — FAQ`} />
+      <FAQSection faqs={seo.faqs} heading={`${industry.name} Foam Control in ${locationName} - FAQ`} />
       <RelatedPages links={seo.relatedPages} heading="Related Solutions" hubLink={seo.hubPage} />
 
       <section className="section-padding">

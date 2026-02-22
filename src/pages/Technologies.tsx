@@ -121,7 +121,7 @@ const Technologies = () => {
         </div>
       </section>
 
-      {/* Block A — Chemistry Platforms */}
+      {/* Block A - Chemistry Platforms */}
       <section className="section-padding pt-0">
         <div className="container-max">
           <div className="flex items-center space-x-3 mb-8">
@@ -136,7 +136,7 @@ const Technologies = () => {
         </div>
       </section>
 
-      {/* Block B — Physical Formats */}
+      {/* Block B - Physical Formats */}
       <section className="section-padding bg-navy-950/50">
         <div className="container-max">
           <div className="flex items-center space-x-3 mb-8">
@@ -151,7 +151,7 @@ const Technologies = () => {
         </div>
       </section>
 
-      {/* Block C — Environmental Profile */}
+      {/* Block C - Environmental Profile */}
       <section className="section-padding">
         <div className="container-max">
           <div className="flex items-center space-x-3 mb-8">

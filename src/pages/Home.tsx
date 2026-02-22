@@ -112,14 +112,15 @@ const Home = () => {
                 Why ChemAssure Global?
               </h2>
               <p className="text-gray-300 text-lg mb-8 leading-relaxed">
-                We combine application understanding, chemistry selection and cost-performance optimization to deliver reliable foam control under real plant conditions.
+                Large chemical companies sell from a catalogue. We engineer from your process. That's the difference between a product and a solution.
               </p>
               <div className="space-y-4">
                 {[
-                  { icon: <Factory className="w-5 h-5" />, text: "Solutions configured for your process — not off-the-shelf products" },
-                  { icon: <Shield className="w-5 h-5" />, text: "Chemistry platform selection based on your operating window" },
-                  { icon: <Globe className="w-5 h-5" />, text: "Serving industries across India with global-standard engineering" },
-                  { icon: <Leaf className="w-5 h-5" />, text: "Sustainability-aware formulations that reduce environmental load" },
+                  { icon: <Factory className="w-5 h-5" />, text: "Process-first engineering - we analyze your conditions before recommending chemistry" },
+                  { icon: <Shield className="w-5 h-5" />, text: "Direct access to our founder and technical team - no call centers" },
+                  { icon: <Globe className="w-5 h-5" />, text: "Serving 10+ industries across India with global-standard engineering" },
+                  { icon: <Leaf className="w-5 h-5" />, text: "Honest sustainability - we don't make blanket green claims" },
+                  { icon: <Zap className="w-5 h-5" />, text: "Dosage optimization that typically reduces chemical costs by 30-50%" },
                 ].map((item, i) => (
                   <div key={i} className="flex items-start space-x-3">
                     <div className="text-brand-400 mt-0.5">{item.icon}</div>
@@ -127,12 +128,21 @@ const Home = () => {
                   </div>
                 ))}
               </div>
+              <div className="flex flex-col sm:flex-row gap-3 mt-8">
+                <Link to="/request-pricing" className="btn-primary text-sm px-6 py-3 inline-flex items-center group">
+                  Request Pricing
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <Link to="/blog" className="btn-secondary text-sm px-6 py-3">
+                  Read Our Blog
+                </Link>
+              </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[
-                { num: "10", label: "Industries Served" },
+                { num: "10+", label: "Industries Served" },
                 { num: "5", label: "Chemistry Platforms" },
-                { num: "4", label: "Physical Forms" },
+                { num: "22+", label: "Product Grades" },
                 { num: "3", label: "ECO Grade Levels" },
               ].map((stat, i) => (
                 <div key={i} className="p-6 rounded-xl bg-white/5 border border-white/5 text-center">

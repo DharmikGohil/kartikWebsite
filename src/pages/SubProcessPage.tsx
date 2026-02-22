@@ -42,7 +42,7 @@ export default function SubProcessPage() {
             </Link>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-            {subProcess.name} <span className="text-gradient">Foam Control</span>
+            Defoamer for {subProcess.name}{subProcess.productGrades?.[0] && <span className="text-brand-400 ml-2">{subProcess.productGrades[0].code}</span>} <span className="text-gradient">Foam Control</span>
           </h1>
           <p className="text-lg text-gray-300 max-w-3xl leading-relaxed">
             {subProcess.engineeringApproach.description}

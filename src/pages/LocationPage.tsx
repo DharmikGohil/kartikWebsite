@@ -125,7 +125,7 @@ export default function LocationPage() {
         </section>
       )}
 
-      <FAQSection faqs={seo.faqs} heading={`Foam Control in ${locationName} — FAQ`} />
+      <FAQSection faqs={seo.faqs} heading={`Foam Control in ${locationName} - FAQ`} />
       <RelatedPages links={seo.relatedPages} heading="Related Solutions" hubLink={seo.hubPage} />
 
       {/* CTA */}

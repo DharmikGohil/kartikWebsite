@@ -93,7 +93,7 @@ export const chemistryPlatforms: ChemistryPlatform[] = [
     mechanism: "Polyether defoamers work through a cloud-point mechanism. Below their cloud point temperature, they are soluble and provide antifoaming action. Above the cloud point, they become insoluble and act as defoamers by entering foam films and causing destabilization. This temperature-dependent behavior allows controlled, persistent foam suppression.",
     advantages: [
       "Excellent compatibility with biological treatment systems",
-      "Low aquatic toxicity — suitable for sensitive discharge environments",
+      "Low aquatic toxicity - suitable for sensitive discharge environments",
       "Controlled, persistent foam suppression (not just knockdown)",
       "Good performance in surfactant-rich systems",
       "Temperature-responsive behavior allows process-tuned performance",
@@ -130,7 +130,7 @@ export const chemistryPlatforms: ChemistryPlatform[] = [
       "Derived from renewable, natural raw materials",
       "Very low aquatic toxicity and ecological impact",
       "Excellent compatibility with biological treatment processes",
-      "No silicone residues — suitable for food and pharma-adjacent use",
+      "No silicone residues - suitable for food and pharma-adjacent use",
       "Supports water reuse and zero liquid discharge (ZLD) targets",
     ],
     limitations: [
@@ -138,7 +138,7 @@ export const chemistryPlatforms: ChemistryPlatform[] = [
       "Not suitable for high-temperature applications (>100°C typically)",
       "Requires higher dosage rates for equivalent performance",
       "Limited effectiveness against aggressive mechanical foam",
-      "Shorter persistence — more frequent dosing needed",
+      "Shorter persistence - more frequent dosing needed",
     ],
     typicalApplications: [
       "Sugar and ethanol fermentation",
@@ -157,7 +157,7 @@ export const chemistryPlatforms: ChemistryPlatform[] = [
     slug: "hybrid-defoamer",
     name: "Hybrid & Specialty Defoamers",
     shortName: "Hybrid",
-    description: "Advanced foam control formulations that combine multiple chemistry platforms — such as silicone-polyether hybrids, modified silicone-organic blends, or multi-component systems — to achieve performance characteristics that no single platform can deliver alone. Engineered for complex processes with conflicting requirements.",
+    description: "Advanced foam control formulations that combine multiple chemistry platforms - such as silicone-polyether hybrids, modified silicone-organic blends, or multi-component systems - to achieve performance characteristics that no single platform can deliver alone. Engineered for complex processes with conflicting requirements.",
     mechanism: "Hybrid defoamers combine the rapid knockdown of silicone with the persistence of polyether, or the biodegradability of fatty esters with the efficiency of modified organics. The multi-component approach allows fine-tuning of incompatibility level, persistence, and environmental profile to match complex process requirements.",
     advantages: [
       "Combines strengths of multiple chemistry platforms",
@@ -168,7 +168,7 @@ export const chemistryPlatforms: ChemistryPlatform[] = [
       "Versatile across varying process conditions",
     ],
     limitations: [
-      "More complex formulation — higher development cost",
+      "More complex formulation - higher development cost",
       "Performance optimization requires detailed process understanding",
       "May not match pure silicone in extreme conditions",
       "Requires careful compatibility testing",

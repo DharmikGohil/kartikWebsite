@@ -1,3 +1,11 @@
+export interface ProductGrade {
+  code: string;
+  tradeName: string;
+  type: string;
+  form: string;
+  description: string;
+}
+
 export interface SubProcess {
   name: string;
   foamChallenges: string[];
@@ -15,6 +23,7 @@ export interface SubProcess {
     ecoGrade: string;
   };
   solutionConfigurations: string[];
+  productGrades?: ProductGrade[];
 }
 
 export interface IndustryData {
@@ -59,6 +68,9 @@ export const industries: IndustryData[] = [
           "Continuous-dose emulsion for wash baths",
           "Intermittent shock dosing for foam spikes",
         ],
+        productGrades: [
+          { code: "TP-101", tradeName: "Defoamer for Washing / Scouring / Pretreatment TP-101", type: "Oil-modified silicone emulsion", form: "Emulsion", description: "General-purpose wash bath defoamer for continuous dosing at 60-95°C" },
+        ],
       },
       {
         name: "High-Temperature Dyeing (Jet / Winch)",
@@ -84,6 +96,9 @@ export const industries: IndustryData[] = [
           "High-temperature liquid defoamer for jet machines",
           "Pre-dosing system to prevent foam formation",
         ],
+        productGrades: [
+          { code: "TP-201", tradeName: "Defoamer for High-Temperature Dyeing TP-201", type: "Modified silicone liquid", form: "Liquid", description: "Thermal-stable defoamer for jet dyeing at 80-130°C with controlled incompatibility" },
+        ],
       },
       {
         name: "Finishing / Padding / Softening",
@@ -108,6 +123,9 @@ export const industries: IndustryData[] = [
         solutionConfigurations: [
           "Low-residue finishing defoamer",
           "Spray-safe foam control additive",
+        ],
+        productGrades: [
+          { code: "TP-301", tradeName: "Defoamer for Finishing / Padding / Softening TP-301", type: "Polyether emulsion", form: "Emulsion", description: "Ultra-low residue defoamer for padding and softening, no surface spots" },
         ],
       },
     ],
@@ -143,6 +161,9 @@ export const industries: IndustryData[] = [
           "Continuous-dose aeration defoamer",
           "Shock-dose foam breaker",
         ],
+        productGrades: [
+          { code: "WW-101", tradeName: "Defoamer for Aeration Tank WW-101", type: "Polyether emulsion", form: "Emulsion", description: "Continuous-dose aeration tank defoamer, bio-safe with long persistence" },
+        ],
       },
       {
         name: "Clarifier / Secondary Settling",
@@ -167,6 +188,9 @@ export const industries: IndustryData[] = [
         solutionConfigurations: [
           "Clarifier-safe foam control system",
         ],
+        productGrades: [
+          { code: "WW-201", tradeName: "Defoamer for Clarifier / Secondary Settling WW-201", type: "Fatty ester emulsion", form: "Emulsion", description: "Gentle clarifier foam control with minimal sludge disturbance" },
+        ],
       },
       {
         name: "Sludge Handling / Thickener",
@@ -189,6 +213,9 @@ export const industries: IndustryData[] = [
         },
         solutionConfigurations: [
           "Pump-line air-release defoamer",
+        ],
+        productGrades: [
+          { code: "WW-301", tradeName: "Defoamer for Sludge Handling / Thickener WW-301", type: "Low-dose silicone hybrid", form: "Liquid", description: "Rapid air-release defoamer for sludge pumping lines" },
         ],
       },
     ],
@@ -225,6 +252,9 @@ export const industries: IndustryData[] = [
           "Grinding-stage air-release additive",
           "Pre-dispersion foam suppression system",
         ],
+        productGrades: [
+          { code: "PC-101", tradeName: "Defoamer for Raw Material Grinding / Dispersion PC-101", type: "Modified silicone liquid", form: "Liquid", description: "Controlled air-release for high-speed dispersion, no surface defects" },
+        ],
       },
       {
         name: "Let-Down / Formulation Adjustment",
@@ -249,6 +279,9 @@ export const industries: IndustryData[] = [
         solutionConfigurations: [
           "Let-down-stage foam control additive",
         ],
+        productGrades: [
+          { code: "PC-201", tradeName: "Defoamer for Let-Down / Formulation Adjustment PC-201", type: "Polyether liquid", form: "Liquid", description: "Ultra-low incompatibility defoamer for let-down, zero gloss impact" },
+        ],
       },
       {
         name: "Filling / Packaging",
@@ -272,6 +305,9 @@ export const industries: IndustryData[] = [
         },
         solutionConfigurations: [
           "Filling-line foam suppressor",
+        ],
+        productGrades: [
+          { code: "PC-301", tradeName: "Defoamer for Filling / Packaging PC-301", type: "Polyether liquid", form: "Liquid", description: "Instant surface foam collapse for filling lines, no residue" },
         ],
       },
     ],
@@ -306,6 +342,9 @@ export const industries: IndustryData[] = [
         solutionConfigurations: [
           "Stock-prep foam control system",
         ],
+        productGrades: [
+          { code: "PP-101", tradeName: "Defoamer for Pulp Washing / Stock Preparation PP-101", type: "Silicone compound emulsion", form: "Emulsion", description: "High-persistence foam control for pulp washing recycle loops" },
+        ],
       },
       {
         name: "Paper Machine (Forming Section)",
@@ -329,6 +368,9 @@ export const industries: IndustryData[] = [
         },
         solutionConfigurations: [
           "Machine-section foam control additive",
+        ],
+        productGrades: [
+          { code: "PP-201", tradeName: "Defoamer for Paper Machine (Forming Section) PP-201", type: "Controlled silicone liquid", form: "Liquid", description: "Fast thin-film foam rupture for paper machine forming section" },
         ],
       },
     ],
@@ -363,6 +405,9 @@ export const industries: IndustryData[] = [
         solutionConfigurations: [
           "Dry-mix powder defoamer",
         ],
+        productGrades: [
+          { code: "CC-101", tradeName: "Defoamer for Dry Mortar / Premix Systems CC-101", type: "Silicone on solid carrier", form: "Powder", description: "Delayed-activation powder defoamer for dry mortar premix systems" },
+        ],
       },
       {
         name: "Ready-Mix Concrete",
@@ -386,6 +431,9 @@ export const industries: IndustryData[] = [
         },
         solutionConfigurations: [
           "Liquid air-release agent",
+        ],
+        productGrades: [
+          { code: "CC-201", tradeName: "Defoamer for Ready-Mix Concrete CC-201", type: "Liquid silicone defoamer", form: "Liquid", description: "Rapid air-release agent for ready-mix concrete, admixture compatible" },
         ],
       },
     ],
@@ -420,6 +468,9 @@ export const industries: IndustryData[] = [
         solutionConfigurations: [
           "Continuous fermentation foam control",
         ],
+        productGrades: [
+          { code: "SF-101", tradeName: "Defoamer for Fermentation SF-101", type: "Fatty ester emulsion", form: "Emulsion", description: "Biodegradable fermentation defoamer, low toxicity with controlled persistence" },
+        ],
       },
       {
         name: "Evaporation / Distillation",
@@ -443,6 +494,9 @@ export const industries: IndustryData[] = [
         },
         solutionConfigurations: [
           "Evaporation-stage foam suppressor",
+        ],
+        productGrades: [
+          { code: "SF-201", tradeName: "Defoamer for Evaporation / Distillation SF-201", type: "Silicone-free polyether liquid", form: "Liquid", description: "Thermal-stable evaporation defoamer, no contamination risk" },
         ],
       },
     ],
@@ -469,7 +523,7 @@ export const industries: IndustryData[] = [
           shearLevel: "Low–Medium",
         },
         engineeringApproach: {
-          description: "Silicone-free or ultra-low silicone preference. Focus on biodegradability and low bio-accumulation. Controlled persistence — foam control without residual activity. Compliance-driven material selection.",
+          description: "Silicone-free or ultra-low silicone preference. Focus on biodegradability and low bio-accumulation. Controlled persistence - foam control without residual activity. Compliance-driven material selection.",
           chemistryPlatforms: "Polyether | Fatty ester | Food-safe hybrids",
           physicalForms: "Water-based emulsions",
           incompatibilityLevel: "Moderate and temporary",
@@ -478,6 +532,9 @@ export const industries: IndustryData[] = [
         solutionConfigurations: [
           "Fermentation foam control systems",
           "Evaporation and concentration foam suppressors",
+        ],
+        productGrades: [
+          { code: "FB-101", tradeName: "Defoamer for Fermentation (Food-Grade) FB-101", type: "Polyether emulsion (food-process)", form: "Emulsion", description: "Food-process compatible fermentation defoamer, qualification based" },
         ],
       },
       {
@@ -503,6 +560,9 @@ export const industries: IndustryData[] = [
         solutionConfigurations: [
           "CIP-compatible foam control additives",
         ],
+        productGrades: [
+          { code: "FB-201", tradeName: "Defoamer for CIP (Clean-in-Place) Systems FB-201", type: "Polyether emulsion (CIP-safe)", form: "Emulsion", description: "Acid and caustic compatible CIP defoamer, no surface residue" },
+        ],
       },
       {
         name: "Evaporation & Concentration",
@@ -526,6 +586,9 @@ export const industries: IndustryData[] = [
         },
         solutionConfigurations: [
           "Evaporation-stage foam suppressors (food-grade)",
+        ],
+        productGrades: [
+          { code: "FB-301", tradeName: "Defoamer for Evaporation & Concentration FB-301", type: "Food-safe polyether liquid", form: "Liquid", description: "Thermal-stable evaporation defoamer for food-grade concentration" },
         ],
       },
     ],
@@ -563,6 +626,9 @@ export const industries: IndustryData[] = [
           "Bioreactor foam control systems",
           "Fermentation batch stabilizers",
         ],
+        productGrades: [
+          { code: "PB-101", tradeName: "Defoamer for Bioreactor Foam Control PB-101", type: "High-purity polyether emulsion", form: "Emulsion", description: "Ultra-pure bioreactor defoamer, sterile-compatible and validation-ready" },
+        ],
       },
       {
         name: "API Processing & Crystallization",
@@ -586,6 +652,9 @@ export const industries: IndustryData[] = [
         },
         solutionConfigurations: [
           "API-stage foam control (custom qualification)",
+        ],
+        productGrades: [
+          { code: "PB-201", tradeName: "Defoamer for API Processing & Crystallization PB-201", type: "High-purity polyether liquid", form: "Liquid", description: "Zero-residue API processing defoamer, validation documentation available" },
         ],
       },
     ],
@@ -621,6 +690,9 @@ export const industries: IndustryData[] = [
         solutionConfigurations: [
           "Separator foam control agents",
         ],
+        productGrades: [
+          { code: "OG-101", tradeName: "Defoamer for Separator Foam Control OG-101", type: "Modified silicone concentrate", form: "Liquid", description: "Extreme thermal stability separator defoamer, up to 200°C" },
+        ],
       },
       {
         name: "Distillation Unit Foam Control",
@@ -645,6 +717,9 @@ export const industries: IndustryData[] = [
         solutionConfigurations: [
           "Distillation unit foam suppressors",
         ],
+        productGrades: [
+          { code: "OG-201", tradeName: "Defoamer for Distillation Unit OG-201", type: "High-temperature silicone compound", form: "Liquid", description: "Ultra-high temp distillation defoamer, no decomposition products" },
+        ],
       },
       {
         name: "Drilling Mud Systems",
@@ -668,6 +743,9 @@ export const industries: IndustryData[] = [
         },
         solutionConfigurations: [
           "Drilling-grade defoamer for mud systems",
+        ],
+        productGrades: [
+          { code: "OG-301", tradeName: "Defoamer for Drilling Mud Systems OG-301", type: "Modified silicone liquid", form: "Liquid", description: "High-shear drilling mud defoamer, WBM and OBM compatible" },
         ],
       },
     ],
@@ -703,6 +781,9 @@ export const industries: IndustryData[] = [
         solutionConfigurations: [
           "Aeration tank foam control for reuse plants",
         ],
+        productGrades: [
+          { code: "MW-101", tradeName: "Defoamer for Aeration Tank (Reuse-Grade STP) MW-101", type: "Polyether emulsion (reuse-grade)", form: "Emulsion", description: "Silicone-free aeration defoamer for reuse-oriented STPs" },
+        ],
       },
       {
         name: "Clarifier (Reuse Systems)",
@@ -726,6 +807,9 @@ export const industries: IndustryData[] = [
         },
         solutionConfigurations: [
           "Clarifier-safe foam suppression systems",
+        ],
+        productGrades: [
+          { code: "MW-201", tradeName: "Defoamer for Clarifier (Reuse Systems) MW-201", type: "Fatty ester emulsion (reuse-grade)", form: "Emulsion", description: "Gentle clarifier foam control for reuse-grade effluent quality" },
         ],
       },
     ],

@@ -170,7 +170,7 @@ export function getLocationProblemPageSEO(
   ];
 
   const relatedProblems = [
-    { href: `/foam-problems/${problemSlug}`, label: `${problem.name} — Full Guide`, description: problem.description.split(".")[0] + "." },
+    { href: `/foam-problems/${problemSlug}`, label: `${problem.name} - Full Guide`, description: problem.description.split(".")[0] + "." },
     ...affectedIndustries.slice(0, 2).map((i) => ({
       href: `/solutions/${i.slug}`,
       label: `${i.name} Foam Control`,
@@ -197,6 +197,6 @@ export function getLocationProblemPageSEO(
       ),
     ],
     relatedPages: relatedProblems,
-    hubPage: { href: `/foam-problems/${problemSlug}`, label: `${problem.name} — Full Guide` },
+    hubPage: { href: `/foam-problems/${problemSlug}`, label: `${problem.name} - Full Guide` },
   };
 }

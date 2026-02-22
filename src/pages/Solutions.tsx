@@ -17,7 +17,7 @@ const Solutions = () => {
             Solutions by <span className="text-gradient">Industry</span>
           </h1>
           <p className="text-lg text-gray-300 leading-relaxed">
-            Every industry has unique foam challenges, operating conditions and chemistry requirements. We engineer foam control solutions specific to each — not one-size-fits-all products.
+            Every industry has unique foam challenges, operating conditions and chemistry requirements. We engineer foam control solutions specific to each - not one-size-fits-all products.
           </p>
         </div>
       </section>

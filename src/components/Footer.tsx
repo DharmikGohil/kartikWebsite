@@ -51,10 +51,10 @@ const Footer = () => {
                 { name: "Chemistry Platforms", href: "/chemistry" },
                 { name: "Foam Problems", href: "/foam-problems" },
                 { name: "Technologies", href: "/technologies" },
-                { name: "Locations (India)", href: "/locations" },
-                { name: "Global Locations", href: "/global" },
+                { name: "Blog", href: "/blog" },
                 { name: "Sustainability", href: "/sustainability" },
                 { name: "About", href: "/about" },
+                { name: "Request Pricing", href: "/request-pricing" },
                 { name: "Contact", href: "/contact" },
               ].map((link) => (
                 <li key={link.name}>
@@ -88,7 +88,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin size={15} className="text-brand-400" />
-                <span className="text-gray-400 text-sm">Ahmedabad, Gujarat, India</span>
+                <span className="text-gray-400 text-sm">Surat, Gujarat, India - 395006</span>
               </div>
             </div>
           </div>
@@ -96,9 +96,13 @@ const Footer = () => {
 
         <div className="border-t border-white/5 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-gray-500 text-sm">© {currentYear} ChemAssure Global. All rights reserved.</p>
-          <div className="text-gray-500 text-sm">
-            Designed & Developed by{' '}
-            <a href="https://www.linkedin.com/in/dharmikgohil/" target="_blank" rel="noopener noreferrer" className="text-brand-400 hover:text-brand-300 transition-colors">Dharmik Gohil</a>
+          <div className="flex items-center space-x-4">
+            <Link to="/privacy-policy" className="text-gray-500 hover:text-gray-400 text-sm transition-colors">Privacy Policy</Link>
+            <Link to="/terms" className="text-gray-500 hover:text-gray-400 text-sm transition-colors">Terms</Link>
+            <span className="text-gray-500 text-sm">
+              Designed & Developed by{' '}
+              <a href="https://www.linkedin.com/in/dharmikgohil/" target="_blank" rel="noopener noreferrer" className="text-brand-400 hover:text-brand-300 transition-colors">Dharmik Gohil</a>
+            </span>
           </div>
         </div>
       </div>

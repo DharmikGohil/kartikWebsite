@@ -29,7 +29,9 @@ const SubProcessBlock = ({
 }) => (
   <div className="border border-white/5 rounded-2xl overflow-hidden">
     <div className="bg-white/[0.03] px-6 sm:px-8 py-5 border-b border-white/5 flex items-center justify-between">
-      <h3 className="text-xl sm:text-2xl font-bold text-white">{sub.name}</h3>
+      <h3 className="text-xl sm:text-2xl font-bold text-white">
+        Defoamer for {sub.name}{sub.productGrades?.[0] && <span className="text-brand-400 ml-2">{sub.productGrades[0].code}</span>}
+      </h3>
       <Link
         to={`/solutions/${industrySlug}/${slugify(sub.name)}`}
         className="text-brand-400 hover:text-brand-300 text-xs font-medium inline-flex items-center transition-colors"
@@ -130,6 +132,7 @@ const SubProcessBlock = ({
           ))}
         </div>
       </div>
+
     </div>
   </div>
 );

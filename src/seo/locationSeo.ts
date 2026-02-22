@@ -37,7 +37,7 @@ export function getLocationPageSEO(stateSlug: string, citySlug?: string): SEOPag
   const faqs: FAQItem[] = [
     {
       question: `What foam control solutions are available in ${locationName}?`,
-      answer: `ChemAssure Global provides engineered defoamer and antifoam solutions for ${industryNames} in ${locationName}. We configure solutions based on your specific process conditions — temperature, pH, shear level, and chemistry compatibility.`,
+      answer: `ChemAssure Global provides engineered defoamer and antifoam solutions for ${industryNames} in ${locationName}. We configure solutions based on your specific process conditions - temperature, pH, shear level, and chemistry compatibility.`,
     },
     {
       question: `Which industries does ChemAssure serve in ${state.name}?`,
@@ -88,7 +88,7 @@ export function getLocationsHubSEO(): SEOPageData {
   const faqs: FAQItem[] = [
     {
       question: "Where does ChemAssure Global operate?",
-      answer: `We serve industrial clients across ${states.length} Indian states including ${states.slice(0, 5).map((s) => s.name).join(", ")}, and more. Our headquarters is in Ahmedabad, Gujarat.`,
+      answer: `We serve industrial clients across ${states.length} Indian states including ${states.slice(0, 5).map((s) => s.name).join(", ")}, and more. Our headquarters is in Surat, Gujarat.`,
     },
     {
       question: "Do you provide on-site technical support?",

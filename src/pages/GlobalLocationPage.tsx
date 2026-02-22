@@ -84,7 +84,7 @@ export default function GlobalLocationPage() {
         </section>
       )}
 
-      <FAQSection faqs={seo.faqs} heading={`Foam Control in ${locationName} — FAQ`} />
+      <FAQSection faqs={seo.faqs} heading={`Foam Control in ${locationName} - FAQ`} />
       <RelatedPages links={seo.relatedPages} heading="Related Solutions" hubLink={seo.hubPage} />
 
       <section className="section-padding">
@@ -141,7 +141,7 @@ export function GlobalHubPage() {
         </section>
       ))}
 
-      <FAQSection faqs={seo.faqs} heading="Global Foam Control — FAQ" />
+      <FAQSection faqs={seo.faqs} heading="Global Foam Control - FAQ" />
       <RelatedPages links={seo.relatedPages} heading="Related" hubLink={seo.hubPage} />
     </div>
   );

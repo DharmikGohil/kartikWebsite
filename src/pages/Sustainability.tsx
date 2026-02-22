@@ -76,7 +76,7 @@ const Sustainability = () => {
               <div>
                 <h3 className="text-lg font-semibold text-white mb-2">A Note on Honesty</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Sustainability performance depends on application and system design. We don't make blanket "green" claims. Instead, we work with you to understand your environmental targets and configure solutions that genuinely move you toward them — with measurable results, not marketing language.
+                  Sustainability performance depends on application and system design. We don't make blanket "green" claims. Instead, we work with you to understand your environmental targets and configure solutions that genuinely move you toward them - with measurable results, not marketing language.
                 </p>
               </div>
             </div>

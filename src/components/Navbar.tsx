@@ -17,7 +17,7 @@ const Navbar = () => {
     { name: "Home", href: "/" },
     { name: "Engineering", href: "/foam-control-engineering" },
     { name: "Technologies", href: "/technologies" },
-    { name: "Sustainability", href: "/sustainability" },
+    { name: "Blog", href: "/blog" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
   ];

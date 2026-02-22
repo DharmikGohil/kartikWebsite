@@ -14,6 +14,12 @@ const Technologies = lazy(() => import("./pages/Technologies"));
 const Sustainability = lazy(() => import("./pages/Sustainability"));
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
+const Blog = lazy(() => import("./pages/Blog"));
+const BlogArticle = lazy(() => import("./pages/BlogArticle"));
+const RequestPricing = lazy(() => import("./pages/RequestPricing"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const Terms = lazy(() => import("./pages/Terms"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Programmatic SEO page templates
 const LocationsHub = lazy(() => import("./pages/LocationsHub"));
@@ -55,24 +61,29 @@ function App() {
             <Route path="/sustainability" element={<Sustainability />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:articleSlug" element={<BlogArticle />} />
+            <Route path="/request-pricing" element={<RequestPricing />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<Terms />} />
 
             {/* Industry pages (hub → industry → sub-process) */}
             <Route path="/solutions" element={<Solutions />} />
             <Route path="/solutions/:industrySlug" element={<IndustryPage />} />
             <Route path="/solutions/:industrySlug/:subProcessSlug" element={<SubProcessPage />} />
 
-            {/* Location pages — India (hub → state → city) */}
+            {/* Location pages - India (hub → state → city) */}
             <Route path="/locations" element={<LocationsHub />} />
             <Route path="/locations/:stateSlug" element={<LocationPage />} />
             <Route path="/locations/:stateSlug/:citySlug" element={<LocationPage />} />
 
-            {/* Location × Industry cross-product — India */}
+            {/* Location × Industry cross-product - India */}
             <Route path="/locations/:stateSlug/:citySlug/:industrySlug" element={<LocationIndustryPage />} />
 
-            {/* Location × Chemistry cross-product — India */}
+            {/* Location × Chemistry cross-product - India */}
             <Route path="/locations/:stateSlug/:citySlug/chemistry/:chemistrySlug" element={<LocationChemistryPage />} />
 
-            {/* Location × Problem cross-product — India */}
+            {/* Location × Problem cross-product - India */}
             <Route path="/locations/:stateSlug/:citySlug/foam-problems/:problemSlug" element={<LocationProblemPage />} />
 
             {/* Global/International pages (hub → country → city) */}
@@ -97,6 +108,9 @@ function App() {
             {/* Foam problem pages (hub → problem) */}
             <Route path="/foam-problems" element={<ProblemsHubPage />} />
             <Route path="/foam-problems/:problemSlug" element={<FoamProblemPage />} />
+
+            {/* 404 */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
       </main>

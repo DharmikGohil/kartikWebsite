@@ -62,7 +62,7 @@ export const foamProblems: FoamProblem[] = [
     slug: "pump-cavitation-from-foam",
     name: "Pump Cavitation from Foam",
     searchIntent: "foam causing pump cavitation industrial process",
-    description: "Entrained air and foam in process liquids cause pump cavitation — the formation and collapse of vapor bubbles inside the pump. This leads to reduced pumping efficiency, mechanical damage, vibration, noise, and premature pump failure.",
+    description: "Entrained air and foam in process liquids cause pump cavitation - the formation and collapse of vapor bubbles inside the pump. This leads to reduced pumping efficiency, mechanical damage, vibration, noise, and premature pump failure.",
     causes: ["Entrained air in process liquor from upstream foam", "Vortex formation at pump suction drawing in air", "Foam carry-over from upstream vessels", "Inadequate deaeration before pumping", "High surfactant levels stabilizing micro-bubbles", "Process upsets causing sudden foam generation"],
     consequences: ["Reduced pump efficiency and flow rate", "Mechanical damage to pump impeller and seals", "Excessive vibration and noise", "Premature pump failure and replacement costs", "Process flow interruptions", "Increased maintenance frequency and downtime"],
     solutionApproach: "Pump cavitation from foam requires rapid air-release defoamers dosed upstream of the pump. We recommend fast-acting silicone or hybrid systems that quickly collapse entrained air.",

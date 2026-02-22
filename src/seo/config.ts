@@ -17,7 +17,9 @@ export const ORGANIZATION_SCHEMA = {
   serviceType: "Foam Control Solutions",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Ahmedabad",
+    streetAddress: "Ground Floor, Plot No. 134, Pramukh Park Society, Sanya Road, Simada Gam, Patel Park",
+    addressLocality: "Surat",
+    postalCode: "395006",
     addressRegion: "Gujarat",
     addressCountry: "IN",
   },

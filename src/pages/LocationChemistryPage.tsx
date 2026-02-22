@@ -113,7 +113,7 @@ export default function LocationChemistryPage() {
         </div>
       </section>
 
-      <FAQSection faqs={seo.faqs} heading={`${chem.shortName} Defoamers in ${locationName} — FAQ`} />
+      <FAQSection faqs={seo.faqs} heading={`${chem.shortName} Defoamers in ${locationName} - FAQ`} />
       <RelatedPages links={seo.relatedPages} heading="Related Solutions" hubLink={seo.hubPage} />
 
       <section className="section-padding">

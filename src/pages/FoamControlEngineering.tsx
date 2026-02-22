@@ -13,7 +13,7 @@ const FoamControlEngineering = () => {
     {
       icon: <Thermometer className="w-8 h-8" />,
       title: "Process Window",
-      desc: "Temperature, pH, shear level and contact time define the operating window. A defoamer that works at 40°C may fail at 120°C. We match the solution to your actual plant conditions — not lab conditions.",
+      desc: "Temperature, pH, shear level and contact time define the operating window. A defoamer that works at 40°C may fail at 120°C. We match the solution to your actual plant conditions - not lab conditions.",
     },
     {
       icon: <FlaskConical className="w-8 h-8" />,
@@ -23,12 +23,12 @@ const FoamControlEngineering = () => {
     {
       icon: <Box className="w-8 h-8" />,
       title: "Physical Form",
-      desc: "Liquid, emulsion, powder or granular — the physical form affects dosing, dispersion and performance. We recommend the form that fits your dosing system and process requirements.",
+      desc: "Liquid, emulsion, powder or granular - the physical form affects dosing, dispersion and performance. We recommend the form that fits your dosing system and process requirements.",
     },
     {
       icon: <Leaf className="w-8 h-8" />,
       title: "Environmental Profile",
-      desc: "Industrial grade, ETP compatible, water-reuse oriented or food-contact capable — we match the environmental profile to your discharge requirements and sustainability goals.",
+      desc: "Industrial grade, ETP compatible, water-reuse oriented or food-contact capable - we match the environmental profile to your discharge requirements and sustainability goals.",
     },
   ]
 
@@ -45,7 +45,7 @@ const FoamControlEngineering = () => {
             We don't just sell defoamers. We control foam by understanding your process.
           </p>
           <p className="text-gray-400 leading-relaxed">
-            Every foam problem has a root cause. Our engineering approach identifies that cause and matches the right chemistry, form and dosage to solve it reliably — under your real plant conditions, not theoretical ones.
+            Every foam problem has a root cause. Our engineering approach identifies that cause and matches the right chemistry, form and dosage to solve it reliably - under your real plant conditions, not theoretical ones.
           </p>
         </div>
       </section>
@@ -83,7 +83,7 @@ const FoamControlEngineering = () => {
           <div className="bg-gradient-to-r from-brand-900/20 to-brand-800/10 border border-brand-500/15 rounded-2xl p-10 sm:p-14">
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">The Result</h2>
             <p className="text-gray-300 text-lg leading-relaxed mb-6 max-w-3xl">
-              When you combine foam mechanism understanding, process window analysis, chemistry compatibility, physical form selection and environmental profiling — you get a solution that works. Not a product. A configuration designed for your process.
+              When you combine foam mechanism understanding, process window analysis, chemistry compatibility, physical form selection and environmental profiling - you get a solution that works. Not a product. A configuration designed for your process.
             </p>
             <Link to="/contact" className="btn-primary inline-flex items-center group">
               Discuss Your Process

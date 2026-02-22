@@ -20,7 +20,7 @@ export function getFoamProblemPageSEO(problemSlug?: string): SEOPageData {
       },
       {
         question: "How does ChemAssure solve foam problems?",
-        answer: "We start by identifying the root cause — foam mechanism, process conditions, and chemistry environment. Then we configure the right defoamer chemistry, physical form, and dosage for your specific conditions. No generic solutions.",
+        answer: "We start by identifying the root cause - foam mechanism, process conditions, and chemistry environment. Then we configure the right defoamer chemistry, physical form, and dosage for your specific conditions. No generic solutions.",
       },
     ];
     return {
@@ -83,7 +83,7 @@ export function getFoamProblemPageSEO(problemSlug?: string): SEOPageData {
 
   return {
     meta: {
-      title: `${problem.name} — Causes, Solutions & Defoamer Selection | ${SITE_NAME}`,
+      title: `${problem.name} - Causes, Solutions & Defoamer Selection | ${SITE_NAME}`,
       description: `${problem.description.split(".").slice(0, 2).join(".")}. Affects ${affectedIndustries.map((i) => i.name.toLowerCase()).join(", ")}. Engineered solutions from ${SITE_NAME}.`,
       canonical: `/foam-problems/${problemSlug}`,
     },
@@ -93,7 +93,7 @@ export function getFoamProblemPageSEO(problemSlug?: string): SEOPageData {
       buildBreadcrumbSchema(breadcrumbs),
       buildFAQSchema(faqs)!,
       buildWebPageSchema(
-        `${problem.name} — Solutions`,
+        `${problem.name} - Solutions`,
         problem.description,
         `/foam-problems/${problemSlug}`
       ),

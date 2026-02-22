@@ -168,7 +168,7 @@ export default function FoamProblemPage() {
         </div>
       </section>
 
-      <FAQSection faqs={seo.faqs} heading={`${problem.name} — FAQ`} />
+      <FAQSection faqs={seo.faqs} heading={`${problem.name} - FAQ`} />
       <RelatedPages links={seo.relatedPages} heading="Related Foam Problems" hubLink={seo.hubPage} />
 
       <section className="section-padding bg-navy-950/50">
