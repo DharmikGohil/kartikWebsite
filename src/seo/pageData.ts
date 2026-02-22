@@ -56,7 +56,7 @@ export function getHomePageSEO(): SEOPageData {
     {
       question: "Where is ChemAssure Global located?",
       answer:
-        "We are headquartered in Surat, Gujarat, India, and serve industrial clients across India with global-standard foam control engineering.",
+        "We are headquartered at Ground Floor, Plot No. 134, Pramukh Park Society, Sanya Road, Simada Gam, Patel Park, Surat - 395006, Gujarat, India, and serve industrial clients across India with global-standard foam control engineering.",
     },
   ];
 

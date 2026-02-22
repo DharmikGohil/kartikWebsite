@@ -88,7 +88,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin size={15} className="text-brand-400" />
-                <span className="text-gray-400 text-sm">Surat, Gujarat, India - 395006</span>
+                <span className="text-gray-400 text-sm">Ground Floor, Plot No. 134, Pramukh Park Society, Sanya Road, Simada Gam, Patel Park, Surat - 395006, Gujarat, India</span>
               </div>
             </div>
           </div>

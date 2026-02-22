@@ -170,7 +170,7 @@ Contact: ${formData.name} | ${formData.email} | ${formData.company} | ${formData
                     <Phone size={16} className="text-brand-400" /><span>+91 93137 49421</span>
                   </a>
                   <div className="flex items-center space-x-3 text-gray-400 text-sm">
-                    <MapPin size={16} className="text-brand-400" /><span>Surat, Gujarat, India - 395006</span>
+                    <MapPin size={16} className="text-brand-400" /><span>Ground Floor, Plot No. 134, Pramukh Park Society, Sanya Road, Simada Gam, Patel Park, Surat - 395006, Gujarat, India</span>
                   </div>
                 </div>
               </div>

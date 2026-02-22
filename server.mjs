@@ -155,7 +155,7 @@ app.post('/api/download-report', async (req, res) => {
                     📱 <a href="tel:+919313749421" style="color: #0066cc;">+91 93137 49421</a>
                   </p>
                   <p style="color: #333; margin: 5px 0;">
-                    📍 Surat, Gujarat, India - 395006
+                    📍 Ground Floor, Plot No. 134, Pramukh Park Society, Sanya Road, Simada Gam, Patel Park, Surat - 395006, Gujarat, India
                   </p>
                 </div>
                 

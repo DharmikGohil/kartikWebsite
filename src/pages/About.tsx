@@ -46,7 +46,7 @@ const About = () => {
               {[
                 { label: "Company Name", value: "ChemAssure Global" },
                 { label: "Industry", value: "Specialty Chemicals - Foam Control" },
-                { label: "Headquarters", value: "Surat, Gujarat, India" },
+                { label: "Headquarters", value: "Ground Floor, Plot No. 134, Pramukh Park Society, Sanya Road, Simada Gam, Patel Park, Surat - 395006, Gujarat, India" },
                 { label: "Sectors Served", value: "10+ Industrial Sectors" },
                 { label: "Product Range", value: "Defoamers & Antifoams" },
                 { label: "Chemistry Platforms", value: "Silicone, Polyether, Fatty Ester, Hybrid" },
