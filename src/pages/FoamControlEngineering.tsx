@@ -9,26 +9,31 @@ const FoamControlEngineering = () => {
       icon: <Waves className="w-8 h-8" />,
       title: "Foam Mechanism",
       desc: "We start by understanding how foam forms in your process. Is it surfactant-driven, mechanical, biological or resin-based? Each type requires a different control strategy. Applying the wrong approach wastes chemical and creates new problems.",
+      bgImage: "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=800&q=60",
     },
     {
       icon: <Thermometer className="w-8 h-8" />,
       title: "Process Window",
       desc: "Temperature, pH, shear level and contact time define the operating window. A defoamer that works at 40°C may fail at 120°C. We match the solution to your actual plant conditions - not lab conditions.",
+      bgImage: "https://images.unsplash.com/photo-1581093458791-9d42e3c7e117?w=800&q=60",
     },
     {
       icon: <FlaskConical className="w-8 h-8" />,
       title: "Chemistry Compatibility",
       desc: "The defoamer must work with your process chemistry, not against it. Silicone in the wrong textile process causes spots. The wrong chemistry in paint causes craters. We select platforms that are compatible with your system.",
+      bgImage: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&q=60",
     },
     {
       icon: <Box className="w-8 h-8" />,
       title: "Physical Form",
       desc: "Liquid, emulsion, powder or granular - the physical form affects dosing, dispersion and performance. We recommend the form that fits your dosing system and process requirements.",
+      bgImage: "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=800&q=60",
     },
     {
       icon: <Leaf className="w-8 h-8" />,
       title: "Environmental Profile",
       desc: "Industrial grade, ETP compatible, water-reuse oriented or food-contact capable - we match the environmental profile to your discharge requirements and sustainability goals.",
+      bgImage: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=60",
     },
   ]
 
@@ -70,12 +75,16 @@ const FoamControlEngineering = () => {
             {pillars.map((p, i) => (
               <div
                 key={i}
-                className="flex flex-col md:flex-row items-start gap-6 p-8 rounded-xl bg-white/5 border border-white/5"
+                className="relative flex flex-col md:flex-row items-start gap-6 p-8 rounded-xl border border-white/5 overflow-hidden group"
               >
-                <div className="w-16 h-16 bg-brand-600/15 rounded-xl flex items-center justify-center text-brand-400 flex-shrink-0">
+                <div className="absolute inset-0">
+                  <img src={p.bgImage} alt="" className="w-full h-full object-cover opacity-30 group-hover:opacity-40 transition-opacity duration-500" loading="lazy" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-900/70 to-navy-900/60" />
+                </div>
+                <div className="relative z-10 w-16 h-16 bg-brand-600/15 rounded-xl flex items-center justify-center text-brand-400 flex-shrink-0">
                   {p.icon}
                 </div>
-                <div>
+                <div className="relative z-10">
                   <h3 className="text-xl font-semibold text-white mb-3">{p.title}</h3>
                   <p className="text-gray-400 leading-relaxed">{p.desc}</p>
                 </div>

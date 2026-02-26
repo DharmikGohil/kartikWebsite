@@ -8,24 +8,28 @@ const chemistryPlatforms = [
     body: "High-efficiency foam control systems offering rapid knockdown under high temperature and shear conditions. Selected for demanding industrial processes where fast foam collapse is critical.",
     tags: "Textile, Paper, Paint, Polymer",
     icon: <Beaker className="w-5 h-5" />,
+    bgImage: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&q=60",
   },
   {
     title: "Silicone-Free",
     body: "Foam control solutions designed without silicone for sensitive systems requiring low surface interaction, improved biodegradability and minimal residue formation during processing.",
     tags: "ETP, Paint, Food-adjacent, Finishing",
     icon: <Droplets className="w-5 h-5" />,
+    bgImage: "https://images.unsplash.com/photo-1616400619175-5beda3a17896?w=800&q=60",
   },
   {
     title: "Polyether-Based",
     body: "Controlled defoaming systems offering balanced persistence and low toxicity, suitable for biological, surfactant-rich and water-based processes requiring stable foam suppression.",
     tags: "ETP, Fermentation, Coatings",
     icon: <Wind className="w-5 h-5" />,
+    bgImage: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&q=60",
   },
   {
     title: "Fatty Ester-Based",
     body: "Biodegradability-focused foam control solutions developed for biological and fermentation systems where environmental profile and controlled persistence are prioritized over aggressive foam breaking.",
     tags: "Sugar, ETP, Bio-processes",
     icon: <Trees className="w-5 h-5" />,
+    bgImage: "https://images.unsplash.com/photo-1530587191325-3db32d826c18?w=800&q=60",
   },
 ]
 
@@ -35,18 +39,21 @@ const physicalFormats = [
     body: "Concentrated liquid systems designed for direct inline dosing, rapid dispersion and performance stability under high temperature or high shear process conditions.",
     tags: "Paint, Textile, Polymer",
     icon: <Droplets className="w-5 h-5" />,
+    bgImage: "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=800&q=60",
   },
   {
     title: "Emulsion",
     body: "Water-based emulsions engineered for easy handling, uniform distribution and controlled release of active components in aqueous industrial systems.",
     tags: "Textile, ETP, Paper",
     icon: <Waves className="w-5 h-5" />,
+    bgImage: "https://images.unsplash.com/photo-1559825481-12a05cc00344?w=800&q=60",
   },
   {
     title: "Powder / Solid",
     body: "Solid and powder defoaming systems developed for dry blending or delayed-release applications, providing long shelf life and compatibility with dry formulation processes.",
     tags: "Cement, Mortar, Detergents",
     icon: <Box className="w-5 h-5" />,
+    bgImage: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=60",
   },
 ]
 
@@ -56,24 +63,28 @@ const envProfiles = [
     body: "Performance-driven foam control solutions optimized for demanding industrial processes where regulatory sensitivity is limited and maximum operational efficiency is required.",
     tags: "Textile, Paper, Cement",
     icon: <Factory className="w-5 h-5" />,
+    bgImage: "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=800&q=60",
   },
   {
     title: "ETP Compatible",
     body: "Foam control systems developed for wastewater treatment environments, focusing on biological compatibility, reduced toxicity and stable long-term performance under continuous aeration.",
     tags: "ETP, STP",
     icon: <Droplets className="w-5 h-5" />,
+    bgImage: "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800&q=60",
   },
   {
     title: "Water-Reuse Oriented",
     body: "Advanced foam control solutions engineered with enhanced biodegradability and low aquatic impact, supporting wastewater reuse and sustainability-focused treatment systems.",
     tags: "Reuse STP, ZLD",
     icon: <Recycle className="w-5 h-5" />,
+    bgImage: "https://images.unsplash.com/photo-1468421870903-4df1664ac249?w=800&q=60",
   },
   {
     title: "Food-Contact Capable (Custom)",
     body: "Qualification-based foam control solutions developed through collaborative evaluation, designed to meet process safety and regulatory expectations for food, beverage and sensitive applications.",
     tags: "Food, Beverage, Pharma",
     icon: <ShieldCheck className="w-5 h-5" />,
+    bgImage: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=800&q=60",
   },
 ]
 
@@ -82,22 +93,31 @@ interface TechCardProps {
   body: string
   tags: string
   icon: React.ReactNode
+  bgImage?: string
 }
 
-const TechCard = ({ title, body, tags, icon }: TechCardProps) => (
-  <div className="p-6 rounded-xl bg-white/[0.03] border border-white/5 hover:border-brand-500/20 transition-colors duration-200 flex flex-col h-full">
-    <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-gray-400 mb-4">
-      {icon}
+const TechCard = ({ title, body, tags, icon, bgImage }: TechCardProps) => (
+  <div className="relative rounded-xl border border-white/5 hover:border-brand-500/20 transition-colors duration-200 flex flex-col h-full overflow-hidden group">
+    {bgImage && (
+      <div className="absolute inset-0">
+        <img src={bgImage} alt="" className="w-full h-full object-cover opacity-30 group-hover:opacity-40 transition-opacity duration-500" loading="lazy" />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-navy-900/70 to-navy-900/60" />
+      </div>
+    )}
+    <div className={`relative z-10 p-6 flex flex-col h-full ${!bgImage ? 'bg-white/[0.03]' : ''}`}>
+      <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-gray-400 mb-4">
+        {icon}
+      </div>
+      <h3 className="text-base font-semibold text-white mb-3">{title}</h3>
+      <p className="text-gray-400 text-sm leading-relaxed mb-4 flex-1">{body}</p>
+      <div className="text-[11px] text-gray-500 uppercase tracking-wider mb-4">{tags}</div>
+      <Link
+        to="/solutions"
+        className="text-brand-400 hover:text-brand-300 text-sm font-medium inline-flex items-center transition-colors duration-200"
+      >
+        View applications <ArrowRight className="w-3.5 h-3.5 ml-1" />
+      </Link>
     </div>
-    <h3 className="text-base font-semibold text-white mb-3">{title}</h3>
-    <p className="text-gray-400 text-sm leading-relaxed mb-4 flex-1">{body}</p>
-    <div className="text-[11px] text-gray-500 uppercase tracking-wider mb-4">{tags}</div>
-    <Link
-      to="/solutions"
-      className="text-brand-400 hover:text-brand-300 text-sm font-medium inline-flex items-center transition-colors duration-200"
-    >
-      View applications <ArrowRight className="w-3.5 h-3.5 ml-1" />
-    </Link>
   </div>
 )
 

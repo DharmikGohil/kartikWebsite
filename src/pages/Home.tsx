@@ -7,10 +7,10 @@ import { SEOHead, FAQSection, getHomePageSEO } from '../seo'
 const Home = () => {
   const seo = getHomePageSEO();
   const signals = [
-    { icon: <Settings className="w-7 h-7" />, title: 'Application-Driven', desc: 'Solutions configured for your specific process conditions, not generic products.' },
-    { icon: <FlaskConical className="w-7 h-7" />, title: 'Chemistry-Aware', desc: 'We select the right chemistry platform based on your operating window.' },
-    { icon: <Leaf className="w-7 h-7" />, title: 'Sustainability-Aware', desc: 'Lower dosage, biodegradable options and water-reuse compatible grades.' },
-    { icon: <Zap className="w-7 h-7" />, title: 'Growing Capability', desc: 'Expanding across industries with engineered foam control solutions.' },
+    { icon: <Settings className="w-7 h-7" />, title: 'Application-Driven', desc: 'Solutions configured for your specific process conditions, not generic products.', bgImage: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=60' },
+    { icon: <FlaskConical className="w-7 h-7" />, title: 'Chemistry-Aware', desc: 'We select the right chemistry platform based on your operating window.', bgImage: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&q=60' },
+    { icon: <Leaf className="w-7 h-7" />, title: 'Sustainability-Aware', desc: 'Lower dosage, biodegradable options and water-reuse compatible grades.', bgImage: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=60' },
+    { icon: <Zap className="w-7 h-7" />, title: 'Growing Capability', desc: 'Expanding across industries with engineered foam control solutions.', bgImage: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=60' },
   ]
 
   return (
@@ -64,13 +64,19 @@ const Home = () => {
             {signals.map((s, i) => (
               <div
                 key={i}
-                className="p-6 rounded-xl bg-white/5 border border-white/5 hover:border-brand-500/20 transition-colors duration-200"
+                className="relative rounded-xl border border-white/5 hover:border-brand-500/20 transition-colors duration-200 overflow-hidden group"
               >
-                <div className="w-12 h-12 bg-brand-600/15 rounded-lg flex items-center justify-center mb-4 text-brand-400">
-                  {s.icon}
+                <div className="absolute inset-0">
+                  <img src={s.bgImage} alt="" className="w-full h-full object-cover opacity-30 group-hover:opacity-40 transition-opacity duration-500" loading="lazy" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-navy-900/70 to-navy-900/60" />
                 </div>
-                <h3 className="text-lg font-semibold text-white mb-2">{s.title}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">{s.desc}</p>
+                <div className="relative z-10 p-6">
+                  <div className="w-12 h-12 bg-brand-600/15 rounded-lg flex items-center justify-center mb-4 text-brand-400">
+                    {s.icon}
+                  </div>
+                  <h3 className="text-lg font-semibold text-white mb-2">{s.title}</h3>
+                  <p className="text-gray-400 text-sm leading-relaxed">{s.desc}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -92,11 +98,17 @@ const Home = () => {
               <Link
                 key={ind.slug}
                 to={`/solutions/${ind.slug}`}
-                className="block p-6 rounded-xl bg-white/5 border border-white/5 hover:border-brand-500/30 hover:bg-white/[0.07] transition-colors duration-200 group h-full"
+                className="relative block rounded-xl border border-white/5 hover:border-brand-500/30 transition-colors duration-200 group h-full overflow-hidden"
               >
-                <IndustryIcon slug={ind.slug} className="w-8 h-8 text-brand-400 mb-3" />
-                <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-brand-400 transition-colors duration-200">{ind.name}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">{ind.shortDesc}</p>
+                <div className="absolute inset-0">
+                  <img src={ind.heroImage} alt="" className="w-full h-full object-cover opacity-30 group-hover:opacity-40 transition-opacity duration-500" loading="lazy" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-navy-900/70 to-navy-900/60" />
+                </div>
+                <div className="relative z-10 p-6">
+                  <IndustryIcon slug={ind.slug} className="w-8 h-8 text-brand-400 mb-3" />
+                  <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-brand-400 transition-colors duration-200">{ind.name}</h3>
+                  <p className="text-gray-400 text-sm leading-relaxed">{ind.shortDesc}</p>
+                </div>
               </Link>
             ))}
           </div>

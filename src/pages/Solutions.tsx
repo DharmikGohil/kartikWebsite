@@ -36,15 +36,21 @@ const Solutions = () => {
               <Link
                 key={ind.slug}
                 to={`/solutions/${ind.slug}`}
-                className="block p-7 rounded-xl bg-white/5 border border-white/5 hover:border-brand-500/30 hover:bg-white/[0.07] transition-colors duration-200 group h-full"
+                className="relative block rounded-xl border border-white/5 hover:border-brand-500/30 transition-colors duration-200 group h-full overflow-hidden"
               >
-                <IndustryIcon slug={ind.slug} className="w-10 h-10 text-brand-400 mb-4" />
-                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-brand-400 transition-colors duration-200">
-                  {ind.name}
-                </h3>
-                <p className="text-gray-400 text-sm leading-relaxed mb-4">{ind.shortDesc}</p>
-                <div className="text-brand-400 text-sm font-medium inline-flex items-center">
-                  View solutions <ArrowRight className="w-4 h-4 ml-1" />
+                <div className="absolute inset-0">
+                  <img src={ind.heroImage} alt="" className="w-full h-full object-cover opacity-30 group-hover:opacity-40 transition-opacity duration-500" loading="lazy" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-navy-900/70 to-navy-900/60" />
+                </div>
+                <div className="relative z-10 p-7">
+                  <IndustryIcon slug={ind.slug} className="w-10 h-10 text-brand-400 mb-4" />
+                  <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-brand-400 transition-colors duration-200">
+                    {ind.name}
+                  </h3>
+                  <p className="text-gray-400 text-sm leading-relaxed mb-4">{ind.shortDesc}</p>
+                  <div className="text-brand-400 text-sm font-medium inline-flex items-center">
+                    View solutions <ArrowRight className="w-4 h-4 ml-1" />
+                  </div>
                 </div>
               </Link>
             ))}
