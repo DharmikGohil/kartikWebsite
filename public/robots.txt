@@ -10,3 +10,6 @@ Disallow: /api/
 Allow: /assets/
 Allow: *.css
 Allow: *.js
+
+# Throttle crawl rate to preserve crawl budget
+Crawl-delay: 1

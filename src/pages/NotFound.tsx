@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import { Home, Search } from 'lucide-react'
 
 const NotFound = () => (
   <div className="min-h-screen bg-navy-900 pt-20 flex items-center">
+    <Helmet>
+      <title>Page Not Found | ChemAssure Global</title>
+      <meta name="robots" content="noindex, nofollow" />
+      <meta name="prerender-status-code" content="404" />
+    </Helmet>
     <div className="container-max text-center py-20">
       <div className="text-8xl font-bold text-brand-400/20 mb-4">404</div>
       <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">Page Not Found</h1>

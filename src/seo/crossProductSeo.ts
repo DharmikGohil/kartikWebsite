@@ -48,11 +48,15 @@ export function getLocationIndustryPageSEO(
       description: i.shortDesc,
     }));
 
+  // noindex city-level cross-product pages to avoid thin content penalties
+  const isCityLevel = parentPath.split("/").filter(Boolean).length >= 3;
+
   return {
     meta: {
       title: `${industry.name} Foam Control in ${locationName} | Defoamer Solutions | ${SITE_NAME}`,
       description: `Industrial defoamer solutions for ${industry.name.toLowerCase()} in ${locationName}. ${industry.shortDesc} Application-specific foam control engineered for local process conditions.`,
-      canonical: path,
+      canonical: `/solutions/${industrySlug}`,
+      ...(isCityLevel ? { noindex: true } : {}),
     },
     breadcrumbs,
     faqs,
@@ -111,11 +115,15 @@ export function getLocationChemistryPageSEO(
       description: c.description.split(".")[0] + ".",
     }));
 
+  // noindex city-level cross-product pages to avoid thin content penalties
+  const isCityLevel = parentPath.split("/").filter(Boolean).length >= 3;
+
   return {
     meta: {
       title: `${chem.name} in ${locationName} | ${chem.temperatureRange} | ${SITE_NAME}`,
       description: `${chem.shortName} defoamer solutions in ${locationName}. ${chem.description.split(".")[0]}. Temperature: ${chem.temperatureRange}. pH: ${chem.phRange}.`,
-      canonical: path,
+      canonical: `/chemistry/${chemistrySlug}`,
+      ...(isCityLevel ? { noindex: true } : {}),
     },
     breadcrumbs,
     faqs,
@@ -178,11 +186,15 @@ export function getLocationProblemPageSEO(
     })),
   ];
 
+  // noindex city-level cross-product pages to avoid thin content penalties
+  const isCityLevel = parentPath.split("/").filter(Boolean).length >= 3;
+
   return {
     meta: {
       title: `${problem.name} Solutions in ${locationName} | ${SITE_NAME}`,
       description: `Solve ${problem.name.toLowerCase()} in ${locationName}. ${problem.description.split(".")[0]}. Expert defoamer solutions from ${SITE_NAME}.`,
-      canonical: path,
+      canonical: `/foam-problems/${problemSlug}`,
+      ...(isCityLevel ? { noindex: true } : {}),
     },
     breadcrumbs,
     faqs,
