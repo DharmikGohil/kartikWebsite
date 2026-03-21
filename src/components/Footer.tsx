@@ -35,7 +35,7 @@ const Footer = () => {
               Industrial foam control solutions engineered for process efficiency and sustainability. Application-specific defoamers and antifoams across industries.
             </p>
             <div className="flex space-x-3">
-              <a href="https://www.linkedin.com/in/chemsassure-global-b62a3737a/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-brand-400 transition-colors">
+              <a href="https://www.linkedin.com/company/chemassure-global" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-brand-400 transition-colors">
                 <Linkedin size={18} />
               </a>
             </div>
