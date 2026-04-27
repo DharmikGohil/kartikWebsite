@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentskills.io/schema/v0.2.0/index.json",
+  "skills": [
+    {
+      "name": "lab-search",
+      "type": "api",
+      "description": "Search NABL-accredited testing laboratories across India by location, discipline, or keyword.",
+      "url": "https://chemassureglobal.com/.well-known/agent-skills/lab-search/SKILL.md",
+      "sha256": ""
+    },
+    {
+      "name": "contact-form",
+      "type": "api",
+      "description": "Submit a contact inquiry to ChemAssure Global for foam control solutions.",
+      "url": "https://chemassureglobal.com/.well-known/agent-skills/contact-form/SKILL.md",
+      "sha256": ""
+    },
+    {
+      "name": "sample-report",
+      "type": "api",
+      "description": "Request a sample quality control report delivered via email.",
+      "url": "https://chemassureglobal.com/.well-known/agent-skills/sample-report/SKILL.md",
+      "sha256": ""
+    }
+  ]
+}

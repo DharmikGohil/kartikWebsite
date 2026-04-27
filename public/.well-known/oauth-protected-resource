@@ -1,0 +1,8 @@
+{
+  "resource": "https://chemassureglobal.com",
+  "authorization_servers": [],
+  "scopes_supported": [],
+  "bearer_methods_supported": ["header"],
+  "resource_documentation": "https://chemassureglobal.com/.well-known/openapi.json",
+  "resource_signing_alg_values_supported": []
+}

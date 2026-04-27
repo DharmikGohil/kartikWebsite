@@ -8,6 +8,9 @@
     },
     "api/labs-search.ts": {
       "maxDuration": 30
+    },
+    "api/markdown.ts": {
+      "maxDuration": 5
     }
   },
   "redirects": [
@@ -29,7 +32,18 @@
       "destination": "/api/$1"
     },
     {
-      "source": "/((?!api|assets|favicon|apple-touch|manifest|robots|sitemap|kartikPhoto|sample-qc).*)",
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "Accept",
+          "value": "(?:.*text/markdown.*)"
+        }
+      ],
+      "destination": "/api/markdown"
+    },
+    {
+      "source": "/((?!api|assets|favicon|apple-touch|manifest|robots|sitemap|kartikPhoto|sample-qc|\\.well-known).*)",
       "destination": "/index.html"
     }
   ],
@@ -44,6 +58,56 @@
       ],
       "headers": [
         { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
+      ]
+    },
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</.well-known/api-catalog>; rel=\"api-catalog\", </.well-known/openapi.json>; rel=\"service-desc\", </.well-known/openid-configuration>; rel=\"openid-configuration\", </.well-known/agent-skills/index.json>; rel=\"agent-skills\""
+        }
+      ]
+    },
+    {
+      "source": "/.well-known/api-catalog",
+      "headers": [
+        { "key": "Content-Type", "value": "application/linkset+json" },
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
+      ]
+    },
+    {
+      "source": "/.well-known/openid-configuration",
+      "headers": [
+        { "key": "Content-Type", "value": "application/json" },
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
+      ]
+    },
+    {
+      "source": "/.well-known/oauth-protected-resource",
+      "headers": [
+        { "key": "Content-Type", "value": "application/json" },
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
+      ]
+    },
+    {
+      "source": "/.well-known/openapi.json",
+      "headers": [
+        { "key": "Content-Type", "value": "application/json" },
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
+      ]
+    },
+    {
+      "source": "/.well-known/mcp/server-card.json",
+      "headers": [
+        { "key": "Content-Type", "value": "application/json" },
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
+      ]
+    },
+    {
+      "source": "/.well-known/agent-skills/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
       ]
     },
     {

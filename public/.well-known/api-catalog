@@ -1,0 +1,67 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://chemassureglobal.com/api/contact",
+      "service-desc": [
+        {
+          "href": "https://chemassureglobal.com/.well-known/openapi.json",
+          "type": "application/openapi+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://chemassureglobal.com/docs/api",
+          "type": "text/html"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://chemassureglobal.com/api/health",
+          "type": "application/json"
+        }
+      ]
+    },
+    {
+      "anchor": "https://chemassureglobal.com/api/labs-search",
+      "service-desc": [
+        {
+          "href": "https://chemassureglobal.com/.well-known/openapi.json",
+          "type": "application/openapi+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://chemassureglobal.com/docs/api",
+          "type": "text/html"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://chemassureglobal.com/api/health",
+          "type": "application/json"
+        }
+      ]
+    },
+    {
+      "anchor": "https://chemassureglobal.com/api/download-report",
+      "service-desc": [
+        {
+          "href": "https://chemassureglobal.com/.well-known/openapi.json",
+          "type": "application/openapi+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://chemassureglobal.com/docs/api",
+          "type": "text/html"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://chemassureglobal.com/api/health",
+          "type": "application/json"
+        }
+      ]
+    }
+  ]
+}

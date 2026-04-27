@@ -5,7 +5,7 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 export const config = {
-  matcher: "/((?!api|assets|favicon|apple-touch|manifest|robots|sitemap|kartikPhoto|sample-qc|_next).*)",
+  matcher: "/((?!api|assets|favicon|apple-touch|manifest|robots|sitemap|kartikPhoto|sample-qc|_next|\\.well-known).*)",
 };
 
 export default function middleware(request: NextRequest) {

@@ -49,5 +49,80 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- WebMCP: expose site tools to AI agents via the browser -->
+    <script>
+      if (navigator.modelContext && navigator.modelContext.provideContext) {
+        navigator.modelContext.provideContext({
+          tools: [
+            {
+              name: "search_labs",
+              description: "Search NABL-accredited testing laboratories across India by location, discipline, or keyword.",
+              inputSchema: {
+                type: "object",
+                properties: {
+                  query: { type: "string", description: "Free-text search" },
+                  state: { type: "string", description: "Indian state filter" },
+                  city: { type: "string", description: "City filter" },
+                  disciplines: { type: "string", description: "Testing discipline filter" },
+                  page: { type: "integer", default: 1 },
+                  limit: { type: "integer", default: 20 }
+                }
+              },
+              execute: async function(params) {
+                var qs = new URLSearchParams(params).toString();
+                var res = await fetch("/api/labs-search?" + qs);
+                return res.json();
+              }
+            },
+            {
+              name: "submit_contact",
+              description: "Submit a contact inquiry to ChemAssure Global.",
+              inputSchema: {
+                type: "object",
+                required: ["name", "email", "message"],
+                properties: {
+                  name: { type: "string" },
+                  email: { type: "string", format: "email" },
+                  company: { type: "string" },
+                  phone: { type: "string" },
+                  message: { type: "string" }
+                }
+              },
+              execute: async function(params) {
+                var res = await fetch("/api/contact", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify(params)
+                });
+                return res.json();
+              }
+            },
+            {
+              name: "request_sample_report",
+              description: "Request a sample QC report delivered via email.",
+              inputSchema: {
+                type: "object",
+                required: ["name", "email"],
+                properties: {
+                  name: { type: "string" },
+                  email: { type: "string", format: "email" },
+                  company: { type: "string" },
+                  phone: { type: "string" }
+                }
+              },
+              execute: async function(params) {
+                var res = await fetch("/api/download-report", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify(params)
+                });
+                return res.json();
+              }
+            }
+          ]
+        });
+      }
+    </script>
   </body>
 </html>

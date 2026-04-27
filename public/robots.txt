@@ -13,3 +13,7 @@ Allow: *.js
 
 # Throttle crawl rate to preserve crawl budget
 Crawl-delay: 1
+
+# Content Signals — AI content usage preferences
+# See https://contentsignals.org/
+Content-Signal: ai-train=no, search=yes, ai-input=no

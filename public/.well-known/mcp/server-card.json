@@ -1,0 +1,39 @@
+{
+  "serverInfo": {
+    "name": "ChemAssure Global",
+    "version": "1.0.0",
+    "description": "Industrial foam control solutions — defoamers, antifoams, lab search, and quality control reports."
+  },
+  "transport": {
+    "type": "https",
+    "endpoint": "https://chemassureglobal.com/api"
+  },
+  "capabilities": {
+    "tools": [
+      {
+        "name": "search_labs",
+        "description": "Search NABL-accredited laboratories by location, discipline, or keyword.",
+        "endpoint": "/api/labs-search",
+        "method": "GET"
+      },
+      {
+        "name": "submit_contact",
+        "description": "Submit a contact inquiry to ChemAssure Global.",
+        "endpoint": "/api/contact",
+        "method": "POST"
+      },
+      {
+        "name": "request_sample_report",
+        "description": "Request a sample QC report delivered via email.",
+        "endpoint": "/api/download-report",
+        "method": "POST"
+      },
+      {
+        "name": "health_check",
+        "description": "Check API health status.",
+        "endpoint": "/api/health",
+        "method": "GET"
+      }
+    ]
+  }
+}
