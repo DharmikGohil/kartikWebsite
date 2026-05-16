@@ -23,12 +23,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-brand-600 rounded-lg flex items-center justify-center">
-                <Droplets className="w-5 h-5 text-white" />
-              </div>
-              <div>
-                <span className="text-lg font-bold">ChemAssure</span>
-                <span className="text-xs text-brand-400 font-medium ml-1">Global</span>
+              <svg width="40" height="40" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
+                <path d="M 120 200 C 160 140, 280 140, 360 190 C 290 160, 200 180, 120 230 Z" fill="#1E4FA1"/>
+                <path d="M 320 200 C 280 260, 160 260, 80 210 C 150 240, 240 220, 320 170 Z" fill="#7CC242"/>
+              </svg>
+              <div className="flex flex-col">
+                <span className="text-xl font-bold text-white leading-tight tracking-tight">ChemAssure</span>
+                <span className="text-[11px] text-accent-500 font-bold uppercase tracking-widest -mt-0.5">Global</span>
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">

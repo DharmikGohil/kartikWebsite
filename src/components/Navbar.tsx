@@ -71,12 +71,13 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16 px-4 lg:px-6">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2.5 flex-shrink-0">
-            <div className="w-9 h-9 bg-brand-600 rounded-lg flex items-center justify-center">
-              <Droplets className="w-4 h-4 text-white" />
-            </div>
+            <svg width="36" height="36" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
+              <path d="M 120 200 C 160 140, 280 140, 360 190 C 290 160, 200 180, 120 230 Z" fill="#1E4FA1"/>
+              <path d="M 320 200 C 280 260, 160 260, 80 210 C 150 240, 240 220, 320 170 Z" fill="#7CC242"/>
+            </svg>
             <div className="flex flex-col">
-              <span className="text-lg font-bold text-white leading-tight">ChemAssure</span>
-              <span className="text-[10px] text-brand-400 font-medium -mt-0.5">Global</span>
+              <span className="text-xl font-bold text-white leading-tight tracking-tight">ChemAssure</span>
+              <span className="text-[11px] text-accent-500 font-bold uppercase tracking-widest -mt-0.5">Global</span>
             </div>
           </Link>
 
@@ -158,7 +159,7 @@ const Navbar = () => {
           {/* Mobile toggle */}
           <div className="lg:hidden">
             <button
-              onClick={() => setIsOpen(!isOpen)}
+               onClick={() => setIsOpen(!isOpen)}
               className="text-white p-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors"
               aria-label="Toggle menu">
               {isOpen ? <X size={22} /> : <Menu size={22} />}
