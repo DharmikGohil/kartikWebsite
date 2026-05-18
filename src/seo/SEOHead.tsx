@@ -31,6 +31,8 @@ export default function SEOHead({ meta, schemas = [] }: SEOHeadProps) {
       <meta property="og:description" content={meta.ogDescription || meta.description} />
       <meta property="og:url" content={canonical} />
       <meta property="og:image" content={ogImage} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       <meta property="og:type" content={meta.ogType || "website"} />
       <meta property="og:site_name" content={SITE_NAME} />
 

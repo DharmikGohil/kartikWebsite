@@ -2,7 +2,7 @@
 
 export const SITE_URL = "https://chemassureglobal.com";
 export const SITE_NAME = "ChemAssure Global";
-export const DEFAULT_OG_IMAGE = `${SITE_URL}/apple-touch-icon.png`;
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.png`;
 export const DEFAULT_TWITTER_CARD = "summary_large_image" as const;
 
 export const ORGANIZATION_SCHEMA = {
