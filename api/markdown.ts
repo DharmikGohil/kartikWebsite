@@ -1,11 +1,8 @@
-import { NextApiRequest, NextApiResponse } from 'next'
+export const config = {
+  runtime: 'edge',
+};
 
-/**
- * Markdown-for-Agents endpoint.
- * When the homepage is requested with Accept: text/markdown,
- * Vercel rewrites to this function which returns a markdown summary.
- */
-export default function handler(_req: NextApiRequest, res: NextApiResponse) {
+export default async function handler(req: Request) {
   const md = `# ChemAssure Global
 
 Industrial foam control solutions — application-specific defoamers and antifoams.
@@ -35,12 +32,16 @@ ChemAssure Global engineers defoamers and antifoams for textiles, wastewater, pa
 - Contact: https://chemassureglobal.com/contact
 - API Docs: https://chemassureglobal.com/.well-known/openapi.json
 - API Catalog: https://chemassureglobal.com/.well-known/api-catalog
-`
+`;
 
-  const tokenCount = md.split(/\s+/).length
+  const tokenCount = md.split(/\s+/).length;
 
-  res.setHeader('Content-Type', 'text/markdown; charset=utf-8')
-  res.setHeader('X-Markdown-Tokens', String(tokenCount))
-  res.setHeader('Cache-Control', 'public, max-age=3600')
-  res.status(200).send(md)
+  return new Response(md, {
+    status: 200,
+    headers: {
+      'Content-Type': 'text/markdown; charset=utf-8',
+      'x-markdown-tokens': String(tokenCount),
+      'Cache-Control': 'public, max-age=3600'
+    }
+  });
 }

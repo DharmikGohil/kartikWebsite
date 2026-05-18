@@ -32,12 +32,12 @@
       "destination": "/api/$1"
     },
     {
-      "source": "/",
+      "source": "/(.*)",
       "has": [
         {
           "type": "header",
           "key": "Accept",
-          "value": "(?:.*text/markdown.*)"
+          "value": "(?i).*text/markdown.*"
         }
       ],
       "destination": "/api/markdown"
